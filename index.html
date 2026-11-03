@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-davznvWhBdr5jbL1T0PJrhbYPbNaBLdhMHRATEDQ7hQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="description" content="Roz ke top 10 trending GitHub projects, simple Hinglish mein: kya karte hain, kitne safe hain, kiske kaam ke hain."><meta property="og:type" content="website"><meta property="og:title" content="GitHub Trends in Hinglish"><meta property="og:description" content="Roz ke top 10 trending GitHub projects, simple Hinglish mein: kya karte hain, kitne safe hain, kiske kaam ke hain."><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}/* animations */
+<!doctype html><html><head><meta charset=utf8><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-YVCsSddu850BBIXu+eWjJ0z0gH2q1v6RLKOOHba5NJQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="description" content="Roz ke top 10 trending GitHub projects, simple Hinglish mein: kya karte hain, kitne safe hain, kiske kaam ke hain."><meta property="og:type" content="website"><meta property="og:title" content="GitHub Trends in Hinglish"><meta property="og:description" content="Roz ke top 10 trending GitHub projects, simple Hinglish mein: kya karte hain, kitne safe hain, kiske kaam ke hain."><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}/* animations */
 @keyframes rise{from{opacity:0;transform:translateY(18px)}}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
@@ -256,6 +256,8 @@ details#gloss>summary{cursor:pointer;list-style:revert}
 .lvl p{margin:0}.lvl.low{border-color:var(--ok);background:var(--ok-bg)}.lvl.med{border-color:var(--warn);background:var(--warn-bg)}.lvl.high{border-color:var(--bad);background:var(--bad-bg)}
 .lvl.low h3{color:var(--ok)}.lvl.med h3{color:var(--warn)}.lvl.high h3{color:var(--bad)}
 .rgx{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.85rem}
+
+.wrap>header.top{position:relative;z-index:50}
 </style>
 
 <div class="wrap"><noscript><p style="padding:16px">Please JavaScript on karein, tabhi ye page dikhega.</p></noscript>
@@ -274,7 +276,6 @@ details#gloss>summary{cursor:pointer;list-style:revert}
       <button class="btn" id="themeBtn" type="button" aria-label="Dark ya light mode switch karein">◐ <span id="themeLbl">Dark mode</span></button>
       <button class="btn" id="shareBtn" type="button" aria-pressed="false" hidden>🔒 <span id="shareLbl">Share mode: off</span></button>
       <button class="btn" id="copyBtn" type="button">📋 Copy summary</button>
-      <button class="btn" id="randBtn" type="button">🎲 Surprise me</button>
       <div class="dlwrap">
         <button class="btn pri" id="dlBtn" type="button" aria-expanded="false" aria-controls="dlMenu">⬇ Download</button>
         <div class="menu sk" id="dlMenu" hidden>
@@ -525,7 +526,6 @@ function drawTop3(){
 }
 function summaryText(){const t=L.daily.rows.slice(0,3).map(([id],i)=>`${i+1}. ${short(id)}: ${R[id].kya.split(". ")[0].replace(/\.$/,"")}`).join("\n");return `GitHub Trends in Hinglish (${DATA_DATE})\nAaj ke Top 3:\n${t}\n\nPoori list simple Hinglish mein: https://tushar-chabra.github.io/trends-in-hinglish/`}
 $("copyBtn").onclick=async()=>{const t=summaryText();try{await navigator.clipboard.writeText(t);toast("Summary copy ho gayi. Ab kahin bhi paste karein.")}catch(e){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");toast("Summary copy ho gayi. Ab kahin bhi paste karein.")}catch(x){toast("Copy nahi ho paayi. Dobara try karein.")}a.remove()}};
-$("randBtn").onclick=()=>{const rows=L[cur].rows;openRepo(rows[Math.floor(Math.random()*rows.length)][0]);toast("🎲 Ye lijiye aapki surprise repo!")};
 
 /* ---------- tabs ---------- */
 function drawTabs(){$("tabs").innerHTML=Object.entries(L).map(([k,l])=>`<button class="tab" role="tab" id="tab-${k}" aria-selected="${k===cur}" data-k="${k}">${esc(l.lbl)}</button>`).join("")}

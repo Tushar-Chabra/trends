@@ -28,3 +28,8 @@ Trendshift.io aur har project ka public GitHub page. Page roz ek baar update hot
 - Sab data page ke andar ek JSON block mein hai (code ki tarah chalta nahi). Dikhane se pehle har field check aur escape hoti hai.
 - Content-Security-Policy sirf page ki apni ek script ko chalne deti hai; bahar ka koi script, network call ya form allowed nahi.
 - Galti mili to GitHub Issues mein batayein.
+
+## Copyright
+© 2026 Tushar Chhabra. All rights reserved.
+Is page ka content, design aur write-ups copy ya republish karne se pehle permission lein. Share karna ho to page ka link share karein.
+Repos ke naam aur unke logos unke apne owners ke hain.

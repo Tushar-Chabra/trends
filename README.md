@@ -10,7 +10,6 @@ Kya karte hain, kitne safe hain, aur kiske kaam ke hain.
 - Har project ke liye: kya karta hai, kyun bana, kyun zaroorat padi, kis kaam aayega
 - Language chart, stars ka comparison, risk label (Low / Medium / High risk) aur warning
 - "Risk guide" section: har label 5 fixed sawaalon se decide hota hai, simple example ke saath
-- Report ko Word, PDF ya Markdown mein download karne ka option, aur "Copy summary" button share karne ke liye
 
 ## Data kahan se aata hai
 Trendshift.io aur har project ka public GitHub page. Page roz ek baar update hota hai; link hamesha wahi rehta hai.

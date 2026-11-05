@@ -1,0 +1,99 @@
+name: Page guard
+
+# Har push par page check hota hai. Check pass ho tabhi page live hota hai.
+# Check fail ho to purana page hi live rehta hai.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Check page safety
+        run: |
+          git show HEAD~1:index.html > prev.html 2>/dev/null || cp index.html prev.html
+          python3 -I - "$(git log -1 --format=%s)" <<'PY'
+          import sys, re, json, hashlib, base64
+          msg = sys.argv[1]
+          t = open("index.html", encoding="utf-8").read()
+          p = open("prev.html", encoding="utf-8").read()
+          bad = []
+          def fail(x): bad.append(x)
+          OPEN = '<script type="application/json" id="radar-data">'
+          if t.count('id="radar-data"') != 1 or t.count(OPEN) != 1:
+              fail("radar-data block missing or repeated")
+          s = t.find(OPEN) + len(OPEN); e = t.find("</script>", s)
+          block = t[s:e]
+          if "<" in block: fail("raw < inside data block")
+          execs = re.findall(r"<script>(.*?)</script>", t, re.S)
+          if len(execs) != 1: fail("must have exactly one executable inline script")
+          if re.search(r"<script[^>]*\ssrc=", t, re.I): fail("external script found")
+          if re.search(r"<iframe|<object|<embed", t, re.I): fail("iframe/object/embed found")
+          m = re.search(r"'sha256-([A-Za-z0-9+/=]+)'", t)
+          if not m or not execs or base64.b64encode(hashlib.sha256(execs[0].encode("utf-8")).digest()).decode() != m.group(1):
+              fail("script hash does not match the Content-Security-Policy")
+          try:
+              d = json.loads(block)
+          except Exception as ex:
+              d = {}; fail("data block is not valid JSON")
+          ID = re.compile(r"^(?!\.)[A-Za-z0-9_.-]+/(?!\.)[A-Za-z0-9_.-]+$")
+          R = d.get("R", {}) if isinstance(d, dict) else {}
+          EN = (d.get("EN") or {}).get("R", {}) if isinstance(d, dict) else {}
+          for i in list(R) + list(EN):
+              if not ID.match(i): fail("bad repo id: " + i[:60])
+          def walk(x):
+              if isinstance(x, str): yield x
+              elif isinstance(x, list):
+                  for y in x: yield from walk(y)
+              elif isinstance(x, dict):
+                  for y in x.values(): yield from walk(y)
+          for sval in walk(d):
+              low = sval.lower()
+              if "javascript:" in low: fail("javascript: found in data")
+              if re.search(r"[ऀ-ॿ]", sval): fail("Devanagari found in data")
+              for w in ("upwork", "fiverr", "laptop", "@gmail.com"):
+                  if w in low: fail("forbidden word in data: " + w)
+          for tk in list(d.get("TAKE", [])) + list((d.get("EN") or {}).get("TAKE", [])):
+              for tag in re.findall(r"</?([a-zA-Z]+)", tk.replace("\\u003c", "<")):
+                  if tag.lower() not in ("b", "i", "strong", "em"): fail("tag not allowed in TAKE: " + tag)
+          if msg.startswith("Daily update"):
+              ps = p.find(OPEN) + len(OPEN); pe = p.find("</script>", ps)
+              if t[:s] != p[:ps] or t[e:] != p[pe:]:
+                  fail("daily update changed the page outside the data block")
+          if bad:
+              print("PAGE GUARD FAILED:"); [print(" -", b) for b in sorted(set(bad))]; sys.exit(1)
+          print("PAGE GUARD PASSED")
+          PY
+      - name: Prepare page files
+        run: |
+          mkdir _site
+          cp index.html og.png apple-touch-icon.png _site/
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

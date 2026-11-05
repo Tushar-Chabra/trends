@@ -12,7 +12,7 @@ Kya karte hain, kitne safe hain, aur kiske kaam ke hain.
 - "Risk guide" section: har label 5 fixed sawaalon se decide hota hai, simple example ke saath
 
 ## Data kahan se aata hai
-Trendshift.io aur har project ka public GitHub page. Page roz ek baar update hota hai; link hamesha wahi rehta hai.
+Daily, Weekly aur Monthly list GitHub ki apni Trending list se aati hai. Yearly list Trendshift.io se aati hai (GitHub yearly list nahi deta). Har project ki details uske apne public GitHub page se. Page roz ek baar update hota hai; link hamesha wahi rehta hai.
 
 ## Safety aur disclaimer (zaroor padhein)
 - Ye sirf information hai, advice nahi. Risk label andaza hai, security audit nahi.

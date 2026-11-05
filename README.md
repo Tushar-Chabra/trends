@@ -1,4 +1,4 @@
-# GitHub Trends in Hinglish
+# GitHub Trends in Hinglish/Simple English
 
 Roz ke top 10 trending GitHub projects, simple Hinglish mein, non-tech logon ke liye.
 Kya karte hain, kitne safe hain, aur kiske kaam ke hain.

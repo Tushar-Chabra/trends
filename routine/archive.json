@@ -1,1 +1,189 @@
-{}
+{
+ "Renhuai123/ziwei-doushu": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "The maker says traditional knowledge should not be locked away. So they made the charting algorithm and the knowledge base open source. It is an open snapshot of the engine behind ouranic.cn.",
+   "job": "Web developers, app builders, makers of astrology and culture projects, AI dataset researchers.",
+   "kahan": "Astrology apps, culture websites, research projects.",
+   "kya": "This is an engine that makes Zi Wei Dou Shu (a Chinese astrology method) charts. You give a birth date and time and it builds the chart. It also comes with a big interpretation dataset (written readings).",
+   "need": "If you are building an astrology app or website, writing the chart math yourself is hard. For example, you make a small app where a user enters a birth date and sees a chart; this engine does the math.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. It does not need control of any account or computer. Keep in mind: it is only a traditional method, not scientific proof, and the dataset is very big (56.6 GB according to the README).",
+   "type": "Zi Wei Dou Shu (Chinese astrology) chart engine",
+   "win": [
+    "You need Node.js. In the terminal: `git clone https://github.com/Renhuai123/ziwei-doushu.git`",
+    "Then: `cd ziwei-doushu` and `npm ci`",
+    "To run the demo: `npm run dev` (the chart demo opens at http://localhost:3000/chart)"
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "Maker ka kehna hai ki traditional knowledge locked nahi hona chahiye. Isliye unhone charting algorithm aur knowledge base open source kar diye. Ye ouranic.cn ke engine ka open snapshot hai.",
+   "job": "Web developers, app builders, astrology aur culture projects wale makers, AI dataset researchers.",
+   "kahan": "Astrology apps, culture websites, research projects.",
+   "kya": "Ye Zi Wei Dou Shu (Chinese astrology ka ek tarika) ka chart banane wala engine hai. Janam ki date aur time dene par chart banta hai, aur saath mein bada interpretation dataset (padhne ke liye likhe hue jawab) bhi hai.",
+   "lang": [
+    [
+     "TypeScript",
+     98
+    ],
+    [
+     "Other",
+     2
+    ]
+   ],
+   "need": "Agar aap astrology app ya website bana rahe hain, to chart ka hisaab khud likhna mushkil hai. Jaise aap ek chhota app banate hain jisme user apni janam date daale aur chart dekhe; ye engine wo hisaab de deta hai.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Koi account ya computer control nahi chahiye. Dhyan rahe: ye sirf ek tradition ka way hai, science ka proof nahi, aur dataset bahut bada hai (README ke hisaab se 56.6 GB).",
+   "t": "life",
+   "type": "Zi Wei Dou Shu (Chinese astrology) chart engine",
+   "win": [
+    "Node.js chahiye. Terminal mein: `git clone https://github.com/Renhuai123/ziwei-doushu.git`",
+    "Phir: `cd ziwei-doushu` aur `npm ci`",
+    "Demo chalane ke liye: `npm run dev` (chart demo http://localhost:3000/chart par khulta hai)"
+   ]
+  },
+  "archived": "2026-11-10"
+ },
+ "dsx-ai-factory/nvke": {
+  "EN": {
+   "and": [
+    "It does not run on a phone; it is a tool for a Linux server or computer."
+   ],
+   "bani": "Big companies must run many clusters on GPU machines, and doing it by hand is hard. NVIDIA built a management layer that creates, grows and removes clusters.",
+   "job": "Platform engineers, DevOps, AI infrastructure teams.",
+   "kahan": "Data centers, AI companies, cloud teams.",
+   "kya": "Builds a 'managed Kubernetes' (a system for running groups of apps on many machines) on your own NVIDIA GPU servers. It is a preview version, not ready for real production yet.",
+   "need": "A platform team has to give each customer a separate cluster. Example: a company's AI team needs a GPU cluster right now, and this tool makes it for them.",
+   "plat": [
+    "Linux",
+    "Mac (with Colima)"
+   ],
+   "rn": "Medium risk because it takes control of whole servers and clusters (question 2). The README itself says: in preview, API login is off and plain HTTP is used, so do not run it in production.",
+   "type": "Kubernetes cluster manager (for NVIDIA GPU servers)",
+   "win": [
+    "`git clone https://github.com/dsx-ai-factory/nvke.git`",
+    "`make build`",
+    "Test with the local quickstart first (you need Docker and a Linux host)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Phone par nahi chalta; ye Linux server ya computer ka tool hai."
+   ],
+   "bani": "Badi companies ko GPU machines par kai cluster chalane padte hain, aur ye kaam haath se karna mushkil hai. NVIDIA ne ek management layer banayi jo clusters banati, badhati aur hatati hai.",
+   "job": "Platform engineers, DevOps, AI infrastructure teams.",
+   "kahan": "Data centers, AI companies, cloud teams.",
+   "kya": "NVIDIA ke apne GPU servers par 'managed Kubernetes' (cluster chalane ka system) banata hai. Preview version hai, abhi production ke liye nahi.",
+   "lang": [
+    [
+     "Go",
+     88.2
+    ],
+    [
+     "Shell",
+     10.2
+    ],
+    [
+     "Other",
+     1.6
+    ]
+   ],
+   "need": "Platform team ko apne customers ko alag-alag cluster dene hote hain. Example: ek company ke AI team ko turant GPU cluster chahiye, to ye tool use banakar de deta hai.",
+   "plat": [
+    "Linux",
+    "Mac (Colima ke saath)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye poore servers aur clusters ka control leta hai (sawaal 2). README khud kehta hai: preview mein API authentication band hoti hai aur plain HTTP chalta hai, isliye production mein na chalayein.",
+   "t": "infra",
+   "type": "Kubernetes cluster manager (NVIDIA GPU servers ke liye)",
+   "win": [
+    "`git clone https://github.com/dsx-ai-factory/nvke.git`",
+    "`make build`",
+    "Pehle local quickstart se test karein (Docker aur Linux host chahiye)."
+   ]
+  },
+  "archived": "2026-11-10"
+ },
+ "ranxianglei/billion-context": {
+  "EN": {
+   "and": [
+    "It does not run on a phone; it is a tool for a computer."
+   ],
+   "bani": "In long coding sessions the AI's memory fills up and the cost grows. This plugin sits in the middle and shortens old talk.",
+   "job": "AI developers, power users of coding agents.",
+   "kahan": "Software teams, freelancers, agent automation.",
+   "kya": "Makes a long AI chat shorter so fewer tokens (the units an AI counts and charges by) are used. It claims 5 times fewer tokens and month-long single sessions.",
+   "need": "When an agent works on a big project, the chat gets very long. Example: running a week-long coding session without starting a new chat again and again.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "OpenCode",
+    "Gemini CLI",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because it can see all the traffic between your tool and the AI service, and some modes in the README use a certificate trick (cert-MITM) (question 2). Use it only in a setup you trust.",
+   "type": "Context compression plugin for AI agents",
+   "win": [
+    "`npm install -g billion-context --prefix=~/.local`",
+    "For Windows, please see the official README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Phone par nahi; ye computer ka tool hai."
+   ],
+   "bani": "Lambe coding sessions mein AI ki memory bhar jaati hai aur kharcha badhta hai. Is plugin ne beech mein baithkar purani baatein chhoti kar di.",
+   "job": "AI developers, power users of coding agents.",
+   "kahan": "Software teams, freelancers, agent automation.",
+   "kya": "Lambi AI chat ko chhota karta hai taaki kam tokens (AI ka kaam ginne ki unit) lagein. Claim hai: 5 guna kam tokens aur mahine bhar ek hi session.",
+   "lang": [
+    [
+     "TypeScript",
+     97.1
+    ],
+    [
+     "Other",
+     2.9
+    ]
+   ],
+   "need": "Agent se bada project karwate time chat bahut lambi ho jaati hai. Example: ek hafte ka coding session bina bar-bar nayi chat shuru kiye chalana.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "OpenCode",
+    "Gemini CLI",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye aapke tool aur AI service ke beech ka saara traffic dekh sakta hai, aur README ke kuch modes mein certificate (cert-MITM) use hota hai (sawaal 2). Sirf bharosemand setup mein chalayein.",
+   "t": "agent",
+   "type": "AI agent ke liye context compression plugin",
+   "win": [
+    "`npm install -g billion-context --prefix=~/.local`",
+    "Windows ke liye Official README dekhein."
+   ]
+  },
+  "archived": "2026-11-10"
+ }
+}

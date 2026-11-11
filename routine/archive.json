@@ -1,4 +1,63 @@
 {
+ "D4Vinci/Scrapling": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "Websites keep changing and bot checks block them, so scraping code kept breaking. The maker built a framework that can still find an element after a page changes, and helps get past bot checks.",
+   "job": "Data engineers, Python developers, researchers, people learning AI automation.",
+   "kahan": "Price tracking, market research, lead lists, AI data collection.",
+   "kya": "Scrapling is a Python framework for pulling data from websites (web scraping). It has fast HTTP requests, stealth browsers (that look like a real user), parsing, and features to crawl many pages at once.",
+   "need": "If you need data from many websites, like prices or job listings, copying by hand is a long job. For example, you want the prices of 100 shops in one sheet every day; this becomes automatic.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because it has features that get past bot checks and scraping can break a website's rules (question 5). On some sites this can become a legal issue. Scrape only sites whose rules allow it.",
+   "type": "Python web scraping framework",
+   "win": [
+    "You need Python. In the terminal: `pip install scrapling`",
+    "For the browser features: `pip install \"scrapling[fetchers]\"` then `scrapling install`",
+    "For AI or shell features see the other options in the README (like `pip install \"scrapling[shell]\"`)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "Websites badalti rehti hain aur bot-check unhe rok deta hai, isliye scraping code baar baar toot jata tha. Maker ne aisa framework banaya jo page badalne par bhi element dhundh leta hai aur bot-check se bachne mein madad karta hai.",
+   "job": "Data engineers, Python developers, researchers, AI automation learners.",
+   "kahan": "Price tracking, market research, lead lists, AI data collection.",
+   "kya": "Scrapling websites se data nikalne (web scraping) ka Python framework hai. Isme tez HTTP requests, stealth browsers (jo asli user jaise dikhte hain), parsing aur ek saath kai pages crawl karne ke features hain.",
+   "lang": [
+    [
+     "Python",
+     90
+    ],
+    [
+     "Other",
+     10
+    ]
+   ],
+   "need": "Agar aapko kai websites se data chahiye, jaise prices ya job listings, to haath se copy karna lamba kaam hai. Jaise aap 100 shops ke daam roz ek sheet mein jama karna chahte hain; ye kaam automatic ho jata hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye bot-check se bachne ke features deta hai aur scraping se website rules tod sakte hain (sawaal 5). Kuch sites par ye legal issue ban sakta hai. Sirf wahi sites scrape karein jinke rules ise allow karte hain.",
+   "t": "infra",
+   "type": "Python web scraping framework",
+   "win": [
+    "Python chahiye. Terminal mein: `pip install scrapling`",
+    "Browser wale features chahiye to: `pip install \"scrapling[fetchers]\"` phir `scrapling install`",
+    "AI ya shell features ke liye README ke aur options dekhein (jaise `pip install \"scrapling[shell]\"`)."
+   ]
+  },
+  "archived": "2026-11-11"
+ },
  "Renhuai123/ziwei-doushu": {
   "EN": {
    "and": [
@@ -60,6 +119,65 @@
   },
   "archived": "2026-11-10"
  },
+ "ZhuLinsen/daily_stock_analysis": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Checking news, prices and indicators (chart signals) separately every day is tiring. This project collects the data, makes an AI report and sends it to WeChat, Telegram, Slack or email.",
+   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
+   "kahan": "Fintech, trading research and personal investing.",
+   "kya": "Uses AI to analyse your chosen stocks (mainly China, US and HK markets) every day and sends a dashboard.",
+   "need": "If you are learning about stocks, a daily summary saves time. Example: each morning your phone gets 'watch these 5 stocks today'. This is not financial advice.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "GitHub Actions"
+   ],
+   "rn": "Low risk because there is no exploit or script, but trading on such signals can cause money loss, so use it only to learn.",
+   "type": "AI stock analysis bot",
+   "win": [
+    "Please see the official README"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Roz news, price aur indicators (chart ke signals) alag alag dekhna thakane wala hai. Yeh project data jodta hai, AI se report banata hai aur WeChat, Telegram, Slack ya email par bhejta hai.",
+   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
+   "kahan": "Fintech, trading research aur personal investing.",
+   "kya": "AI se aapki chuni hui stocks (India nahi, mainly China/US/HK markets) ka roz analysis karke dashboard bhejta hai.",
+   "lang": [
+    [
+     "Python",
+     66.3
+    ],
+    [
+     "TypeScript",
+     31.4
+    ],
+    [
+     "Other",
+     2.3
+    ]
+   ],
+   "need": "Agar aap stocks ke baare mein seekhna chahte hain, to roz ka summary time bachata hai. Example: subah aapke phone par 'aaj in 5 stocks par yeh dhyan dein' ka message aa jata hai. Yeh financial advice nahi hai.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "GitHub Actions"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki koi exploit ya script nahi hai, par stock signals par depend karke paisa lagana loss kara sakta hai, isliye sirf seekhne ke liye use karein.",
+   "t": "life",
+   "type": "AI stock analysis bot",
+   "win": [
+    "Official README dekhein"
+   ]
+  },
+  "archived": "2026-11-11"
+ },
  "dsx-ai-factory/nvke": {
   "EN": {
    "and": [
@@ -120,6 +238,71 @@
    ]
   },
   "archived": "2026-11-10"
+ },
+ "garrytan/gbrain": {
+  "EN": {
+   "and": [
+    "Please see the official README: the README has no Android tablet steps."
+   ],
+   "bani": "AI agents forget everything when a chat ends. This project stores facts with their sources, lets you correct or remove them, and lets different agents like Claude Code and Codex use the same memory. Made by Garry Tan.",
+   "job": "AI automation developer, solo founder, product manager, researcher.",
+   "kahan": "Startups, consulting, and research teams that use AI agents daily.",
+   "kya": "Gives an AI agent a memory that saves facts with their sources and can be shared across agents.",
+   "need": "If you use AI often, repeating context is tiring. Example: you say once 'my client is Mr. Sharma, report due Friday', and the next agent remembers too.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "ChatGPT",
+    "Cursor",
+    "Windows",
+    "macOS",
+    "Linux"
+   ],
+   "rn": "Medium risk because the hosted install runs a script from the internet (question 3) and the memory connects to your agent accounts (question 2).",
+   "type": "AI memory layer",
+   "win": [
+    "`bun install -g github:garrytan/gbrain#stable`",
+    "Please see the official README: this project's hosted installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: README mein Android tablet ke steps nahi hain."
+   ],
+   "bani": "AI agents baat khatam hote hi sab bhool jate hain. Yeh project facts ko sahi source ke saath store karta hai, aap unhe sudhaar (correct) ya hata sakte hain, aur wahi memory Claude Code, Codex jaise alag agents use kar sakte hain. Made by Garry Tan.",
+   "job": "AI automation developer, solo founder, product manager, researcher.",
+   "kahan": "Startups, consulting, research teams jo AI agents roz use karte hain.",
+   "kya": "AI agent ke liye ek yaadasht (memory) banata hai jo facts ko unke source ke saath save karti hai aur kai agents mein share hoti hai.",
+   "lang": [
+    [
+     "TypeScript",
+     98.1
+    ],
+    [
+     "Other",
+     1.9
+    ]
+   ],
+   "need": "Agar aap AI se lagataar kaam karwate hain, to har baar context batana thakane wala hai. Example: aap ek baar likhein 'mera client Sharma ji hai, report Friday ko', agla agent bhi yaad rakhega.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "ChatGPT",
+    "Cursor",
+    "Windows",
+    "macOS",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki hosted install internet se seedhi script chalata hai (sawaal 3) aur memory aapke agents ke accounts se judti hai (sawaal 2).",
+   "t": "agent",
+   "type": "AI memory layer",
+   "win": [
+    "`bun install -g github:garrytan/gbrain#stable`",
+    "Official README dekhein: is project ka hosted installer internet se script chalata hai, isliye woh command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ]
+  },
+  "archived": "2026-11-11"
  },
  "ranxianglei/billion-context": {
   "EN": {
@@ -185,5 +368,74 @@
    ]
   },
   "archived": "2026-11-10"
+ },
+ "ruvnet/RuView": {
+  "EN": {
+   "and": [
+    "Please see the official README: it needs ESP32 hardware; tablet steps are not shown in the README excerpt."
+   ],
+   "bani": "Cameras raise privacy worries. This project reads changes in the WiFi signal (CSI, fine signal detail) to guess pose, movement and breathing. It connects to smart-home tools like Home Assistant.",
+   "job": "IoT engineer, smart-home developer, healthcare tech researcher, embedded developer.",
+   "kahan": "Smart homes, elder care, security and research labs.",
+   "kya": "Uses ordinary WiFi signals to detect people in a room and measure breathing and heart rate, with no camera.",
+   "need": "If you want to watch a room without a camera, this helps. Example: at night, an alert if an elderly person's breathing stops.",
+   "plat": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "ESP32 hardware"
+   ],
+   "rn": "Medium risk because special hardware and models come from outside sites (question 4), and people's privacy needs care.",
+   "type": "WiFi sensing system",
+   "win": [
+    "`npx @ruvnet/ruview@0.9.1 doctor`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ESP32 hardware chahiye, tablet par seedhe chalane ke steps README mein alag hain."
+   ],
+   "bani": "Camera privacy ka masla banate hain. Yeh project WiFi signal ke badalne (CSI, signal ka detail) ko padh kar pose, movement aur breathing ka andaza lagata hai. Smart home jaise Home Assistant se judta hai.",
+   "job": "IoT engineer, smart-home developer, healthcare tech researcher, embedded developer.",
+   "kahan": "Smart homes, elder care, security aur research labs.",
+   "kya": "Normal WiFi signal se kamre mein logon ko detect karta hai, saans aur heart rate naapta hai, bina camera ke.",
+   "lang": [
+    [
+     "Rust",
+     45.6
+    ],
+    [
+     "Python",
+     15.3
+    ],
+    [
+     "JavaScript",
+     14.8
+    ],
+    [
+     "TypeScript",
+     11.5
+    ],
+    [
+     "Other",
+     12.8
+    ]
+   ],
+   "need": "Agar aap bina camera ke room mein presence ya bimar vyakti ki saans monitor karna chahte hain, to yeh idea kaam aata hai. Example: raat ko dadi ji ke kamre mein saans ruk jaye to alert aa jaye.",
+   "plat": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "ESP32 hardware"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki special hardware aur models bahar ki site se download hote hain (sawaal 4) aur logon ki privacy ka dhyan rakhna zaroori hai.",
+   "t": "device",
+   "type": "WiFi sensing system",
+   "win": [
+    "`npx @ruvnet/ruview@0.9.1 doctor`"
+   ]
+  },
+  "archived": "2026-11-11"
  }
 }

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset=utf8><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-XdeEYV1+7zeV/P8DU3VeHhi6GFLcsxmuNdSH+kk4V40='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="description" content="The top 10 trending GitHub projects of the day, in simple words: what they do, how safe they are and who they are for."><meta property="og:type" content="website"><meta property="og:title" content="GitHub Trends"><meta property="og:description" content="The top 10 trending GitHub projects of the day, in simple words: what they do, how safe they are and who they are for."><meta property="og:url" content="https://tushar-chabra.github.io/trends/"><meta property="og:site_name" content="GitHub Trends"><meta property="og:image" content="https://tushar-chabra.github.io/trends/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="GitHub Trends by Tushar Chhabra"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GitHub Trends"><meta name="twitter:image" content="https://tushar-chabra.github.io/trends/og.png"><meta name="author" content="Tushar Chhabra"><link rel="canonical" href="https://tushar-chabra.github.io/trends/"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='%236965db'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='30' fill='%23fff'%3EGT%3C/text%3E%3Ccircle cx='51' cy='13' r='5' fill='%23fff3a3'/%3E%3C/svg%3E"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#6965db"><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}/* animations */
+<!doctype html><html lang="en"><head><meta charset=utf8><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-tFmO3KndAsW0LlrshubPtSprT5aQWeax8EfGeRhQs8o='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="description" content="The top 10 trending GitHub projects of the day, in simple words: what they do, how safe they are and who they are for."><meta property="og:type" content="website"><meta property="og:title" content="GitHub Trends"><meta property="og:description" content="The top 10 trending GitHub projects of the day, in simple words: what they do, how safe they are and who they are for."><meta property="og:url" content="https://tushar-chabra.github.io/trends/"><meta property="og:site_name" content="GitHub Trends"><meta property="og:image" content="https://tushar-chabra.github.io/trends/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="GitHub Trends by Tushar Chhabra"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GitHub Trends"><meta name="twitter:image" content="https://tushar-chabra.github.io/trends/og.png"><meta name="author" content="Tushar Chhabra"><link rel="canonical" href="https://tushar-chabra.github.io/trends/"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='%236965db'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='30' fill='%23fff'%3EGT%3C/text%3E%3Ccircle cx='51' cy='13' r='5' fill='%23fff3a3'/%3E%3C/svg%3E"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#6965db"><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}/* animations */
 @keyframes rise{from{opacity:0;transform:translateY(18px)}}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
@@ -954,17 +954,20 @@ function applyAud(){
   cap.appendChild(sp);
 }
 let lastPT="mouse",skipClick=0,pd=null;
-document.addEventListener("pointerdown",e=>{lastPT=e.pointerType||"mouse"},true);
+let lastTouch=0;
+/* some phone browsers report a finger tap as "mouse": real touch events decide */
+document.addEventListener("touchstart",()=>{lastTouch=Date.now();lastPT="touch"},{capture:true,passive:true});
+document.addEventListener("pointerdown",e=>{lastPT=(e.pointerType==="mouse"&&Date.now()-lastTouch<1500)?"touch":(e.pointerType||"mouse")},true);
 const touchy=()=>lastPT!=="mouse"||!canHover;
 function pickSeg(el,x,y){const id=el.dataset.open;
-  if(SEL===id){hideTip();SEL=null;applyAud();openRepo(id);return}
-  SEL=id;hideTip();applyAud();
-  if(touchy()){const rc=el.getBoundingClientRect();showTip(id,x||rc.left+rc.width/2,y||rc.top+rc.height/2)}}
+  if(SEL===id){hideTip(1);SEL=null;applyAud();openRepo(id);return}
+  SEL=id;hideTip(1);applyAud();
+  const rc=el.getBoundingClientRect();showTip(id,x||rc.left+rc.width/2,y||rc.top+rc.height/2);tipLock=Date.now()+700}
 /* touch: use the finger's own target (pointerdown), not the browser's adjusted click target */
-$("stars").addEventListener("pointerdown",e=>{if(e.pointerType==="mouse"||e.target.closest("#starTip")){pd=null;return}
+$("stars").addEventListener("pointerdown",e=>{if(!touchy()||e.target.closest("#starTip")){pd=null;return}
   const el=e.target.closest("[data-open]");pd=el&&!el.classList.contains("gofull")?{el,x:e.clientX,y:e.clientY}:null});
 $("stars").addEventListener("pointercancel",()=>{pd=null});
-$("stars").addEventListener("pointerup",e=>{const s=pd;pd=null;if(!s||e.pointerType==="mouse")return;
+$("stars").addEventListener("pointerup",e=>{const s=pd;pd=null;if(!s||!touchy())return;
   if(Math.hypot(e.clientX-s.x,e.clientY-s.y)>12)return;
   skipClick=Date.now()+700;pickSeg(s.el,e.clientX,e.clientY)});
 $("stars").addEventListener("click",e=>{
@@ -992,13 +995,15 @@ function showTip(id,x,y){
   let lx=x-box.left+16,ly=y-box.top+16;
   if(lx+w>box.width-8)lx=x-box.left-w-16;
   lx=Math.max(8,Math.min(lx,box.width-w-8));ly=Math.max(8,Math.min(ly,box.height-h-8));
+  ly=Math.max(8-box.top,Math.min(ly,innerHeight-8-h-box.top));
   tip.style.left=lx+"px";tip.style.top=ly+"px";tip.classList.add("show");
 }
-function hideTip(){tip.classList.remove("show")}
+let tipLock=0;
+function hideTip(force){if(!force&&Date.now()<tipLock)return;tip.classList.remove("show")}
 let tipY=0;
 addEventListener("scroll",()=>{if(tip.classList.contains("touch")&&tip.classList.contains("show")&&Math.abs(scrollY-tipY)>160)hideTip()},{passive:true});
 document.addEventListener("click",e=>{if(tip.classList.contains("touch")&&!e.target.closest("#stars"))hideTip()});
-function tipGo(g){const id=g.dataset.open;hideTip();SEL=null;applyAud();openRepo(id)}
+function tipGo(g){const id=g.dataset.open;hideTip(1);SEL=null;applyAud();openRepo(id)}
 let tipT=null;
 tip.addEventListener("touchstart",e=>{const g=e.target.closest(".tipgo");tipT=g&&e.touches.length===1?{g,x:e.touches[0].clientX,y:e.touches[0].clientY}:null},{passive:true});
 tip.addEventListener("touchmove",e=>{if(tipT&&Math.hypot(e.touches[0].clientX-tipT.x,e.touches[0].clientY-tipT.y)>10)tipT=null},{passive:true});
@@ -1014,7 +1019,7 @@ if(canHover){
 $("stars").addEventListener("focusin",e=>{if(e.target.closest("#starTip"))return;const el=e.target.closest(".srow,.seg-arc[data-open]");if(!el||touchy()){if(!touchy())hideTip();return}
   const rc=el.getBoundingClientRect();showTip(el.dataset.open,rc.left+Math.min(rc.width,220),rc.top+rc.height/2)});
 $("stars").addEventListener("focusout",()=>{if(!touchy())hideTip()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")hideTip()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")hideTip(1)});
 
 /* ---------- list ---------- */
 const listEl=$("list");

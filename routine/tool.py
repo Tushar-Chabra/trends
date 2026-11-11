@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fixed helper for the daily "GitHub Trends in Hinglish" update.
+"""Fixed helper for the daily "GitHub Trends" update.
 
 Run from the repo root:  python3 -I routine/tool.py <step>
 Steps (in order): start, plan, fetch, apply, publish, guard <commit sha>
@@ -22,7 +22,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from decimal import ROUND_HALF_UP, Decimal
 
-REPO = "Tushar-Chabra/trends-in-hinglish"
+REPO = "Tushar-Chabra/trends"
 AUTHOR_NAME = "Tushar Chhabra"
 AUTHOR_EMAIL = "213567181+Tushar-Chabra@users.noreply.github.com"
 

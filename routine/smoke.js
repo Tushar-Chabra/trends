@@ -32,7 +32,7 @@ const { chromium } = require("playwright");
       if (r.take !== 5) fails.push(`${tag}: signals ${r.take}`);
       if (r.stats !== 4) fails.push(`${tag}: stats ${r.stats}`);
       if (r.wide) fails.push(`${tag}: page wider than the screen`);
-      if (r.badge !== "HI") fails.push(`${tag}: language badge is "${r.badge}" (expected HI)`);
+      if (r.badge !== "EN") fails.push(`${tag}: language badge is "${r.badge}" (expected EN, page opens in English)`);
       if (shots) await page.screenshot({ path: `${shots}/${width}-${scheme}.png` });
       if (scheme === "light") {
         await page.click("#langBtn");
@@ -42,7 +42,7 @@ const { chromium } = require("playwright");
           take: document.querySelectorAll("#take .tk").length,
           badge: document.getElementById("langBadge").textContent,
         }));
-        if (e.lang !== "en" || e.take !== 5 || e.badge !== "EN") fails.push(`${tag}: Simple English switch failed ${JSON.stringify(e)}`);
+        if (e.lang !== "hi-Latn" || e.take !== 5 || e.badge !== "HI") fails.push(`${tag}: Hinglish switch failed ${JSON.stringify(e)}`);
         await page.click("#themeBtn");
         await page.waitForTimeout(300);
         const dark = await page.evaluate(() => document.getElementById("themeBtn").getAttribute("aria-pressed"));

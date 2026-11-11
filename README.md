@@ -1,9 +1,9 @@
-# GitHub Trends in Hinglish/Simple English
+# GitHub Trends
 
-Roz ke top 10 trending GitHub projects, simple Hinglish mein, non-tech logon ke liye.
+Roz ke top 10 trending GitHub projects, non-tech logon ke liye. Page Simple English mein khulta hai; ek button se Hinglish mein padh sakte hain.
 Kya karte hain, kitne safe hain, aur kiske kaam ke hain.
 
-**Live page:** https://tushar-chabra.github.io/trends-in-hinglish/
+**Live page:** https://tushar-chabra.github.io/trends/
 
 ## Ye page kya dikhata hai
 - Aaj ke Top 3, stats, aur Daily / Weekly / Monthly / Yearly top 10

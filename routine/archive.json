@@ -1,63 +1,4 @@
 {
- "D4Vinci/Scrapling": {
-  "EN": {
-   "and": [
-    "Not available on Android."
-   ],
-   "bani": "Websites keep changing and bot checks block them, so scraping code kept breaking. The maker built a framework that can still find an element after a page changes, and helps get past bot checks.",
-   "job": "Data engineers, Python developers, researchers, people learning AI automation.",
-   "kahan": "Price tracking, market research, lead lists, AI data collection.",
-   "kya": "Scrapling is a Python framework for pulling data from websites (web scraping). It has fast HTTP requests, stealth browsers (that look like a real user), parsing, and features to crawl many pages at once.",
-   "need": "If you need data from many websites, like prices or job listings, copying by hand is a long job. For example, you want the prices of 100 shops in one sheet every day; this becomes automatic.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "rn": "Medium risk because it has features that get past bot checks and scraping can break a website's rules (question 5). On some sites this can become a legal issue. Scrape only sites whose rules allow it.",
-   "type": "Python web scraping framework",
-   "win": [
-    "You need Python. In the terminal: `pip install scrapling`",
-    "For the browser features: `pip install \"scrapling[fetchers]\"` then `scrapling install`",
-    "For AI or shell features see the other options in the README (like `pip install \"scrapling[shell]\"`)."
-   ]
-  },
-  "R": {
-   "and": [
-    "Android par nahi."
-   ],
-   "bani": "Websites badalti rehti hain aur bot-check unhe rok deta hai, isliye scraping code baar baar toot jata tha. Maker ne aisa framework banaya jo page badalne par bhi element dhundh leta hai aur bot-check se bachne mein madad karta hai.",
-   "job": "Data engineers, Python developers, researchers, AI automation learners.",
-   "kahan": "Price tracking, market research, lead lists, AI data collection.",
-   "kya": "Scrapling websites se data nikalne (web scraping) ka Python framework hai. Isme tez HTTP requests, stealth browsers (jo asli user jaise dikhte hain), parsing aur ek saath kai pages crawl karne ke features hain.",
-   "lang": [
-    [
-     "Python",
-     90
-    ],
-    [
-     "Other",
-     10
-    ]
-   ],
-   "need": "Agar aapko kai websites se data chahiye, jaise prices ya job listings, to haath se copy karna lamba kaam hai. Jaise aap 100 shops ke daam roz ek sheet mein jama karna chahte hain; ye kaam automatic ho jata hai.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki ye bot-check se bachne ke features deta hai aur scraping se website rules tod sakte hain (sawaal 5). Kuch sites par ye legal issue ban sakta hai. Sirf wahi sites scrape karein jinke rules ise allow karte hain.",
-   "t": "infra",
-   "type": "Python web scraping framework",
-   "win": [
-    "Python chahiye. Terminal mein: `pip install scrapling`",
-    "Browser wale features chahiye to: `pip install \"scrapling[fetchers]\"` phir `scrapling install`",
-    "AI ya shell features ke liye README ke aur options dekhein (jaise `pip install \"scrapling[shell]\"`)."
-   ]
-  },
-  "archived": "2026-11-11"
- },
  "Renhuai123/ziwei-doushu": {
   "EN": {
    "and": [
@@ -119,64 +60,133 @@
   },
   "archived": "2026-11-10"
  },
- "ZhuLinsen/daily_stock_analysis": {
+ "The-PR-Agent/pr-agent": {
   "EN": {
    "and": [
-    "Please see the official README"
+    "Please see the official README: on a tablet it can be set up through the GitHub Action in a browser"
    ],
-   "bani": "Checking news, prices and indicators (chart signals) separately every day is tiring. This project collects the data, makes an AI report and sends it to WeChat, Telegram, Slack or email.",
-   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
-   "kahan": "Fintech, trading research and personal investing.",
-   "kya": "Uses AI to analyse your chosen stocks (mainly China, US and HK markets) every day and sends a dashboard.",
-   "need": "If you are learning about stocks, a daily summary saves time. Example: each morning your phone gets 'watch these 5 stocks today'. This is not financial advice.",
+   "bani": "Code review takes time and teams wait long for first feedback. The community continued Qodo's legacy project, which reads PRs on GitHub, GitLab and others and gives AI feedback.",
+   "job": "Developers, tech leads, DevOps engineers, open-source maintainers.",
+   "kahan": "Software teams, startups, open-source projects.",
+   "kya": "An open-source AI code reviewer. It comments on pull requests (proposed code changes) with a review, summary and suggestions.",
+   "need": "If you write code in a team or alone, it acts as a first reviewer. It is like asking a friend to check your exam paper before the teacher does.",
    "plat": [
-    "Web app",
+    "GitHub Action",
+    "CLI",
     "Docker",
-    "GitHub Actions"
+    "Windows",
+    "Mac",
+    "Linux"
    ],
-   "rn": "Low risk because there is no exploit or script, but trading on such signals can cause money loss, so use it only to learn.",
-   "type": "AI stock analysis bot",
+   "rn": "Medium risk because it needs access to your repo and an AI provider API key (question 2). Keep the key in a secret store.",
+   "type": "AI code review",
    "win": [
-    "Please see the official README"
+    "Install Python, then run `pip install \"pr-agent[github]\"`",
+    "See the official README"
    ]
   },
   "R": {
    "and": [
-    "Official README dekhein"
+    "Official README dekhein: tablet par GitHub Action ke through browser se set up ho sakta hai"
    ],
-   "bani": "Roz news, price aur indicators (chart ke signals) alag alag dekhna thakane wala hai. Yeh project data jodta hai, AI se report banata hai aur WeChat, Telegram, Slack ya email par bhejta hai.",
-   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
-   "kahan": "Fintech, trading research aur personal investing.",
-   "kya": "AI se aapki chuni hui stocks (India nahi, mainly China/US/HK markets) ka roz analysis karke dashboard bhejta hai.",
+   "bani": "Code review mein time lagta hai aur team ko pehla feedback der se milta hai. Qodo ka legacy project community ne sambhal liya, jo GitHub, GitLab jaise platforms par PR ko AI se padhkar feedback deta hai.",
+   "job": "Developers, tech leads, DevOps engineers, open-source maintainers.",
+   "kahan": "Software teams, startups, open-source projects.",
+   "kya": "Open-source AI code reviewer: pull request (code badlav ka proposal) par comment karke review, summary aur suggestions deta hai.",
    "lang": [
     [
      "Python",
-     66.3
-    ],
-    [
-     "TypeScript",
-     31.4
+     97.3
     ],
     [
      "Other",
-     2.3
+     2.7
     ]
    ],
-   "need": "Agar aap stocks ke baare mein seekhna chahte hain, to roz ka summary time bachata hai. Example: subah aapke phone par 'aaj in 5 stocks par yeh dhyan dein' ka message aa jata hai. Yeh financial advice nahi hai.",
+   "need": "Agar aap team mein code likhte hain ya akele project chalate hain, to ye pehla reviewer ban jata hai. Jaise exam copy teacher ko dene se pehle dost se check karwa lena.",
    "plat": [
-    "Web app",
+    "GitHub Action",
+    "CLI",
     "Docker",
-    "GitHub Actions"
+    "Windows",
+    "Mac",
+    "Linux"
    ],
-   "r": "low",
-   "rn": "Low risk kyunki koi exploit ya script nahi hai, par stock signals par depend karke paisa lagana loss kara sakta hai, isliye sirf seekhne ke liye use karein.",
-   "t": "life",
-   "type": "AI stock analysis bot",
+   "r": "med",
+   "rn": "Medium risk kyunki ise aapke repo ka access aur AI provider ki API key (OpenAI_KEY) chahiye (sawaal 2). Key ko secret mein rakhein.",
+   "t": "agent",
+   "type": "AI code review",
    "win": [
+    "Python install karein, phir `pip install \"pr-agent[github]\"` chalayein",
     "Official README dekhein"
    ]
   },
-  "archived": "2026-11-11"
+  "archived": "2026-11-12"
+ },
+ "anthropics/claude-quickstarts": {
+  "EN": {
+   "and": [
+    "It does not run on a phone; these are demos for a computer."
+   ],
+   "bani": "Developers wanted to build apps with the Claude API, but starting from a blank page is hard. So Anthropic gave small examples that already run.",
+   "job": "Developers, AI automation learners, freelancers.",
+   "kahan": "Support teams, data teams, automation projects.",
+   "kya": "Anthropic's official demo projects: ready examples like a customer support agent, a financial data analyst, computer use, browser use and a coding agent, all using the Claude API.",
+   "need": "If you are learning to build agents, you can start from a ready example. Example: open the customer support agent folder and add your own company FAQ.",
+   "plat": [
+    "Demos that run on a computer (Python / TypeScript)"
+   ],
+   "rn": "Medium risk because the demos need a Claude API key (a secret password for the service) and the computer use demo can control a whole desktop (question 2). Run it in a VM (a safe pretend computer) or a separate machine.",
+   "type": "A collection of official starter projects",
+   "win": [
+    "First create a Claude API key (from the Anthropic console).",
+    "Open the folder of the quickstart you want and follow the steps in its README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Phone par nahi; ye computer par chalne wale demos hain."
+   ],
+   "bani": "Developers ko Claude API se app banana seekhna tha, lekin khali page se shuru karna mushkil hai. Isliye Anthropic ne chhote, chalne wale examples diye.",
+   "job": "Developers, AI automation learners, freelancers.",
+   "kahan": "Support teams, data teams, automation projects.",
+   "kya": "Anthropic ke official demo projects: customer support agent, financial data analyst, computer use, browser use aur coding agent jaise ready examples Claude API ke saath.",
+   "lang": [
+    [
+     "TypeScript",
+     43.6
+    ],
+    [
+     "Python",
+     38.7
+    ],
+    [
+     "Shell",
+     10.3
+    ],
+    [
+     "JavaScript",
+     4.0
+    ],
+    [
+     "Other",
+     3.4
+    ]
+   ],
+   "need": "Aap agent banana seekh rahe hain to ready example se shuru kar sakte hain. Example: customer support agent ka folder kholkar apni company ka FAQ jod dein.",
+   "plat": [
+    "Computer par chalne wale demo (Python / TypeScript)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki demos ko Claude API key chahiye aur computer use demo poore desktop ko control kar sakta hai (sawaal 2). VM ya alag machine mein chalayein.",
+   "t": "agent",
+   "type": "Official starter projects ka collection",
+   "win": [
+    "Pehle Claude API key banayein (Anthropic console se).",
+    "Jo quickstart chahiye uska folder kholein aur uski README ke steps follow karein."
+   ]
+  },
+  "archived": "2026-11-12"
  },
  "dsx-ai-factory/nvke": {
   "EN": {
@@ -303,6 +313,140 @@
    ]
   },
   "archived": "2026-11-11"
+ },
+ "google-deepmind/mujoco": {
+  "EN": {
+   "and": [
+    "There is no separate Android app; the browser version may also open on a phone."
+   ],
+   "bani": "Testing a robot in the real world is costly and risky. Researchers needed a fast and accurate simulation.",
+   "job": "Robotics researchers, ML engineers, game and animation developers.",
+   "kahan": "Universities, robotics labs, AI research.",
+   "kya": "Google DeepMind's physics engine: it simulates robots and things with joints inside a computer, fast and accurately.",
+   "need": "A robot or AI first has to learn inside a computer. Example: teaching a robot hand to pick up an object without breaking a real machine.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web (browser)"
+   ],
+   "rn": "Low risk. It is an official Google DeepMind project. It needs no account or computer control; install is through pip (Python's package tool).",
+   "type": "Physics simulator (for robots)",
+   "win": [
+    "`pip install mujoco`",
+    "Or try it in the browser on the official website, with no install."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android ke liye alag app nahi; browser version mobile par bhi khul sakta hai."
+   ],
+   "bani": "Robot ko asli duniya mein test karna mehnga aur risky hai. Researchers ko ek tez aur sahi simulation chahiye tha.",
+   "job": "Robotics researchers, ML engineers, game aur animation developers.",
+   "kahan": "Universities, robotics labs, AI research.",
+   "kya": "Google DeepMind ka physics engine: robot aur jodon (joints) wali cheezon ko computer mein tezi se aur sahi tarah simulate karta hai.",
+   "lang": [
+    [
+     "C++",
+     30.5
+    ],
+    [
+     "C",
+     27.1
+    ],
+    [
+     "Python",
+     24.9
+    ],
+    [
+     "C#",
+     13.0
+    ],
+    [
+     "Other",
+     4.5
+    ]
+   ],
+   "need": "Robot ya AI ko pehle computer mein seekhna hota hai. Example: robot haath ko cheez uthana sikhana, bina asli machine toote.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web (browser)"
+   ],
+   "r": "low",
+   "rn": "Low risk. Official Google DeepMind project hai. Koi account ya computer control nahi chahiye; install pip se hota hai.",
+   "t": "infra",
+   "type": "Physics simulator (robots ke liye)",
+   "win": [
+    "`pip install mujoco`",
+    "Ya official website par browser mein bina install ke try karein."
+   ]
+  },
+  "archived": "2026-11-12"
+ },
+ "max-sixty/worktrunk": {
+  "EN": {
+   "and": [
+    "It does not run on Android (it is a computer tool)."
+   ],
+   "bani": "When several AI agents work at the same time, they bump into each other in one folder. This developer made a small tool that gives each job its own folder and branch.",
+   "job": "Developers, DevOps engineers (people who keep software running), people learning AI automation.",
+   "kahan": "Software teams, open source projects, getting coding done by AI agents.",
+   "kya": "It creates and switches Git worktrees (extra folder copies of one project, each on its own branch) with simple commands.",
+   "need": "For people who run many AI agents or work on many features at once. For example, one agent fixes a bug while another builds a new page, and they do not mess up each other's work.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. It only runs on your own Git folders. The README (the project's main guide page) says you install it with Homebrew, Cargo or winget, and the Windows file is signed (SignPath).",
+   "type": "Command-line tool (Git worktree manager)",
+   "win": [
+    "In Windows Terminal (the text window where you type commands): `winget install max-sixty.worktrunk`",
+    "Then: `git-wt config shell install`",
+    "On Mac or Linux: `brew install worktrunk && wt config shell install`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par ye nahi chalta (ye computer ka tool hai)."
+   ],
+   "bani": "Jab AI agents ek saath kai kaam karte hain, to ek hi folder mein sab takra jate hain. Is developer ne ek chhota tool banaya jo har kaam ke liye alag folder aur branch deta hai.",
+   "job": "Developers, DevOps engineers, AI automation learners.",
+   "kahan": "Software teams, open source projects, AI agents se coding karwana.",
+   "kya": "Git worktree (ek hi project ke kai folder-copy, har ek par alag branch) ko aasaan commands se banata aur badalta hai.",
+   "lang": [
+    [
+     "Rust",
+     88.7
+    ],
+    [
+     "JavaScript",
+     3.9
+    ],
+    [
+     "Other",
+     7.4
+    ]
+   ],
+   "need": "Un logon ke liye jo ek saath kai AI agents ya features par kaam karte hain. Jaise ek agent bug fix kar raha hai aur doosra naya page bana raha hai, aur dono ek-doosre ka kaam kharab nahi karte.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Ye sirf aapke apne Git folders par chalta hai. README ke hisaab se install Homebrew, Cargo ya winget se hota hai, aur Windows file signed hai (SignPath).",
+   "t": "infra",
+   "type": "Command-line tool (Git worktree manager)",
+   "win": [
+    "Windows Terminal mein: `winget install max-sixty.worktrunk`",
+    "Phir: `git-wt config shell install`",
+    "Mac ya Linux par: `brew install worktrunk && wt config shell install`"
+   ]
+  },
+  "archived": "2026-11-12"
  },
  "ranxianglei/billion-context": {
   "EN": {
@@ -437,5 +581,131 @@
    ]
   },
   "archived": "2026-11-11"
+ },
+ "sherlock-project/sherlock": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "Finding one person's or brand's accounts across many sites takes a long time. This project automates it, so one command checks all the sites.",
+   "job": "Security researchers, OSINT analysts (people who research using public information), journalists, brand teams.",
+   "kahan": "Security research, investigations, brand protection, digital safety training.",
+   "kya": "Sherlock takes a username and checks 400+ social networks to see where an account with that name exists. The accounts it finds are saved in a text file.",
+   "need": "If you want to protect your brand name or do research, you need to see where a username is used. For example, you start a new business and check whether the name is free on Instagram, X and GitHub.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Docker"
+   ],
+   "rn": "Medium risk because it automatically checks many sites (question 5), and some sites' rules may not allow that. It can affect someone's privacy, so use it only on your own names or with permission. It can also include 18+ sites (this is controlled by an option).",
+   "type": "Tool that finds social media accounts from a username",
+   "win": [
+    "You need Python. In the terminal: `pipx install sherlock-project`",
+    "Or with Docker: `docker run -it --rm sherlock/sherlock`",
+    "To run it: `sherlock user123` (replace user123 with the username)"
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "Kisi ek person ya brand ke accounts alag alag sites par dhundna bahut time leta hai. Is project ne ye kaam automatic kar diya, taaki ek command se saari sites check ho jayein.",
+   "job": "Security researchers, OSINT analysts (public jaankari se research karne wale), journalists, brand teams.",
+   "kahan": "Security research, investigations, brand protection, digital safety training.",
+   "kya": "Sherlock ek username leta hai aur 400 se zyada social networks par check karta hai ki us naam ka account kahan bana hua hai. Mile hue accounts ki list ek text file mein save ho jati hai.",
+   "lang": [
+    [
+     "Python",
+     94
+    ],
+    [
+     "Shell",
+     6
+    ]
+   ],
+   "need": "Agar aap apna brand naam bachana chahte hain ya research karte hain, to dekhna hota hai ki wo username kahan lagaa hua hai. Jaise aap naya business shuru kar rahe hain aur check karte hain ki wo naam Instagram, X aur GitHub par free hai ya nahi.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Docker"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye bahut sari sites par automatic check karta hai (sawaal 5), kuch sites ke rules ise rok sakte hain. Ye kisi ki privacy par effect daal sakta hai, isliye sirf apne ya permission wale naam par use karein. Isme 18+ sites bhi ho sakti hain (option se control hota hai).",
+   "t": "sec",
+   "type": "Username se social media accounts dhundne ka tool",
+   "win": [
+    "Python chahiye. Terminal mein: `pipx install sherlock-project`",
+    "Ya Docker se: `docker run -it --rm sherlock/sherlock`",
+    "Chalane ke liye: `sherlock user123` (user123 ki jagah wo username likhein)"
+   ]
+  },
+  "archived": "2026-11-12"
+ },
+ "tokio-rs/topcoat": {
+  "EN": {
+   "and": [
+    "Please see the official README: Rust development works better on a computer"
+   ],
+   "bani": "Web apps usually need a separate backend API and frontend with lots of boilerplate (repeated code). Topcoat lets components query the database directly, so less API code is needed.",
+   "job": "Rust developers, backend engineers, systems programmers.",
+   "kahan": "Web apps, internal tools, startups that use Rust.",
+   "kya": "A framework for building full-stack web apps in the Rust language. Pages render on the server and small bits of Rust turn into JavaScript for interactivity.",
+   "need": "If you are learning Rust and want to build a whole website in one language, this helps. The README says it is early-stage and may change, so think before using it in production.",
+   "plat": [
+    "Rust",
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk because this is a normal developer library with no accounts or internet scripts needed. It is early-stage, so breaking changes can happen.",
+   "type": "Rust framework",
+   "win": [
+    "See the official README",
+    "Install Rust, then follow the Learn Topcoat guide"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: Rust development computer par behtar chalta hai"
+   ],
+   "bani": "Aam taur par web app ke liye alag backend API aur frontend likhna padta hai, jisme bahut boilerplate (baar-baar ka code) hota hai. Topcoat components se seedha database query karne deta hai, to API layer ki zaroorat kam ho jati hai.",
+   "job": "Rust developers, backend engineers, system programmers.",
+   "kahan": "Web apps, internal tools, startups jo Rust use karte hain.",
+   "kya": "Rust language mein full-stack web apps banane ka framework: server par page render hota hai aur chhoti interactivity ke liye Rust code JavaScript mein translate ho jata hai.",
+   "lang": [
+    [
+     "Rust",
+     89.3
+    ],
+    [
+     "TypeScript",
+     8.9
+    ],
+    [
+     "Other",
+     1.8
+    ]
+   ],
+   "need": "Agar aap Rust seekh rahe hain aur ek hi language mein poori website banana chahte hain, to ye kaam aata hai. README bolta hai ki ye early-stage hai aur cheezein badal sakti hain, isliye production se pehle soch lein.",
+   "plat": [
+    "Rust",
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki ye normal developer library hai, koi account ya internet script nahi chahiye. Bas early-stage hai, to breaking changes ho sakte hain.",
+   "t": "infra",
+   "type": "Rust framework",
+   "win": [
+    "Official README dekhein",
+    "Rust install karke Learn Topcoat guide follow karein"
+   ]
+  },
+  "archived": "2026-11-12"
  }
 }

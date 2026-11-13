@@ -1,4 +1,120 @@
 {
+ "D4Vinci/Scrapling": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "Websites keep changing and bot checks block them, so scraping code kept breaking. The maker built a framework that can still find an element after a page changes, and helps get past bot checks.",
+   "job": "Data engineers, Python developers, researchers, people learning AI automation.",
+   "kahan": "Price tracking, market research, lead lists, AI data collection.",
+   "kya": "Scrapling is a Python framework for pulling data from websites (web scraping). It has fast HTTP requests, stealth browsers (that look like a real user), parsing, and features to crawl many pages at once.",
+   "need": "If you need data from many websites, like prices or job listings, copying by hand is a long job. For example, you want the prices of 100 shops in one sheet every day; this becomes automatic.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because it has features that get past bot checks and scraping can break a website's rules (question 5). On some sites this can become a legal issue. Scrape only sites whose rules allow it.",
+   "type": "Python web scraping framework",
+   "win": [
+    "You need Python. In the terminal: `pip install scrapling`",
+    "For the browser features: `pip install \"scrapling[fetchers]\"` then `scrapling install`",
+    "For AI or shell features see the other options in the README (like `pip install \"scrapling[shell]\"`)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "Websites badalti rehti hain aur bot-check unhe rok deta hai, isliye scraping code baar baar toot jata tha. Maker ne aisa framework banaya jo page badalne par bhi element dhundh leta hai aur bot-check se bachne mein madad karta hai.",
+   "job": "Data engineers, Python developers, researchers, AI automation learners.",
+   "kahan": "Price tracking, market research, lead lists, AI data collection.",
+   "kya": "Scrapling websites se data nikalne (web scraping) ka Python framework hai. Isme tez HTTP requests, stealth browsers (jo asli user jaise dikhte hain), parsing aur ek saath kai pages crawl karne ke features hain.",
+   "lang": [
+    [
+     "Python",
+     90
+    ],
+    [
+     "Other",
+     10
+    ]
+   ],
+   "need": "Agar aapko kai websites se data chahiye, jaise prices ya job listings, to haath se copy karna lamba kaam hai. Jaise aap 100 shops ke daam roz ek sheet mein jama karna chahte hain; ye kaam automatic ho jata hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye bot-check se bachne ke features deta hai aur scraping se website rules tod sakte hain (sawaal 5). Kuch sites par ye legal issue ban sakta hai. Sirf wahi sites scrape karein jinke rules ise allow karte hain.",
+   "t": "infra",
+   "type": "Python web scraping framework",
+   "win": [
+    "Python chahiye. Terminal mein: `pip install scrapling`",
+    "Browser wale features chahiye to: `pip install \"scrapling[fetchers]\"` phir `scrapling install`",
+    "AI ya shell features ke liye README ke aur options dekhein (jaise `pip install \"scrapling[shell]\"`)."
+   ]
+  },
+  "archived": "2026-11-13"
+ },
+ "Donchitos/Claude-Code-Game-Studios": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "Building a game alone with AI is powerful, but one chat has no structure. Nobody asks for a design document and nobody does testing. The maker built a studio-like team: directors, leads and specialists, each with their own job.",
+   "job": "Indie game developers, game designers, people learning AI automation.",
+   "kahan": "Indie game studios, game jams, hobby projects, students learning game design.",
+   "kya": "This is a project template that makes one Claude Code session work like a full game studio team: 49 agents (separate AI helpers for separate jobs), 74 skills (slash commands) and 15 hooks (checks that run on their own).",
+   "need": "If you are building a game alone, it asks the right questions at each step and catches mistakes early. For example, you make a small 2D game; design review and testing are handled by separate agents, and the final decision stays yours.",
+   "plat": [
+    "Claude Code",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk because none of the questions 1-5 apply. Still, it adds hooks (scripts that run on their own) and the agents write files in your project folder, so try it first in a new empty folder.",
+   "type": "Files that turn Claude Code into a game studio",
+   "win": [
+    "You need Claude Code installed first. In the terminal (the text window where you type commands): `git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game`",
+    "Then: `cd my-game`",
+    "Run `claude` in that folder, and begin with the `/start` command."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "AI ke saath akele game banana strong hai, par ek chat mein koi structure nahi hota. Koi design doc nahi maangta, koi QA nahi karta. Maker ne studio jaisi team banayi: directors, leads aur specialists, har ek ka apna kaam.",
+   "job": "Indie game developers, game designers, AI automation learners.",
+   "kahan": "Indie game studios, game jams, hobby projects, game design seekhne wale students.",
+   "kya": "Ye ek project template hai jo ek Claude Code session ko poori game studio team jaisa bana deta hai: 49 agents (alag alag kaam ke AI helpers), 74 skills (slash commands) aur 15 hooks (apne aap chalne wale checks).",
+   "lang": [
+    [
+     "Shell",
+     100
+    ]
+   ],
+   "need": "Agar aap solo game bana rahe hain, to ye har step par sahi sawaal puchhta hai aur galti jaldi pakadta hai. Jaise aap ek chhota 2D game banate hain; design review aur testing ka kaam alag agents sambhal lete hain, aur final decision aapka rehta hai.",
+   "plat": [
+    "Claude Code",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki isme koi sawaal 1-5 wala issue nahi mila. Phir bhi ye hooks (apne aap chalne wale scripts) lagata hai aur agents aapke project folder mein files likhte hain, isliye pehle naye khali folder mein try karein.",
+   "t": "agent",
+   "type": "Claude Code ko game studio banane wali files",
+   "win": [
+    "Pehle Claude Code install hona chahiye. Terminal mein: `git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game`",
+    "Phir: `cd my-game`",
+    "Us folder mein `claude` chalayein, aur pehle `/start` command se shuru karein."
+   ]
+  },
+  "archived": "2026-11-13"
+ },
  "Renhuai123/ziwei-doushu": {
   "EN": {
    "and": [
@@ -122,6 +238,120 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "TheAlgorithms/Java": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Students need clear examples of algorithms.\nThis open-source project lets many people write clean Java code together.",
+   "job": "Students, Java learners, interview candidates, teachers",
+   "kahan": "Colleges, coding bootcamps and interview preparation.",
+   "kya": "A big collection of famous algorithms (step-by-step ways to solve problems) written in Java, for learning.",
+   "need": "You may need to understand algorithms for college or interviews.\nExample: read a short code to see how sorting works.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. Learning code only; the README says it may be less efficient than the standard library.",
+   "type": "Learning library (code examples)",
+   "win": [
+    "Please see the official README"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Students ko algorithms (problem solve karne ke step-by-step tareeke) ke saaf examples chahiye the.\nYe open-source project hai jahan sab milkar clean Java code likhte hain.",
+   "job": "Students, Java learners, interview candidates, teachers",
+   "kahan": "Colleges, coding bootcamps, interview preparation.",
+   "kya": "Java mein likhe famous algorithms ka bada collection, seekhne ke liye.",
+   "lang": [
+    [
+     "Java",
+     99.9
+    ],
+    [
+     "Other",
+     0.1
+    ]
+   ],
+   "need": "Interview ya college ke liye algorithms samajhne hote hain.\nExample: sorting kaise kaam karti hai, uska chhota code padhkar samajh sakte hain.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Sirf educational code; README kehta hai ye library se kam efficient ho sakta hai.",
+   "t": "life",
+   "type": "Learning library (code examples)",
+   "win": [
+    "Official README dekhein"
+   ]
+  },
+  "archived": "2026-11-13"
+ },
+ "ZhuLinsen/daily_stock_analysis": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Checking news, prices and indicators (chart signals) separately every day is tiring. This project collects the data, makes an AI report and sends it to WeChat, Telegram, Slack or email.",
+   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
+   "kahan": "Fintech, trading research and personal investing.",
+   "kya": "Uses AI to analyse your chosen stocks (mainly China, US and HK markets) every day and sends a dashboard.",
+   "need": "If you are learning about stocks, a daily summary saves time. Example: each morning your phone gets 'watch these 5 stocks today'. This is not financial advice.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "GitHub Actions"
+   ],
+   "rn": "Low risk because there is no exploit or script, but trading on such signals can cause money loss, so use it only to learn.",
+   "type": "AI stock analysis bot",
+   "win": [
+    "Please see the official README"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Roz news, price aur indicators (chart ke signals) alag alag dekhna thakane wala hai. Yeh project data jodta hai, AI se report banata hai aur WeChat, Telegram, Slack ya email par bhejta hai.",
+   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
+   "kahan": "Fintech, trading research aur personal investing.",
+   "kya": "AI se aapki chuni hui stocks (India nahi, mainly China/US/HK markets) ka roz analysis karke dashboard bhejta hai.",
+   "lang": [
+    [
+     "Python",
+     66.3
+    ],
+    [
+     "TypeScript",
+     31.4
+    ],
+    [
+     "Other",
+     2.3
+    ]
+   ],
+   "need": "Agar aap stocks ke baare mein seekhna chahte hain, to roz ka summary time bachata hai. Example: subah aapke phone par 'aaj in 5 stocks par yeh dhyan dein' ka message aa jata hai. Yeh financial advice nahi hai.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "GitHub Actions"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki koi exploit ya script nahi hai, par stock signals par depend karke paisa lagana loss kara sakta hai, isliye sirf seekhne ke liye use karein.",
+   "t": "life",
+   "type": "AI stock analysis bot",
+   "win": [
+    "Official README dekhein"
+   ]
+  },
+  "archived": "2026-11-13"
  },
  "anthropics/claude-quickstarts": {
   "EN": {
@@ -314,76 +544,62 @@
   },
   "archived": "2026-11-11"
  },
- "google-deepmind/mujoco": {
+ "homeassistant-ai/ha-mcp": {
   "EN": {
    "and": [
-    "There is no separate Android app; the browser version may also open on a phone."
+    "Please see the official README: see the README for the Home Assistant app or HACS steps."
    ],
-   "bani": "Testing a robot in the real world is costly and risky. Researchers needed a fast and accurate simulation.",
-   "job": "Robotics researchers, ML engineers, game and animation developers.",
-   "kahan": "Universities, robotics labs, AI research.",
-   "kya": "Google DeepMind's physics engine: it simulates robots and things with joints inside a computer, fast and accurately.",
-   "need": "A robot or AI first has to learn inside a computer. Example: teaching a robot hand to pick up an object without breaking a real machine.",
+   "bani": "Making automations in Home Assistant is technical. This server offers 87 tools (ways to act) so an AI can manage your devices and settings directly.",
+   "job": "Smart-home hobbyist, IoT developer, automation engineer.",
+   "kahan": "Smart homes, home labs and IoT companies.",
+   "kya": "Connects AI assistants like Claude and ChatGPT to Home Assistant so they can set up and automate your smart home.",
+   "need": "If you have smart lights or an AC, writing every rule by hand is hard. Example: you say 'turn off all lights at 11 pm' and the AI builds the automation.",
    "plat": [
-    "Windows",
-    "Mac",
-    "Linux",
-    "Web (browser)"
+    "Home Assistant",
+    "Claude Desktop",
+    "ChatGPT",
+    "Docker"
    ],
-   "rn": "Low risk. It is an official Google DeepMind project. It needs no account or computer control; install is through pip (Python's package tool).",
-   "type": "Physics simulator (for robots)",
+   "rn": "Medium risk because it needs a Home Assistant administrator token, so the AI gets permission to control your home (question 2).",
+   "type": "MCP server (AI connector)",
    "win": [
-    "`pip install mujoco`",
-    "Or try it in the browser on the official website, with no install."
+    "`uvx ha-mcp@latest`"
    ]
   },
   "R": {
    "and": [
-    "Android ke liye alag app nahi; browser version mobile par bhi khul sakta hai."
+    "Official README dekhein: Home Assistant app ya HACS ke steps README mein dekhein."
    ],
-   "bani": "Robot ko asli duniya mein test karna mehnga aur risky hai. Researchers ko ek tez aur sahi simulation chahiye tha.",
-   "job": "Robotics researchers, ML engineers, game aur animation developers.",
-   "kahan": "Universities, robotics labs, AI research.",
-   "kya": "Google DeepMind ka physics engine: robot aur jodon (joints) wali cheezon ko computer mein tezi se aur sahi tarah simulate karta hai.",
+   "bani": "Home Assistant mein automations banana technical hota hai. Yeh server 87 tools (kaam karne ke raste) deta hai jisse AI aapke devices aur settings seedhe manage kar sakta hai.",
+   "job": "Smart-home hobbyist, IoT developer, automation engineer.",
+   "kahan": "Smart homes, home-lab setups aur IoT companies.",
+   "kya": "AI assistants (Claude, ChatGPT) ko Home Assistant se jodta hai taaki woh aapke smart home ko set aur automate kar sakein.",
    "lang": [
     [
-     "C++",
-     30.5
-    ],
-    [
-     "C",
-     27.1
-    ],
-    [
      "Python",
-     24.9
-    ],
-    [
-     "C#",
-     13.0
+     97.2
     ],
     [
      "Other",
-     4.5
+     2.8
     ]
    ],
-   "need": "Robot ya AI ko pehle computer mein seekhna hota hai. Example: robot haath ko cheez uthana sikhana, bina asli machine toote.",
+   "need": "Agar aapke ghar mein smart lights ya AC hain, to har rule haath se likhna mushkil hai. Example: aap bolein 'raat 11 baje sab lights band karo', AI automation bana deta hai.",
    "plat": [
-    "Windows",
-    "Mac",
-    "Linux",
-    "Web (browser)"
+    "Home Assistant",
+    "Claude Desktop",
+    "ChatGPT",
+    "Docker"
    ],
-   "r": "low",
-   "rn": "Low risk. Official Google DeepMind project hai. Koi account ya computer control nahi chahiye; install pip se hota hai.",
-   "t": "infra",
-   "type": "Physics simulator (robots ke liye)",
+   "r": "med",
+   "rn": "Medium risk kyunki isko Home Assistant ka administrator token chahiye, yaani AI ko aapke ghar ke control ki permission milti hai (sawaal 2).",
+   "t": "agent",
+   "type": "MCP server (AI connector)",
    "win": [
-    "`pip install mujoco`",
-    "Ya official website par browser mein bina install ke try karein."
+    "`uvx ha-mcp@latest`"
    ]
   },
-  "archived": "2026-11-12"
+  "archived": "2026-11-13"
  },
  "max-sixty/worktrunk": {
   "EN": {
@@ -581,6 +797,61 @@
    ]
   },
   "archived": "2026-11-11"
+ },
+ "shadcn/improve": {
+  "EN": {
+   "and": [
+    "Agent apps on Android tablets are limited; Termux with Node.js may run `npx skills add shadcn/improve`, but please see the official README."
+   ],
+   "bani": "Smart AI models cost a lot, so using them for every small job is wasteful. This skill uses the smart model only to study the code and write the plan.\nPlans are plain text files, so a cheaper agent or a person can do the work.",
+   "job": "Developers, Claude Code users, freelancers, AI automation learners",
+   "kahan": "Software companies, startups, agencies and solo developers.",
+   "kya": "An agent skill (a add-on instruction pack for AI) that audits your code and writes plans for other agents to carry out.",
+   "need": "In a big project it is hard to know what to fix first.\nExample: your website is slow; the skill lists the problems and writes one plan file for each.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Any Agent Skills agent"
+   ],
+   "rn": "Low risk. It is only text instructions and does not change code itself. Your agent still gets permission to read your project files.",
+   "type": "Agent skill (Markdown)",
+   "win": [
+    "`npx skills add shadcn/improve`",
+    "Node.js is needed; then run `/improve` in your agent."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android tablet par agent apps limited hain; Termux mein Node.js se `npx skills add shadcn/improve` chal sakta hai, par official README dekhein."
+   ],
+   "bani": "Mehnga AI model sochne mein achha hota hai, par har kaam mein use karna mehnga padta hai. Isliye is skill ne audit aur plan likhna alag kiya.\nPlan simple markdown file mein banta hai, jise sasta agent ya koi person execute kar sakta hai.",
+   "job": "Developers, Claude Code users, freelancers, AI automation learners",
+   "kahan": "Software companies, startups, agencies, solo developers.",
+   "kya": "Ek agent skill jo aapke codebase ka audit karke dusre agents ke liye implementation plans likhti hai.",
+   "lang": [
+    [
+     "Markdown (sirf text)",
+     100
+    ]
+   ],
+   "need": "Bade project mein samajhna mushkil hota hai ki pehle kya theek karein.\nExample: aapki website dheemi hai; skill pehle problems ki list banayegi, phir har problem ka alag plan file likhegi.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Any Agent Skills agent"
+   ],
+   "r": "low",
+   "rn": "Low risk. Ye sirf text instructions hain; skill khud code implement nahi karti. Phir bhi agent ko aapke project files padhne ki permission milti hai.",
+   "t": "agent",
+   "type": "Agent skill (Markdown)",
+   "win": [
+    "`npx skills add shadcn/improve`",
+    "Node.js chahiye; phir apne agent mein `/improve` chalayein."
+   ]
+  },
+  "archived": "2026-11-13"
  },
  "sherlock-project/sherlock": {
   "EN": {

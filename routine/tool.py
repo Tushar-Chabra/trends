@@ -711,10 +711,14 @@ def step_apply():
 # ---------- step: publish ----------
 def step_publish():
     state = jload(os.path.join(WORK, "state.json"))
-    _, out, _ = run(["git", "-C", ROOT, "status", "--porcelain"])
+    code, so, _ = run([sys.executable, "-I", os.path.join(ROOT, "routine", "snapshot.py"), "today"], timeout=120)
+    if code != 0:
+        die("ERROR: daily snapshot failed (no push): " + so.strip()[:300])
+    print(so.strip())
+    _, out, _ = run(["git", "-C", ROOT, "status", "--porcelain", "-uall"])
     changed = {line[3:].strip() for line in out.splitlines() if line.strip()}
     allowed = {"index.html", "routine/archive.json"}
-    extra = changed - allowed
+    extra = {c for c in changed - allowed if not re.match(r"^archive/[0-9A-Za-z._-]+$", c)}
     if extra:
         die("ERROR: unexpected files changed (no push): " + ", ".join(sorted(extra)))
     if not changed:

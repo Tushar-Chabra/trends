@@ -1,0 +1,712 @@
+<!doctype html><html><head><meta charset=utf8><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wpg6t/wfwEoBVwNjHAwpcThgY/Vd5H2io0hctb4ICgA='; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="description" content="Roz ke top 10 trending GitHub projects, simple Hinglish mein: kya karte hain, kitne safe hain, kiske kaam ke hain."><meta property="og:type" content="website"><meta property="og:title" content="GitHub Trends in Hinglish"><meta property="og:description" content="Roz ke top 10 trending GitHub projects, simple Hinglish mein: kya karte hain, kitne safe hain, kiske kaam ke hain."><meta property="og:url" content="https://tushar-chabra.github.io/trends-in-hinglish/"><meta property="og:site_name" content="GitHub Trends in Hinglish"><meta property="og:image" content="https://tushar-chabra.github.io/trends-in-hinglish/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="GitHub Trends in Hinglish by Tushar Chhabra"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GitHub Trends in Hinglish"><meta name="twitter:image" content="https://tushar-chabra.github.io/trends-in-hinglish/og.png"><meta name="author" content="Tushar Chhabra"><link rel="canonical" href="https://tushar-chabra.github.io/trends-in-hinglish/"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='%236965db'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='30' fill='%23fff'%3EGT%3C/text%3E%3Ccircle cx='51' cy='13' r='5' fill='%23fff3a3'/%3E%3C/svg%3E"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><meta name="theme-color" content="#6965db"><meta name="referrer" content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}/* animations */
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
+@keyframes shine{from{background-position:-200% 0}to{background-position:200% 0}}
+.rv{opacity:0;transform:translateY(12px);transition:opacity .35s ease,transform .35s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.card:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--line)}
+.jump a:hover{transform:translateY(-2px) rotate(-1deg)}
+.jchip:hover{transform:translateY(-2px) rotate(-1deg)}
+.row:hover .pill{animation:floaty 1.6s ease-in-out infinite}
+.btn:active{transform:scale(.96)}
+.sugg-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.sugg-btns .btn:hover{transform:translate(-2px,-3px) rotate(-1deg);box-shadow:4px 4px 0 var(--line)}
+#suggest h2{display:inline-block;animation:wiggle 2.4s ease-in-out 1.2s 2}
+#suggest .btn.pri{background-image:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.4) 50%,transparent 65%);background-size:200% 100%;animation:shine 3.2s linear infinite}
+.wrap>h1,.wrap>header{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+.wrap [id]{scroll-margin-top:72px}
+</style><title>GitHub Trends in Hinglish</title></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: Excalidraw-style whiteboard — dotted canvas, hand-drawn boxes, donut summary on top, ranked lists with per-repo donuts below */
+:root{
+  --bg:#fbfaf7; --dot:#d9d6ce; --paper:#ffffff; --ink:#1e1e1e; --muted:#5f5b55; --line:#1e1e1e;
+  --accent:#6965db; --accent-soft:#e9e8fb; --hl:#fff3a3; --code:#f1efe9;
+  --ok:#2b8a3e; --ok-bg:#e6f6ea; --warn:#b35c00; --warn-bg:#fff0d9; --bad:#c92a2a; --bad-bg:#ffe3e3;
+  --c1:#6965db; --c2:#1971c2; --c3:#e8590c; --c4:#2f9e44; --c5:#c2255c; --c6:#868e96;
+  --hand:"Kalam","Comic Sans MS","Segoe Print",cursive;
+  --body:"Nunito","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --sketch:255px 15px 225px 15px/15px 225px 15px 255px;
+  --wm:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='240'%3E%3Ctext x='190' y='125' text-anchor='middle' transform='rotate(-24 190 120)' font-family='Segoe Print,Comic Sans MS,cursive' font-size='22' font-weight='700' fill='%231e1e1e' fill-opacity='0.05'%3ETushar Chhabra%3C/text%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121212; --dot:#2c2c2c; --paper:#1c1c1e; --ink:#e3e3e3; --muted:#a3a09a; --line:#cfcfcf;
+  --accent:#a8a5ff; --accent-soft:#2a2850; --hl:#4a4318; --code:#2a2a2d;
+  --ok:#69db7c; --ok-bg:#1d3324; --warn:#ffc078; --warn-bg:#3d2b12; --bad:#ff8787; --bad-bg:#3d1c1c;
+  --c1:#a8a5ff; --c2:#74c0fc; --c3:#ffa94d; --c4:#8ce99a; --c5:#f783ac; --c6:#adb5bd; color-scheme:dark; --wm:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='240'%3E%3Ctext x='190' y='125' text-anchor='middle' transform='rotate(-24 190 120)' font-family='Segoe Print,Comic Sans MS,cursive' font-size='22' font-weight='700' fill='%23ffffff' fill-opacity='0.045'%3ETushar Chhabra%3C/text%3E%3C/svg%3E")}}
+:root[data-theme="dark"]{
+  --bg:#121212; --dot:#2c2c2c; --paper:#1c1c1e; --ink:#e3e3e3; --muted:#a3a09a; --line:#cfcfcf;
+  --accent:#a8a5ff; --accent-soft:#2a2850; --hl:#4a4318; --code:#2a2a2d;
+  --ok:#69db7c; --ok-bg:#1d3324; --warn:#ffc078; --warn-bg:#3d2b12; --bad:#ff8787; --bad-bg:#3d1c1c;
+  --c1:#a8a5ff; --c2:#74c0fc; --c3:#ffa94d; --c4:#8ce99a; --c5:#f783ac; --c6:#adb5bd; color-scheme:dark; --wm:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='240'%3E%3Ctext x='190' y='125' text-anchor='middle' transform='rotate(-24 190 120)' font-family='Segoe Print,Comic Sans MS,cursive' font-size='22' font-weight='700' fill='%23ffffff' fill-opacity='0.045'%3ETushar Chhabra%3C/text%3E%3C/svg%3E")}
+body{background:var(--bg);background-image:var(--wm),radial-gradient(var(--dot) 1px,transparent 1px);background-size:380px 240px,22px 22px;color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:1060px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:28px}
+h1,h2,h3{font-family:var(--hand);font-weight:700;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(2rem,6vw,3.1rem)}
+h2{font-size:1.7rem}
+h3{font-size:1.25rem}
+.u{background:linear-gradient(transparent 60%,var(--hl) 60%)}
+.sk{background:var(--paper);border:2px solid var(--line);border-radius:var(--sketch)}
+.top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-start;justify-content:space-between}
+.sub{color:var(--muted);margin:.4rem 0 0;max-width:62ch}
+.btn{font:700 .95rem var(--body);color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:var(--sketch);padding:.45rem .9rem;cursor:pointer;display:inline-flex;gap:.4rem;align-items:center;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--line)}
+.btn:focus-visible,.tab:focus-visible,.row:focus-visible,.seg button:focus-visible,.flt:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn.pri{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{font:600 .8rem var(--body);border:1.5px dashed var(--muted);border-radius:999px;padding:.15rem .65rem;color:var(--muted)}
+.chip b{color:var(--ink)}
+.devs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.dev{padding:12px 16px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center}
+.dev .ic{font:700 1.8rem var(--hand);grid-row:span 2}
+.dev b{font-weight:800}
+.dev span{color:var(--muted);font-size:.9rem}
+/* summary */
+.grid2{display:grid;grid-template-columns:1.15fr 1fr;gap:20px}
+@media(max-width:780px){.grid2{grid-template-columns:1fr}}
+.card{padding:20px 22px;min-width:0}
+.kyun{font:400 1rem var(--hand);color:var(--accent);margin:.2rem 0 .8rem}
+.donutwrap{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.donutwrap svg{flex:0 0 auto}
+.legend{display:grid;gap:6px;flex:1 1 200px;min-width:0;font-size:.92rem}
+.legend div{display:grid;grid-template-columns:14px 1fr auto;gap:8px;align-items:center}
+.legend i{width:14px;height:14px;border-radius:4px 2px 5px 3px;border:1.5px solid var(--line)}
+.legend em{font:500 .85rem var(--mono);font-style:normal;font-variant-numeric:tabular-nums}
+.seg-arc{transition:stroke-dashoffset 1.1s cubic-bezier(.2,.8,.2,1)}
+.dtext{font-family:var(--hand);fill:var(--ink)}
+.cap{font-size:.82rem;color:var(--muted);margin-top:10px}
+ol.take{margin:0;padding-left:1.3rem;display:grid;gap:8px}
+ol.take li::marker{font:700 1.05rem var(--hand);color:var(--accent)}
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{font:700 1.2rem var(--hand);background:transparent;color:var(--muted);border:2px solid transparent;border-radius:var(--sketch);padding:.2rem .9rem;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--line);background:var(--paper)}
+.listhead{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.flt{font:700 .88rem var(--body);display:inline-flex;gap:8px;align-items:center;cursor:pointer;color:var(--ink);background:var(--paper);border:2px dashed var(--muted);border-radius:999px;padding:.3rem .8rem}
+.flt[aria-pressed="true"]{border-style:solid;border-color:var(--ok);color:var(--ok);background:var(--ok-bg)}
+.list{display:grid;gap:12px;margin-top:14px}
+.row{padding:14px 18px;cursor:pointer;animation:pop .45s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*55ms)}
+@keyframes pop{from{transform:translateY(10px) rotate(-.4deg)}}
+.rh{display:grid;grid-template-columns:2.2rem 52px minmax(0,1fr) auto;gap:12px;align-items:center}
+.rank{font:700 1.6rem var(--hand);text-align:center;color:var(--accent)}
+.mini{width:52px;height:52px}
+.nm{font-weight:800;word-break:break-word}
+.nm small{font-weight:600;color:var(--muted)}
+.one{color:var(--muted);font-size:.93rem;margin-top:2px}
+.side{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.st{font:500 .82rem var(--mono);font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+.dvicons{display:flex;gap:6px}
+.dvi{font:700 .72rem var(--body);padding:.1rem .45rem;border-radius:6px;border:1.5px solid currentColor;white-space:nowrap}
+.pill{font:800 .72rem var(--body);letter-spacing:.04em;text-transform:uppercase;padding:.15rem .55rem;border-radius:999px;border:1.5px solid currentColor;white-space:nowrap}
+.r-low,.v-yes{color:var(--ok);background:var(--ok-bg)}.r-med,.v-part{color:var(--warn);background:var(--warn-bg)}.r-high,.v-no{color:var(--bad);background:var(--bad-bg)}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.tg{font:600 .76rem var(--body);padding:.12rem .55rem;border-radius:6px;background:var(--accent-soft);color:var(--ink)}
+.tg.cl{border:1.5px solid var(--accent)}
+.det{display:grid;gap:16px;margin-top:14px;padding-top:14px;border-top:2px dashed var(--dot)}
+.q{display:grid;grid-template-columns:minmax(0,12rem) 1fr;gap:6px 14px;margin:0}
+@media(max-width:600px){.q{grid-template-columns:1fr}.rh{grid-template-columns:1.8rem 44px minmax(0,1fr)}.mini{width:44px;height:44px}.side{grid-column:3;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start}}
+.q dt{font:700 1.02rem var(--hand)}
+.q dd{margin:0;min-width:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.box{padding:12px 14px;border:2px solid var(--line);border-radius:10px 4px 12px 6px;min-width:0;display:grid;gap:8px;align-content:start}
+.attn{border:2px dashed var(--warn);border-radius:var(--sketch);padding:14px 16px;display:grid;gap:12px}
+.attn>h3{color:var(--warn)}
+.dv{padding:10px 12px;border-radius:10px 4px 12px 6px;display:grid;gap:4px;min-width:0}
+.dv b{font-weight:800}
+.sec{padding:10px 14px;border-radius:10px 4px 12px 6px}
+.seg{display:inline-flex;flex-wrap:wrap;gap:6px}
+.seg button{font:700 .88rem var(--body);color:var(--muted);background:transparent;border:2px solid var(--dot);border-radius:8px 4px 10px 6px;padding:.25rem .7rem;cursor:pointer}
+.seg button[aria-selected="true"]{color:var(--ink);border-color:var(--line);background:var(--paper)}
+ol.steps{margin:0;padding-left:1.4rem;display:grid;gap:7px}
+ol.steps li::marker{font:700 1rem var(--hand);color:var(--accent)}
+code{font:500 .82rem var(--mono);background:var(--code);border-radius:5px;padding:.08rem .35rem;overflow-wrap:anywhere}
+.where{font-size:.92rem}
+.langbox{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.ai{display:grid;gap:10px;padding:14px;border:2px dashed var(--accent);border-radius:var(--sketch);background:var(--accent-soft)}
+.ai .out{white-space:pre-wrap;min-width:0;overflow-wrap:anywhere}
+.ai form{display:flex;gap:8px;flex-wrap:wrap}
+.ai input{flex:1 1 220px;min-width:0;font:600 .95rem var(--body);color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:8px 4px 10px 6px;padding:.45rem .7rem}
+.note{font:400 1rem var(--hand);color:var(--muted)}
+.empty{padding:18px;text-align:center;color:var(--muted)}
+.foot{font-size:.85rem;color:var(--muted);display:grid;gap:6px}
+.foot a{color:var(--accent)}
+
+
+/* v3 additions */
+.hacts{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start}
+@keyframes drop{from{transform:translateY(-6px);opacity:.3}}
+.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;flex-wrap:wrap;gap:4px 6px;padding:8px 12px;align-items:center}
+.jump a{font:700 1.02rem var(--hand);color:var(--ink);text-decoration:none;padding:.15rem .7rem;border-radius:8px 4px 10px 6px;cursor:pointer;transition:background .15s}
+.jump a:hover,.jump a:focus-visible{background:var(--hl);outline:none}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:40;margin:0;background:var(--ink);color:var(--paper);font-weight:700;padding:.55rem 1rem;border-radius:var(--sketch);animation:drop .25s ease-out;max-width:calc(100% - 32px)}
+.seg-arc{transition:stroke-dashoffset 1.1s cubic-bezier(.2,.8,.2,1),stroke-width .2s}
+.seg-arc.click{cursor:pointer}
+.seg-arc.click:hover,.seg-arc.click:focus-visible{stroke-width:calc(var(--sw) * 1.28);outline:none}
+.seg-arc.dim{opacity:.25}
+.slabel{fill:#ffffff;font:800 1px var(--body);paint-order:stroke;stroke:rgba(0,0,0,.5);stroke-width:2.5px;pointer-events:none;animation:fadein .5s .9s both}
+@keyframes fadein{from{opacity:0}}
+.dsub{fill:var(--muted);font-family:var(--body);font-weight:700}
+.legend .lrow{display:grid;grid-template-columns:14px 1fr auto;gap:8px;align-items:center;font:inherit;color:inherit;text-align:left;background:transparent;border:0;border-radius:8px;padding:.25rem .4rem;cursor:pointer;transition:background .15s,transform .15s}
+.legend .lrow:hover,.legend .lrow:focus-visible{background:var(--accent-soft);transform:translateX(3px);outline:none}
+.legend .lrow.on{background:var(--hl)}
+.slegend{display:grid;gap:6px;flex:1 1 300px;min-width:0}
+.srow{display:grid;grid-template-columns:1.6rem minmax(0,1fr) 4.2rem 3rem;gap:8px;align-items:center;font:inherit;color:inherit;text-align:left;background:transparent;border:0;border-radius:8px;padding:.3rem .45rem;cursor:pointer;transition:background .15s,transform .15s}
+.srow:hover,.srow:focus-visible{background:var(--accent-soft);transform:translateX(3px);outline:none}
+.srow .rk{font:700 1.05rem var(--hand);color:var(--accent);text-align:center}
+.srow .nmb{display:grid;gap:3px;min-width:0}
+.srow .nmb b{font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.srow .trk{height:8px;border-radius:4px 8px 5px 9px;background:var(--dot);overflow:hidden}
+.srow .fil{height:100%;width:var(--w);background:var(--col);animation:grow 1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{width:0}}
+.srow .num,.srow .pc{font:500 .84rem var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.srow .pc{color:var(--muted)}
+.srow.na{opacity:.55}
+.tabbar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.fchip{font:700 .85rem var(--body);display:inline-flex;gap:6px;align-items:center;color:var(--ink);background:var(--hl);border:2px solid var(--line);border-radius:999px;padding:.2rem .4rem .2rem .75rem;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.jchip{font:700 .82rem var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:8px 4px 10px 6px;padding:.15rem .55rem;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.jchip:hover,.jchip:focus-visible{transform:translate(-1px,-1px);box-shadow:2px 2px 0 var(--line);outline:none}
+.jchip b{color:var(--accent);margin-right:3px}
+a.rl{color:var(--accent);font-weight:800;text-decoration:underline;text-decoration-style:wavy;text-underline-offset:3px;text-decoration-thickness:1px}
+.nm a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--hl)}
+.nm a:hover{border-bottom-color:var(--accent)}
+.det{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1),margin .3s;margin-top:0;padding-top:0;border-top:0}
+.det.open{grid-template-rows:1fr;margin-top:14px}
+.det>.inner{overflow:hidden;min-height:0;display:grid;gap:16px}
+.det.open>.inner{border-top:2px dashed var(--dot);padding-top:14px}
+.row{transition:box-shadow .25s,transform .25s}
+.row:hover{box-shadow:4px 4px 0 var(--line);transform:translate(-2px,-2px)}
+.row.pulse{animation:pulse 1.4s ease-out}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent)}40%{box-shadow:0 0 0 10px var(--accent-soft)}100%{box-shadow:0 0 0 0 transparent}}
+.mdout h1,.mdout h2,.mdout h3,.mdout h4{font-family:var(--hand);margin:.6rem 0 .2rem;font-size:1.2rem}
+.mdout p{margin:.3rem 0}
+.mdout ul,.mdout ol{margin:.2rem 0 .4rem;padding-left:1.3rem}
+.mdout a{color:var(--accent)}
+.aihead{display:flex;justify-content:flex-end}
+.btn.sm{font-size:.8rem;padding:.2rem .6rem}
+.ai .out.mdout{white-space:normal}
+
+/* public page additions */
+.take2{margin:0;padding-left:1.2rem;display:grid;gap:8px}
+.top3{display:grid;gap:10px;margin-top:6px}
+.t3{display:grid;grid-template-columns:2rem minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;font:inherit;color:inherit;background:var(--paper);border:2px solid var(--line);border-radius:var(--sketch);padding:12px 16px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.t3:hover,.t3:focus-visible{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--line);outline:none}
+.t3n{font:700 1.7rem var(--hand);color:var(--accent);text-align:center}
+.t3b{display:grid;gap:2px;min-width:0}
+.t3b b{font-weight:800;word-break:break-word}
+.warnbox{padding:10px 14px;border-radius:10px 4px 12px 6px;border:1.5px solid currentColor;font-size:.92rem;line-height:1.45}
+.warnbox b{font-weight:800}
+details#gloss>summary{cursor:pointer;list-style:revert}
+@media print{.jump,.hacts,.acts,.chips,.tabbar,.toast,#intro{display:none!important}body{background:#fff!important;color:#000!important}.sk{box-shadow:none!important}.det{grid-template-rows:1fr!important}.det>.inner{overflow:visible!important}.row{break-inside:avoid;animation:none!important}}
+/* animations */
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
+@keyframes shine{from{background-position:-200% 0}to{background-position:200% 0}}
+.rv{opacity:0;transform:translateY(12px);transition:opacity .35s ease,transform .35s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.card:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--line)}
+.jump a:hover{transform:translateY(-2px) rotate(-1deg)}
+.jchip:hover{transform:translateY(-2px) rotate(-1deg)}
+.row:hover .pill{animation:floaty 1.6s ease-in-out infinite}
+.btn:active{transform:scale(.96)}
+.sugg-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.sugg-btns .btn:hover{transform:translate(-2px,-3px) rotate(-1deg);box-shadow:4px 4px 0 var(--line)}
+#suggest h2{display:inline-block;animation:wiggle 2.4s ease-in-out 1.2s 2}
+#suggest .btn.pri{background-image:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.4) 50%,transparent 65%);background-size:200% 100%;animation:shine 3.2s linear infinite}
+.wrap>h1,.wrap>header{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+.wrap [id]{scroll-margin-top:72px}
+
+/* engaging additions */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.stat{padding:14px 16px;display:grid;gap:2px;text-align:left}
+.stat .n{font:700 2.1rem/1.1 var(--hand);color:var(--accent)}
+.stat .n small{font-size:1rem;color:var(--ink)}
+.stat .l{font-size:.88rem;color:var(--muted)}
+.stat.warn .n{color:var(--bad)}
+.t3 .one{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.t3:nth-child(1){background:linear-gradient(110deg,var(--hl) -30%,var(--paper) 45%)}
+.takes{display:grid;gap:10px}
+.tk{display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:10px;align-items:start;padding:10px 12px;background:var(--paper);border:2px solid var(--line);border-radius:10px 4px 12px 6px;transition:transform .15s,box-shadow .15s}
+.tk:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--line)}
+.tk .ic{font-size:1.5rem;line-height:1.2;text-align:center}
+.hot{font:800 .72rem var(--body);color:var(--warn);background:var(--warn-bg);border:1.5px solid currentColor;border-radius:999px;padding:.05rem .5rem;margin-left:6px;white-space:nowrap}
+.jump{scrollbar-width:none}@media(max-width:600px){.jump{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.jump a{flex:0 0 auto}}
+.cat{font:700 .72rem var(--body);color:var(--muted);margin-left:6px;white-space:nowrap}
+
+/* risk guide */
+.rg-lead{font-size:1.05rem}
+.rgq{margin:8px 0 0;padding-left:1.4rem;display:grid;gap:8px}
+.rgq li::marker{font:700 1rem var(--hand);color:var(--accent)}
+.rgq li>span:first-child{margin-right:8px}
+.rgq .pill{display:inline-block;margin-top:2px}
+.rg-rule{padding:10px 14px;background:var(--hl);border-radius:10px 4px 12px 6px;margin:12px 0}
+.rg3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.lvl{padding:12px 14px;border:2px solid;border-radius:10px 4px 12px 6px;display:grid;gap:6px;align-content:start}
+.lvl p{margin:0}.lvl.low{border-color:var(--ok);background:var(--ok-bg)}.lvl.med{border-color:var(--warn);background:var(--warn-bg)}.lvl.high{border-color:var(--bad);background:var(--bad-bg)}
+.lvl.low h3{color:var(--ok)}.lvl.med h3{color:var(--warn)}.lvl.high h3{color:var(--bad)}
+.rgx{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.85rem}
+
+.wrap>header.top{position:relative;z-index:50}
+
+/* watermark: screen par sirf halka background; print (Ctrl+P) mein har page par */
+.wm{display:none}
+@page{margin:14mm 12mm 16mm;@bottom-center{content:"© Tushar Chhabra · GitHub Trends in Hinglish · tushar-chabra.github.io/trends-in-hinglish";font-size:8pt;color:#777}}
+@media print{
+ .wm{display:flex;position:fixed;inset:0;align-items:center;justify-content:center;pointer-events:none;z-index:9999}
+ .wm span{transform:rotate(-28deg);font:700 64pt var(--hand);color:#000;opacity:.07;white-space:nowrap;text-align:center;line-height:1.1}
+ .wm small{display:block;font:600 16pt var(--body)}
+}
+
+/* mobile polish */
+.stats>button.stat{text-align:left}
+@media(max-width:600px){
+ .wrap{gap:20px}
+ .card{padding:16px 14px}
+ h2{font-size:1.45rem}
+ details>summary h2{font-size:1.3rem!important}
+ .sub{font-size:.95rem}
+ .stats{grid-template-columns:1fr 1fr;gap:10px}
+ .stat{padding:10px 12px}
+ .stat .n{font-size:1.6rem}
+ .stat .l{font-size:.8rem;line-height:1.35}
+ .stats>button.stat .n{font-size:1.15rem!important;overflow-wrap:anywhere;line-height:1.2}
+ .t3{grid-template-columns:1.6rem minmax(0,1fr);gap:6px 10px;padding:10px 12px}
+ .t3n{font-size:1.4rem;grid-row:span 2;align-self:start}
+ .t3b b{word-break:normal;overflow-wrap:anywhere}
+ .t3 .one{font-size:.88rem}
+ .t3 .side{grid-column:2;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px}
+ .tabs{flex-wrap:nowrap;gap:2px;overflow-x:auto;scrollbar-width:none}
+ .tab{font-size:1.05rem;padding:.15rem .55rem;flex:0 0 auto}
+ .jump{-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent);padding:6px 10px}
+ .jump a{font-size:.98rem;padding:.15rem .5rem}
+ .row{padding:12px 12px}
+ .rh{gap:8px;align-items:start}
+ .rank{padding-top:2px}
+ .row[aria-expanded="false"] .rh>div>.one:nth-of-type(2){display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+ .tk{padding:9px 10px;grid-template-columns:1.8rem minmax(0,1fr)}
+ .tk .ic{font-size:1.25rem}
+ .rgq{padding-left:1.2rem}
+}
+</style>
+
+<div class="wrap"><noscript><p style="padding:16px">Please JavaScript on karein, tabhi ye page dikhega.</p></noscript>
+  <header class="top">
+    <div>
+      <h1>GitHub <span class="u">Trends in Hinglish</span></h1>
+      <p class="sub"><b>Duniya aaj kya bana rahi hai? Jaaniye 3 minute mein.</b> Roz ke top 10 trending GitHub projects, bina tech jargon ke: kya karte hain, kitne safe hain, kiske kaam ke hain, aur kaise install karein.</p>
+      <div class="meta">
+        <span class="chip">📅 Data: <b data-date>24 Oct 2026</b></span><span class="chip">⏱ <b>3 min</b> read</span>
+        <span class="chip">Daily + Weekly: <b>every day</b></span>
+        <span class="chip">Monthly: <b>every Monday</b></span>
+        <span class="chip">Yearly: <b>1st of every month</b></span>
+      </div>
+    </div>
+    <div class="hacts">
+      <button class="btn" id="themeBtn" type="button" aria-label="Dark ya light mode switch karein">◐ <span id="themeLbl">Dark mode</span></button>
+      <button class="btn" id="shareBtn" type="button" aria-pressed="false" hidden>🔒 <span id="shareLbl">Share mode: off</span></button>
+    </div>
+  </header>
+
+  <nav class="jump sk" aria-label="Page ke hisse">
+    <a href="#intro" data-go="intro">First time? Guide</a>
+    <a href="#top3" data-go="top3">🏆 Top 3</a>
+    <a href="#summary" data-go="summary">Summary</a>
+    <a href="#suggest" data-go="suggest">Suggest</a>
+    <a href="#stars" data-go="stars">Stars race</a>
+    <a href="#lists" data-go="lists">Top 10 lists</a>
+    <a href="#riskguide" data-go="riskguide">🚦 Risk guide</a>
+    <a href="#gloss" data-go="gloss">Glossary</a>
+    <a href="#foot" data-go="foot">Sources</a>
+  </nav>
+
+  <section class="devs" id="devs" aria-label="Devices" hidden></section>
+
+  <section class="stats" id="stats" aria-label="Aaj ke numbers"></section>
+
+<details class="sk card" id="intro">
+    <summary><h2 style="display:inline">🤔 First time? Quick guide</h2></summary>
+    <ul class="take2" style="margin-top:12px">
+      <li><b>GitHub kya hai?</b> Ek website jahan programmers apna banaya free software rakhte hain. Jo cheez bahut logon ko pasand aati hai, use "trending" kehte hain.</li>
+      <li><b>Star (&#9733;) ka matlab?</b> Jaise YouTube ka like. Jitne zyada stars, utne zyada logon ko pasand aaya.</li>
+      <li><b>Kuch install karna zaroori nahi.</b> Ye page sirf batata hai ki duniya mein aaj kya naya chal raha hai.</li>
+      <li><b>Risk label:</b> Low risk = aam taur par theek. Medium risk = soch samajh kar use karein. High risk = khatarnak ho sakta hai. <b>Trending ka matlab safe nahi hota.</b> Ye label sirf andaza hai, guarantee nahi. <a class="rl" href="#riskguide" data-go="riskguide">Label kaise decide hota hai? →</a></li>
+    </ul>
+  </details>
+
+  <section class="sk card" id="top3" aria-label="Aaj ke Top 3">
+    <h2>🏆 Aaj ke Top 3</h2>
+    <p class="kyun">Kyun dekhein: agar sirf 1 minute hai, to bas ye teen dekh lein. Aaj sabse zyada log inhi par toot pade hain. Card par click karein.</p>
+    <div class="top3" id="top3List"></div>
+  </section>
+
+  <section class="grid2" id="summary" aria-label="Aaj ka trend summary">
+    <div class="sk card">
+      <h2>🔥 Kaunsi category trend kar rahi hai</h2>
+      <p class="kyun">Kyun dekhein: ek nazar mein pata chalta hai market kis taraf ja raha hai. Kisi category par click karein, list usi se filter ho jayegi.</p>
+      <div class="donutwrap"><div id="catDonut"></div><div class="legend" id="catLegend"></div></div>
+      <p class="cap">Chaaron lists ke 40 slots mein har category ka share (ek repo kai lists mein ho sakti hai).</p>
+    </div>
+    <div class="sk card">
+      <h2>👀 Aaj ke Big Signals</h2>
+      <p class="kyun">Kyun dekhein: inhi se pata chalega ki kaunsa skill seekhna ya kaunsa tool try karna useful hai. Underline wale naam par click karein.</p>
+      <div class="takes" id="take"></div>
+    </div>
+  </section>
+
+  <div class="tabbar" id="lists">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="hacts">
+      <button class="fchip" id="catChip" type="button" hidden></button>
+      <button class="flt" id="fltBtn" type="button" aria-pressed="false" hidden>✓ Sirf jo mere computer par chalein</button>
+    </div>
+  </div>
+
+  <section class="sk card" id="stars" aria-label="Stars ka hissa">
+    <h2 id="starsTitle">⭐ Stars race</h2>
+    <p class="kyun" id="starsKyun">Kyun dekhein: pata chalta hai ki kaunsi repo sabse tezi se logon ko pasand aa rahi hai. Naam ya chart ke hisse par click karein, wahi repo khul jayegi.</p>
+    <div class="donutwrap"><div id="starDonut"></div><div class="slegend" id="starLegend"></div></div>
+    <p class="cap" id="starCap"></p>
+  </section>
+
+  <section aria-label="Top 10 list">
+    <p class="note" style="margin:0">Har repo ke paas wala chhota gol chart = us repo mein kaunsi programming language kitne % hai. Card par click karein, poori jaankari khul jayegi ✎</p>
+    <input type="search" id="qbox" placeholder="🔎 Search karein: naam ya kaam likhein (jaise: design, game, phone)" aria-label="Repo search" style="width:100%;margin-top:10px;padding:.55rem .8rem;font:inherit;color:inherit;background:var(--paper);border:2px solid var(--line);border-radius:10px 4px 12px 6px">
+    <div class="chips" id="jumpChips"></div>
+    <div class="list" id="list" role="tabpanel"></div>
+  </section>
+
+  <section class="sk card" id="riskguide" aria-label="Risk label kaise decide hota hai">
+    <h2>🚦 Risk label kaise decide hota hai?</h2>
+    <p class="kyun">Kyun padhein: taaki aap samajh sakein ki kaunsi repo sirf padhni hai, kaunsi dhyaan se try karni hai, aur kaunsi aaram se.</p>
+    <p class="rg-lead"><b>Ek line mein:</b> Risk label batata hai ki <b>agar aap ise apne computer ya account par chalayein, to kitna nuksaan ho sakta hai.</b> Ye nahi batata ki project achha hai ya bura, ya banane wale ki intention galat hai.</p>
+    <p><b>Rasoi wala example:</b> Chammach (Low risk) koi bhi use kar sakta hai. Chaaku (Medium risk) bahut kaam ka hai, par dhyaan se chalana padta hai. Gas ki pipe kholna (High risk) sirf expert kare, warna accident ho sakta hai.</p>
+    <h3 style="margin-top:6px">Har repo par ye 5 sawaal poochhe jaate hain</h3>
+    <ol class="rgq">
+      <li><span>Kya ye kisi software ko andar se kholta hai (reverse engineering), kisi aur ki app, site ya game ki copy banata hai, piracy ya copy-protection (DRM) todta hai, ya hacking tool hai?</span><span class="pill r-high">Haan = High</span></li>
+      <li><span>Kya ise aapke email, payment, GitHub jaise accounts ya poore computer aur files ka control chahiye?</span><span class="pill r-med">Haan = Medium</span></li>
+      <li><span>Kya install ke liye internet se script seedha chalani padti hai, jaise <code>curl … | sh</code> ya <code>irm … | iex</code>?</span><span class="pill r-med">Haan = Medium</span></li>
+      <li><span>Kya file unsigned hai (company ka digital signature nahi, yaani pakka nahi ki file asli hai) ya official page ke bahar se download hoti hai?</span><span class="pill r-med">Haan = Medium</span></li>
+      <li><span>Kya ye kisi website ke rules tod sakta hai (bot-check bypass, scraping), kuch countries mein law ka issue hai (jaise free VPN lists), ya 18+ content hai?</span><span class="pill r-med">Haan = Medium</span></li>
+    </ol>
+    <p class="rg-rule"><b>Rule simple hai:</b> Sawaal 1 ka jawab "haan" = <b>High risk</b>. Sawaal 2 se 5 mein koi bhi "haan" = <b>Medium risk</b>. Sab "nahi" = <b>Low risk</b>.</p>
+    <div class="rg3">
+      <div class="lvl low"><h3>🟢 Low risk</h3><p><b>Matlab:</b> text, learning material ya simple app jo bada access nahi maangta.</p><p><b>Aap kya karein:</b> README padhein, official page se install karein, aaram se try karein.</p><div class="rgx" data-lvl="low"></div></div>
+      <div class="lvl med"><h3>🟡 Medium risk</h3><p><b>Matlab:</b> kaam ka tool, par galat setting se aapka data, account ya paisa risk mein aa sakta hai.</p><p><b>Aap kya karein:</b> test account ya alag folder mein try karein, kam permission dein, script chalane se pehle padhein.</p><div class="rgx" data-lvl="med"></div></div>
+      <div class="lvl high"><h3>🔴 High risk</h3><p><b>Matlab:</b> galat use par legal problem, data chori ya computer kharab ho sakta hai.</p><p><b>Aap kya karein:</b> sirf padhein. Chalana hi ho to expert ke saath, alag (virtual) machine mein.</p><div class="rgx" data-lvl="high"></div></div>
+    </div>
+    <h3 style="margin-top:6px">Ye label kya NAHI hai</h3>
+    <ul class="take2">
+      <li><b>Security audit ya code scan nahi.</b> Label project ke README aur uske kaam ko padhkar diya gaya andaza hai.</li>
+      <li><b>Low risk ka matlab zero risk nahi.</b> Har software mein bug ho sakta hai.</li>
+      <li><b>High risk ka matlab illegal ya bura project nahi.</b> Kai High risk tools security experts aur researchers ke kaam ke hote hain. Label sirf aam user ke liye khatre ko dikhata hai.</li>
+      <li><b>Label badal sakta hai.</b> Project update hota hai to label bhi badal sakta hai. Final decision hamesha aapka.</li>
+    </ul>
+  </section>
+
+  <section class="sk card" id="suggest" aria-label="Suggestion dein">
+    <h2>&#128161; Aapki suggestion chahiye</h2>
+    <p class="kyun">Kyun: ye page aapke feedback se better banta hai. Kaunsi repo add ho, kya samajh nahi aaya, kya change hona chahiye, bas bata dein.</p>
+    <p style="font-size:1.05rem"><b>Please share your feedback with me on LinkedIn or GitHub.</b></p>
+    <div class="sugg-btns">
+      <a class="btn pri" href="https://www.linkedin.com/in/tusharchhabraofficial/" target="_blank" rel="noopener noreferrer">&#128172; LinkedIn par message karein</a>
+      <a class="btn" href="https://github.com/Tushar-Chabra" target="_blank" rel="noopener noreferrer">&#128025; GitHub par follow karein</a>
+    </div>
+    <p class="note" style="margin-top:10px">Made by Tushar Chhabra. Pasand aaye to LinkedIn par follow karna mat bhooliye.</p>
+  </section>
+
+  
+
+
+  <details class="sk card" id="gloss">
+    <summary><h2 style="display:inline">📖 Glossary: mushkil words ka matlab</h2></summary>
+    <dl class="q" style="margin-top:12px">
+      <dt>Repo</dt><dd>Kisi project ka online folder, jisme uski saari files rehti hain.</dd>
+      <dt>README</dt><dd>Project ka "kaise use karein" wala page.</dd>
+      <dt>Open-source</dt><dd>Jiska code sabke dekhne ke liye khula hai, aur aam taur par free hota hai.</dd>
+      <dt>Plugin / Skill</dt><dd>Kisi app ya AI tool mein jodne wala extra feature.</dd>
+      <dt>AI agent</dt><dd>Aisa AI jo sirf jawab nahi deta, balki khud se kaam bhi karta hai.</dd>
+      <dt>API key</dt><dd>Ek secret password jo AI jaisi service use karne deta hai. Ise kisi ko na dein.</dd>
+      <dt>Install</dt><dd>Kisi software ko apne computer ya phone mein set up karna.</dd>
+      <dt>Exploit / PoC</dt><dd>Security hole (vulnerability) dikhane wala code. Aam logon ke liye nahi.</dd>
+    </dl>
+  </details>
+
+  <footer class="foot" id="foot">
+    <h3 style="margin:0 0 6px">🛡 6 Safety Rules</h3>
+    <ol class="steps">
+      <li>Ye sirf information hai, advice nahi.</li>
+      <li>Kuch bhi install karne se pehle uska official page khud padhein.</li>
+      <li>Risk label sirf andaza hai, security audit nahi.</li>
+      <li>Unknown website se command copy karke na chalayein.</li>
+      <li>Apna password ya API key kisi ko na dein.</li>
+      <li>Software sirf official GitHub page se hi download karein.</li>
+    </ol>
+    <div><b>Disclaimer:</b> Kisi bhi repo ko install ya use karna aapka apna decision hai. Isse hone wale kisi bhi nuksaan ki responsibility is page ya iske owner ki nahi hai. Galti ho sakti hai.</div>
+    <div>Made by <b>Tushar Chhabra</b> &middot; <a href="https://www.linkedin.com/in/tusharchhabraofficial/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot; <a href="https://github.com/Tushar-Chabra" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    <div><b>© 2026 Tushar Chhabra.</b> All rights reserved. Is page ka content, design ya write-ups copy ya republish karne se pehle permission lein. Share karna hai to link share karein.</div>
+    <div>Ye page kisi company ya project se linked nahi hai. Isme koi tracking, analytics ya cookies nahi hain. Sirf fonts Google Fonts se load hote hain.</div>
+    <div>Sources: <a href="https://trendshift.io" target="_blank" rel="noopener noreferrer">Trendshift Daily</a> · <a href="https://trendshift.io/weekly" target="_blank" rel="noopener noreferrer">Weekly</a> · <a href="https://trendshift.io/monthly" target="_blank" rel="noopener noreferrer">Monthly</a> · <a href="https://trendshift.io/yearly" target="_blank" rel="noopener noreferrer">Yearly</a> · har repo ka GitHub page</div>
+  </footer>
+  <p class="toast" id="toast" role="status" hidden></p>
+  <div class="wm" aria-hidden="true"><span>Tushar Chhabra<small>GitHub Trends in Hinglish</small></span></div>
+</div>
+
+<script type="application/json" id="radar-data">{"R":{"NousResearch/hermes-agent":{"t":"agent","r":"med","type":"AI agent app (command-line + desktop)","kya":"Khud seekhne wala AI agent: experience se skills banata hai aur aapko yaad rakhta hai.","bani":"Agents har baar zero se shuru karte the.","need":"Memory wala personal agent chahiye tha.","job":"AI developers, power users, freelancers.","kahan":"Personal assistant, automation.","rn":"Memory mein aapka data rehta hai. Installer internet se script chalata hai.","plat":["Windows","Mac","Linux","Android (Termux)"],"lang":[["Python",71.3],["TypeScript",25.3],["Other",3.4]],"win":["PowerShell mein chalayein: `iex (irm https://hermes-agent.nousresearch.com/install.ps1)`","Setup mein model provider aur key daalein."],"and":["F-Droid se Termux install karein (Play Store wala purana hai).","Hermes docs ki Termux guide follow karein (signed APT repo, stable channel)."]},"affaan-m/ECC":{"t":"agent","r":"med","type":"Claude Code plugin (skills, memory, hooks)","kya":"Claude Code, Codex, Cursor ke liye performance system: skills, memory, security checks.","bani":"Default setup mein agent kam efficient hota hai.","need":"Bade projects mein agent ko structure chahiye.","job":"Developers, AI power users.","kahan":"Software development.","rn":"Hooks automatic chalte hain. README khud kehta hai: sirf official GitHub/npm se install karein.","plat":["Windows","Mac","Linux"],"lang":[["JavaScript",74.1],["Rust",12.6],["Python",10.7],["Other",2.6]],"win":["Node.js 18+, Git aur Claude Code install karein.","PowerShell mein: `npx ecc-universal@2.2.3 setup`","README ka 'Windows first-time walkthrough' follow karein."],"and":["Tablet par nahi."]},"anomalyco/opencode":{"t":"agent","r":"med","type":"Coding agent (terminal app)","kya":"Open-source coding agent jo terminal mein chalta hai, Claude Code jaisa.","bani":"Paid coding agents ka free, open alternative.","need":"Developers apna model khud chunna chahte hain.","job":"Developers.","kahan":"Software development.","rn":"Default 'build' agent ko poora access hota hai. Naye project mein 'plan' (read-only) mode se shuru karein.","plat":["Windows","Mac","Linux"],"lang":[["TypeScript",82.2],["MDX",15.2],["Other",2.6]],"win":["Node.js install karein.","Chalayein: `npm i -g @opencode/cli@latest`","Terminal mein `opencode` likhein."],"and":["Android par nahi."]},"anthropics/skills":{"t":"agent","r":"low","type":"Official skills ka collection","kya":"Anthropic ki official skills repo: documents, design, testing jaise kaam ke ready skills aur examples.","bani":"Skills ka standard aur seekhne ke examples dene ke liye.","need":"Log apni skills banana seekh rahe hain.","job":"Claude users, developers, skill banane wale.","kahan":"Jahan bhi Claude use hota hai.","rn":"Official source hai. Phir bhi install se pehle security scan zaroor karein.","plat":["Kahin bhi Claude chale"],"lang":[["Python",82.3],["HTML",8.5],["JavaScript",7.9],["Other",1.3]],"win":["Claude Code mein: `/plugin marketplace add anthropics/skills`","Phir jo skill chahiye uska plugin install karein (README mein list hai)."],"and":["Claude app mein jo skills pehle se on hain, wahi use karein.","Nayi skill add karni ho to computer se karein."]},"mattpocock/skills":{"t":"agent","r":"low","type":"Claude Code plugin (skills)","kya":"Ek jaane-maane developer ki roz ki agent skills: chhoti, badalne mein aasaan.","bani":"Bade frameworks control apne haath mein le lete hain; chhoti skills behtar.","need":"Achhi quality practical skills ki kami.","job":"Developers.","kahan":"Software teams.","rn":"Official plugin marketplace mein hai.","plat":["Windows","Mac","Linux"],"lang":[["Shell",72.8],["JavaScript",27.2]],"win":["Terminal mein: `claude plugin install mattpocock-skills@claude-plugins-official`","Har project mein ek baar: `/setup-matt-pocock-skills`"],"and":["Tablet par nahi."]},"morluto/rea":{"t":"sec","r":"high","type":"MCP server + tools (coding agent ke andar)","kya":"AI agent ko reverse engineer bana deti hai: apps, Android APK, programs ko andar se samajhna.","bani":"Reverse engineering bahut mushkil skill hai; agents ise aasaan bana rahe hain.","need":"Malware samajhne ya purane software ko samajhne mein mahine lagte the.","job":"Malware analysts, security researchers, Android app testers.","kahan":"Cyber security, antivirus companies, enterprise IT.","rn":"Dual-use tool: achhe aur galat dono kaam ho sakte hain. Agent unknown programs chalata hai, isliye alag machine ya VM mein hi chalayein.","plat":["Windows","Mac","Linux"],"lang":[["TypeScript",87.8],["JavaScript",7.0],["Other",5.2]],"win":["Node.js 22 ya naya install karein.","PowerShell mein chalayein: `npx rea-agents setup`","Agent mein Claude Code chunein, changes review karke approve karein.","Claude Code restart karein."],"and":["Tablet par nahi chalta."]},"msitarzewski/agency-agents":{"t":"agent","r":"low","type":"Agents ka collection + desktop installer app","kya":"Poori agency jaise specialist AI agents: frontend, marketing, sales, finance, design.","bani":"Har role ke liye ready agent chahiye the.","need":"Chhoti teams ko har expert nahi mil pata.","job":"Freelancers, agencies, startups.","kahan":"Digital agencies, marketing.","rn":"Mostly prompts. Installer app alag repo se aata hai.","plat":["Windows","Mac","Linux"],"lang":[["Shell",84.1],["Python",15.4],["Other",0.5]],"win":["agencyagents.app se Windows desktop app download karein.","App mein agents chunein aur 'Claude Code' mein install karein."],"and":["Tablet par nahi."]},"multica-ai/andrej-karpathy-skills":{"t":"agent","r":"low","type":"Ek CLAUDE.md file (instructions)","kya":"Ek CLAUDE.md file jo Claude Code ki aam coding galtiyan kam karti hai (Karpathy ke observations se).","bani":"Agents baar-baar same galtiyan karte hain.","need":"Simple rules se behtar code.","job":"Claude Code users.","kahan":"Software development.","rn":"Sirf text file hai, koi code nahi chalta.","plat":["Kahin bhi"],"lang":[["Markdown (sirf text)",100.0]],"win":["Claude Code mein: `/plugin marketplace add forrestchang/andrej-karpathy-skills`","Phir: `/plugin install andrej-karpathy-skills@karpathy-skills`","Ya sirf `CLAUDE.md` file apne project folder mein rakh dein."],"and":["GitHub par CLAUDE.md kholen aur text copy karein.","Claude app mein naya Project → instructions mein paste karein."]},"obra/superpowers":{"t":"agent","r":"low","type":"Claude Code plugin (skills ka set)","kya":"Coding agent ke liye poora kaam karne ka tareeka: planning, testing, review, skills ke roop mein.","bani":"Agents bina process ke random kaam karte the.","need":"Structured process se kaam reliable hota hai.","job":"Developers, tech leads.","kahan":"Software teams.","rn":"Anthropic ke official plugin marketplace mein hai.","plat":["Windows","Mac","Linux"],"lang":[["Shell",53.4],["JavaScript",38.4],["Python",4.7],["Other",3.5]],"win":["Claude Code mein likhein: `/plugin install superpowers@claude-plugins-official`"],"and":["Tablet par nahi."]},"openclaw/openclaw":{"t":"agent","r":"med","type":"Personal AI assistant (gateway + apps)","kya":"Aapke computer par chalne wala AI assistant jo WhatsApp, Telegram, Slack jaisi apps mein aapse baat karta hai aur kaam karta hai.","bani":"Chatbot sirf baat karte the, kaam nahi.","need":"Log chahte hain AI unki roz ki apps mein khud task kare.","job":"Freelancers, automation users, small business ops.","kahan":"Personal productivity, team automation.","rn":"Agent ko system aur messaging apps par bada access milta hai. Permissions limit rakhein.","plat":["Windows","Mac","Linux","Android","iOS"],"lang":[["TypeScript",89.9],["Swift",4.3],["Other",5.8]],"win":["PowerShell mein chalayein: `iwr -useb https://openclaw.ai/install.ps1 | iex`","Jo onboarding wizard khule, use poora karein.","`openclaw dashboard` se control page kholen."],"and":["Pehle computer par Gateway set karein.","Phir Android app install karke Gateway se jodein (docs.openclaw.ai)."]},"vercel-labs/agent-desktop":{"t":"agent","r":"med","type":"CLI tool (AI agent ko desktop apps chalane ke liye)","kya":"AI agent ko aapke computer ke apps (jaise Notes, Excel, browser) dekhne aur click/type karne ki power deta hai. Screenshot ki jagah app ka 'structure' (accessibility tree) padhta hai, isliye click zyada sahi lagta hai.","bani":"Agents ko screen ke pixel pehchaanne mein galti hoti thi, to wo galat button press kar dete the. Vercel Labs ne ek aisa tool banaya jo har button/field ko ek fixed naam (ref) deta hai taaki agent seedha usi par kaam kare.","need":"Jo kaam sirf desktop app mein hota hai aur jiska API nahi hota, uske liye agent ko haath chahiye. Jaise ek accountant ko roz purane desktop software se report nikalni hoti hai, agent wo clicks khud kar sakta hai.","job":"Automation engineers, QA testers, AI agent builders, freelancers jo repetitive desktop kaam automate karte hain.","kahan":"Software testing, back-office automation, finance/accounting teams, IT support.","rn":"Agent aapke poore desktop ko padh aur chala sakta hai, to snapshots/clipboard/screenshot mein private cheezein aa sakti hain (README khud warn karta hai). Pehle sirf test machine ya kam important apps par chalayein. Open-source (Apache-2.0), Vercel Labs ka official project.","plat":["Windows","Mac","Linux"],"lang":[["Rust",73.3],["Shell",13.1],["Python",5.9],["Other",7.7]],"win":["Node.js chahiye. Terminal mein: `npm install -g agent-desktop`","Check karein: `agent-desktop version`","Agent ko batayein ki ye CLI use kar sakta hai; pehle chhote app (jaise Notepad) par test karein."],"and":["Android par nahi."]},"deepseek-ai/dsh-superagent-prototype":{"t":"agent","r":"med","type":"Coding agent (ek GitHub repo ke liye, research prototype)","kya":"Ek aisa AI agent jo ek GitHub repo ki monitor karta hai. Jab koi allowed person kaam maangta hai, ye apna alag work item banata hai, khud kaam karta hai aur jawab mein pull request jaisa result deta hai. Ek web panel dikhata hai ki kahan person ki zaroorat hai.","bani":"Makers ki team roz ke development mein dekh rahi thi ki agent poori team ka dhyan bhi waste kar sakta hai. Isliye unhone aisa agent banaya jo tabhi bole jab kisi ko sach mein action lena ho. README saaf kehta hai ki ye sirf research prototype hai aur official DeepSeek product nahi.","need":"Bade projects mein log baar-baar chhote kaam (bug fix, review) ke liye interrupt hote hain. Ye agent wo kaam apne aap utha leta hai. Jaise ek chhoti software team ka lead chahta hai ki kaam bas pull request ban kar aa jaye, bina har baar poochhe.","job":"Software developers, DevOps / team leads, AI-agent researchers.","kahan":"Software companies aur startups jahan ek GitHub repo par kai log kaam karte hain.","rn":"Official DeepSeek product nahi, README khud kehta hai ki research code hai aur isme bugs ho sakte hain. Setup mein GitHub aur chat accounts ki access deni padti hai, to galat config se agent aapke repo mein changes kar sakta hai. Pehle test repo par try karein.","plat":["Windows","Mac","Linux"],"lang":[["TypeScript",98.1],["CSS",1.9]],"win":["README ke according setup khud agent karwata hai: apne coding agent ko kahein `Read SETUP.md in this repository and set up dsh-superagent with me.`","Developers ke liye `pnpm check` se typecheck, tests aur build chalte hain (Node.js aur pnpm chahiye)."],"and":["Android par nahi."]},"pingdotgg/t3code":{"t":"agent","r":"med","type":"Agent control app (desktop, web aur mobile app)","kya":"Ek app jisse aap apne computer par chal rahe AI coding agents (Claude Code, Codex, Cursor, OpenCode waghera) ko ek hi jagah se control kar sakte hain, phone se bhi. Aapki apni subscriptions hi use hoti hain.","bani":"Makers ko agents ke saath kaam karne ka behtar tareeka chahiye tha jo tez ho, door se bhi chale aur poori tarah open ho. Jo apps mile (Codex app, Conductor waghera) wo unke standard par fit nahi hue, to unhone ye banayi.","need":"Agar aap kai agents use karte hain to har ek ka alag terminal handle karna thaka deta hai. Jaise ek freelancer computer ghar chhod kar bhi phone se dekh sakta hai ki agent ka kaam kahan tak pahuncha.","job":"Developers, freelancers jo Claude Code / Codex use karte hain, AI automation seekhne wale.","kahan":"Software development, agencies, freelance coding.","rn":"Install ke liye `curl ... | sh` aur `irm ... | iex` jaise internet se seedha script chalane wale commands hain; unhe chalane se pehle script padhna behtar hai. App aapke agents aur computer ko control karti hai, isliye sirf official source se install karein.","plat":["Windows","Mac","Linux","Android"],"lang":[["TypeScript",95.0],["C",2.3],["MDX",1.8],["Other",0.9]],"win":["Pehle koi ek agent (jaise Claude Code) install karke login karein.","PowerShell mein: `irm https://t3.codes/install.ps1 | iex` phir `t3` chalayein.","Ya: `winget install T3Tools.T3Code`","Bina install try karne ke liye: `npx t3@latest`"],"and":["Google Play par T3 Code app hai (README ka link); wo aapke computer wale server se judti hai."]},"patchy631/ai-engineering-hub":{"t":"agent","r":"low","type":"Seekhne ka collection (93+ AI projects ke tutorials aur code)","kya":"AI engineering seekhne ke liye 93 se zyada chhote-bade projects ka collection: LLM, RAG (apne documents se jawab dena) aur AI agents ke tutorials, beginner se advanced tak.","bani":"AI itni tezi se badal rahi hai ki sirf padhne se kaam nahi chalta. Makers ne ek jagah hands-on projects collect kiye taaki log khud banakar seekhein.","need":"Naye logon ko pata nahi hota kahan se shuru karein. Yahan difficulty ke hisab se list hai. Jaise koi student pehle OCR app banata hai, phir agent aur fir fine-tuning tak jata hai.","job":"AI / ML students, junior developers, automation seekhne wale freelancers.","kahan":"Education, AI training, startups ki prototype building.","rn":"Seekhne ka repo hai, har project ki apni requirements hoti hain. Kuch projects ko API keys (paid) ya heavy models chahiye; keys kabhi code mein na likhein.","plat":["Windows","Mac","Linux"],"lang":[["Python",50.8],["TypeScript",46.0],["CSS",1.3],["Other",1.9]],"win":["Repo clone karein aur jo project chahiye uske folder ka README kholein.","Zyadatar Python projects ke liye `pip install -r requirements.txt`, phir README ke hisab se chalayein."],"and":["Android par nahi."]},"storytold/craft-anything":{"t":"agent","r":"high","type":"Desktop engine (kisi bhi website/app/game ko samajhkar apna version banwane ke liye)","kya":"Aap ek website, app ya game ka naam batate hain aur bolte hain \"mujhe iska apna version chahiye\". Tool asli inspection tools se dekhta hai ki wo cheez andar se kaise bani hai, phir ek coding agent se naya project banwata hai aur dono ko side by side compare karke improve karta hai.","bani":"Kisi cheez ko dobara banane ke liye pehle samajhna padta hai ki wo kaise chalti hai, aur ye kaam bahut lamba hota hai. Is team ne ye \"dekho, samjho, banao, milao\" wala poora raasta ek hi app mein daal diya, jise Rust (ek tez programming language) mein likha gaya hai.","need":"Naya software banane wale ko aksar purani cheez jaisa kuch chahiye hota hai. Jaise kisi dukaan ko apni website ka naya, saaf-suthra version chahiye jo purane jaisa hi chale. Tool us purani site ko check karke naya project tayyar karwa deta hai.","job":"Software developers, web agencies, game prototype banane wale, AI agent builders.","kahan":"Web development, game studios, software migration (purane system se naye par jana), seekhne-sikhane ka kaam.","rn":"Reverse engineering (kisi software ko andar se kholkar samajhna) wala tool hai, isliye High risk mana gaya. Kisi aur ki website, app ya game ki copy banana copyright, license aur terms ka issue kar sakta hai; sirf apni ya open-source cheezon par use karein. Abhi early alpha hai. README ke according installers signed hain aur SHA256 checksum list diya gaya hai.","plat":["Windows","Mac","Linux","FreeBSD","Web app"],"lang":[["Rust",98.7],["Shell",1.0],["Other",0.3]],"win":["Releases page se apne PC ka installer lein: Windows x64 ke liye `craft-anything-\u003cver>-windows-x64.msi` (ya portable `.zip`).","Download ke baad `SHA256SUMS.txt` se checksum milayein, phir installer chalayein.","Pehli baar sirf apne banaye ya open-source project par try karein."],"and":["Android par nahi."]},"modelflare-ai/AnyModelBot":{"t":"agent","r":"med","type":"Desktop app (apne computer par chalne wala personal AI bot)","kya":"Ek AI bot jo aapke apne computer par chalta hai. Aap isse app mein ya WeChat, Feishu, Telegram, Slack, Discord par baat kar sakte hain; ye files padh-likh sakta hai, commands chala sakta hai aur desktop bhi chala sakta hai, par apne folder se bahar jaane se pehle aapse poochta hai.","bani":"Aaj ke AI helpers aksar kisi ek company ki subscription se bandhe hote hain. Is team ne ek open-source (MIT) bot banaya jo kisi bhi model ke saath chale aur jitna use ho utna hi paisa lage.","need":"Roz ke ke kaam jaise folder saaf karna ya roz ka report banana chhote-chhote steps mein bante hain. Jaise ek shop owner phone par Telegram se bole \"is mahine ke bills ek folder mein daal do\" aur bot computer par wo kaam kar de.","job":"AI automation freelancers, small-business owners, operations aur support teams, developers.","kahan":"Back-office kaam, customer support, personal productivity, chhoti companies ki automation.","rn":"Bot files padh-likh sakta hai aur commands chala sakta hai, isliye pehle ek empty test folder mein try karein aur har \"poochne wali\" screen ko dhyan se padhein. Models ek alag paid account (Modelflare) se aate hain, jahan token ke hisab se paisa kata jata hai. Chat apps jodne par bot ko un chats ki access mil jati hai.","plat":["Windows","Mac","Linux"],"lang":[["TypeScript",62.2],["JavaScript",20.3],["CSS",11.9],["Other",5.6]],"win":["Releases page se Windows ka installer download karein aur chalayein.","App kholkar Modelflare account se sign-in karein aur model chunein.","Pehle ek empty test folder mein chhota kaam dekar check karein."],"and":["Android par nahi."]},"caru-ini/stack-diagram":{"t":"agent","r":"low","type":"Agent skill (ek line se architecture diagram banane ke liye)","kya":"Aap ek line mein batate hain ki aapka software kin cheezon se bana hai (jaise website, database, login, payment), aur ye skill sahi company-logos ke saath ek saaf architecture diagram bana deta hai. Light aur dark dono theme mein.","bani":"Software ka diagram banana aur logos dhoondhna bahut time leta hai. Is developer ne ye kaam ek skill mein daal diya jo agent ko sikha deti hai ki diagram kaise banate hain.","need":"Client ko samjhana ho ki aapka project kaise bana hai to ek achha diagram bahut kaam aata hai. Jaise ek freelancer client ko batana chahta hai \"website Vercel par, data Neon mein, payment Stripe se\" aur ek hi line likhkar tasveer le leta hai.","job":"Developers, solution architects, technical writers, freelancers jo client ko proposals dete hain.","kahan":"Software documentation, client presentations, pre-sales proposals, teaching.","rn":"Diagram sirf ek HTML file hai, aur logo official sources se aate hain. Install karne par agent ko ek skill milti hai, to pehle `SKILL.md` ek baar padh lein ki wo kya karti hai. Koi bada risk nahi dikha.","plat":["Windows","Mac","Linux","Web app"],"lang":[["Python",55.5],["HTML",44.5]],"win":["Node.js chahiye. Terminal mein: `npx skills add caru-ini/stack-diagram`","Phir apne agent mein likhein, jaise: \"Diagram our stack: Next.js on Vercel, Postgres on Neon\"."],"and":["Android par nahi."]},"l0ng-ai/openidea":{"t":"infra","r":"low","type":"Code editor / IDE (Rust mein naya banaya hua)","kya":"Ek code likhne ka app (IDE) jo IntelliJ IDEA jaisa dikhta aur chalta hai, par andar se Rust mein bana hai. Editor, debugger, Git, terminal, database aur HTTP tools, 60 se zyada languages ke liye.","bani":"Bade IDE shuru hone mein der lagate hain aur bahut memory khate hain. Is team ne wohi jaani-pehcloss keymap aur windows rakhkar naya tez engine banaya.","need":"Purane computer par heavy editor hang ho jata hai. Jaise ek student ke 8 GB wale purane computer par bada IDE slow chalta hai to halka IDE use karna aasaan banata hai.","job":"Software developers, students, backend aur database engineers.","kahan":"Software development, coding bootcamps, startups.","rn":"README ke benchmark (shuru hone ka time, memory) unhi ke apne measurements hain aur khud maante hain ki dono tools ka kaam ek jaisa nahi. Naya project hai, to kaam ke bade project se pehle chhote project par try karein. Apache 2.0 license. JetBrains se koi connection nahi.","plat":["Windows","Mac","Linux"],"lang":[["TypeScript",60.0],["Rust",36.7],["Other",3.3]],"win":["Releases page se Windows ka installer download karein aur chalayein.","Apna chhota project kholkar editor, search aur Git try karein."],"and":["Android par nahi."]},"hoochanlon/fq-book":{"t":"life","r":"med","type":"Book (online book, Chinese mein)","kya":"Chinese language ki ek online book jo batati hai ki internet par jaankari kaise dhoondhi jaye aur proxy, tunnel aur VPN jaise tools kaise kaam karte hain, saath mein unka basic setup aur kuch network ki baaton ka principle.","bani":"Kuch jagah internet par kai sites band hoti hain aur logon ko samajh nahi aata ki kya karein. Author ne ek jagah guide likhi jisme tools aur unke peeche ka network ka theory diya gaya hai.","need":"Network kaise chalta hai ye jaan-na kaam ka hai. Jaise koi student samajhna chahta hai ki VPN data ko kaise hide karta hai aur ek proxy beech mein kya karta hai.","job":"Network ya IT students, security researchers, technical writers, jo Chinese padh sakte hain.","kahan":"Education, IT training, network samajhne ka kaam.","rn":"Book ki kuch jagah free proxy/VPN ki list ya links hain; free servers ka operator aapka traffic dekh sakta hai, to un par trust na karein. Kuch countries mein inhe chalana law ke against ho sakta hai. Aapke country ke rules dekh lein. Chinese mein hai, English version nahi dikha. Is entry ke liye README detail mein nahi padhi gayi.","plat":["Web app"],"lang":[["HTML",47.9],["CSS",27.3],["Shell",24.8]],"win":["Install ki zaroorat nahi; README mein diya hua online link browser mein khol kar padhein."],"and":["Android par bhi browser mein padh sakte hain."]},"patch-gg/pixelfx":{"t":"media","r":"low","type":"Code library + gallery (pixel art effects ka collection)","kya":"244 pixel art effects aur animations ka collection (aag, blast, magic, weather, UI waghera), har ek chhota sa code. Browser mein live dekh sakte hain, rang badal sakte hain, browser game mein daal sakte hain ya kisi bhi game engine ke liye sprite sheet nikal sakte hain.","bani":"Game ke effects banana bahut mehnat ka kaam hai. Is team ne ek bada, tayyar set banaya aur ek agent skill bhi di jo naye effect banane mein madad karti hai.","need":"Chhoti game banane wale ko har dhamake ya aag ke liye artist nahi mil sakta. Jaise ek akela indie developer apni game mein fire aur magic effects bina artist ke seedha laga leta hai.","job":"Indie game developers, pixel artists, game jam participants, motion designers.","kahan":"Game development, mobile games, web games, animation studios.","rn":"Seedha code aur images hain, koi bada risk nahi. Effects ka idea ek aur creator ke blog se inspired hai aur README ne iska credit diya hai. Apne project mein use karne se pehle license padh lein.","plat":["Windows","Mac","Linux","Web app"],"lang":[["JavaScript",99.5],["Other",0.5]],"win":["Gallery dekhein: https://patch-gg.github.io/pixelfx/","Apne project mein: `npm i github:patch-gg/pixelfx` (Node.js chahiye).","Sprite sheet ke liye: `node tools/render.mjs ice/frost-nova --sheet`"],"and":["Android par gallery browser mein dekhi ja sakti hai."]},"haydenschmitty/floorplan":{"t":"agent","r":"low","type":"Coding agent plugin (code ka interactive diagram)","kya":"Aapke coding agent ke saath chalne wala plugin jo poora code padhkar ek interactive map banata hai. Har hissa, file aur web request ko saaf language mein naam milta hai aur har jod dikhaya jata hai.","bani":"AI ki madad se bana software chalta to hai, par aksar kisi ko pata nahi hota ki andar kya kaise judta hai. Developer ne ye plugin banaya taaki koi bhi diagram mein dekh sake ki checkout jaisa kaam peeche kaise hota hai.","need":"Jab naya aadmi kisi purane project par aata hai to usse samajhne mein hafte lag jate hain. Jaise ek nayi hire hui developer pehle din hi map khol kar dekh le ki payment page kin cheezon se judta hai.","job":"Developers, tech leads, freelancers jo purane client projects handle karte hain, QA engineers.","kahan":"Software maintenance, onboarding, documentation, code review.","rn":"Plugin aapke code ko agent se padhwata hai, to private code wale project par apne agent ki privacy settings dekh lein. README ke according alag API key nahi chahiye. MIT license, koi dependency nahi.","plat":["Windows","Mac","Linux"],"lang":[["JavaScript",76.7],["HTML",22.2],["Other",1.1]],"win":["Node.js 18+ chahiye.","Terminal mein: `claude plugin marketplace add haydenschmitty/floorplan` phir `claude plugin install floorplan@floorplan`","Naya session kholkar agent se kahein: \"Make me a floorplan of this app.\""],"and":["Android par nahi."]},"anomalyco/hex":{"t":"life","r":"low","type":"Desktop app (voice se likhwane wala dictation tool)","kya":"Shortcut key press karke rakhein, bolein, chhod dein aur jo bola wo us app mein likh jata hai jisme aap hain. Voice ko samajhne ka kaam aapke apne computer par hota hai.","bani":"Bolkar likhwane wale tools aksar apni voice cloud par bhejte hain. Is team ne ye kaam local rakha taaki privacy bani rahe.","need":"Mail ya notes likhna typing se slow hota hai. Jaise ek writer ya doctor apne notes bolkar kisi bhi app mein seedha daal sakta hai.","job":"Writers, students, support teams, developers jo bolkar notes likhna chahte hain.","kahan":"Content writing, medical ya legal notes, customer support, accessibility.","rn":"Pehli baar chalane par speech model download hota hai, uske baad README ke according kuch bahar nahi jata. Mic aur accessibility permissions maangega. Download links project ke apne server (anoma.ly) ke hain, to sirf README wale link se lein. Dev build khud update hoti rehti hai, Stable tak rahein.","plat":["Windows","Mac (Apple Silicon)","Linux"],"lang":[["Rust",85.2],["Swift",4.8],["JavaScript",3.4],["Other",6.6]],"win":["README ke Downloads table se Windows x64 ya ARM64 ka Stable installer lein aur chalayein.","Shortcut press karke bolein; pehli baar speech model download hone dein."],"and":["Android par nahi."]},"JiaFeiMiao-K-Cat/DiscImageStudio":{"t":"media","r":"low","type":"Desktop app (CD/DVD/Blu-ray disc ke upar tasveer dikhane ke liye)","kya":"Aap ek photo dete hain aur ye tool aisa disc data banata hai ki jab disc burn hoga to uski chamakti surface par wo tasveer aankhon se dikhegi. Windows par design aur burning dono, Linux/Mac par abhi sirf experimental command-line version.","bani":"Normal disc par sirf label print hota hai, par disc ke andar ke chhote chhote dots (data pits) ko khud sahi tarah se rakh kar tasveer banai ja sakti hai. Is developer ne ye mushkil calculation ek app mein daal diya jo C# (ek programming language) mein likhi gayi hai.","need":"Kuch log CD, DVD ya Blu-ray ko collector item ya gift banana chahte hain jisme disc khud ek art piece lage. Jaise koi band apni album ke CD par apna logo bina sticker ke chamakta hua dikhana chahta hai.","job":"Hobbyists, music/film collectors, art-project makers, disc-duplication shops.","kahan":"Gifts aur art projects, album ya film ki special edition, disc archiving ke hobby wale, teaching (disc kaise kaam karti hai).","rn":"Live burning abhi experimental hai, README khud kehta hai ki sirf kharab hone wali test discs use karein. Windows ka seedha `.exe` Releases se aata hai, isliye sirf official Releases page se hi download karein. README zyadatar Chinese mein hai, English version bhi hai. Koi bada risk nahi dikha.","plat":["Windows","Mac","Linux"],"lang":[["C#",97.3],["Python",1.4],["Shell",1.3]],"win":["GitHub Releases se `win-x64.exe` download karke chalayein (isme .NET pehle se saath hai).","Naya project banayein (CD/DVD/Blu-ray chunein), photo import karein, phir Export page par ISO banayein ya sirf test disc par burn karein."],"and":["Android par nahi."]},"RikiyaT/lm_understand-logs":{"t":"agent","r":"low","type":"Research logs (AI model ke experiments ka poora record)","kya":"Ek blog post ke saare experiments ke poore logs: AI model ko kya bheja gaya, usne kya jawab diya, kaun sa code chalaya aur har number kahan se aaya. Yaani aap khud check kar sakte hain ki claim sach hai ya nahi.","bani":"Research mein aksar sirf result publish hota hai, proof nahi. Is author ne har experiment ka poora hisab folder-wise rakh diya taaki koi bhi dobara dekh sake.","need":"Jo log samajhna chahte hain ki AI model neural network ke andar ke numbers (weights) ko samajh aur likh sakta hai ya nahi, unhe asli proof chahiye. Jaise ek student apne project ke liye dekhna chahta hai ki AI ne kaise sochkar ek chhota game-playing network likha.","job":"AI researchers, students, ML engineers, tech bloggers.","kahan":"AI research, university projects, AI safety aur evaluation ka kaam, seekhne ke liye real example.","rn":"Ye chalane wala app nahi, sirf logs aur chhote scripts hain. Koi installer nahi hai, isliye risk bahut kam. Koi script chalane se pehle khud padh lein.","plat":["Windows","Mac","Linux","Web app"],"lang":[["Python",99.8],["Shell",0.2]],"win":["Install ki zaroorat nahi: GitHub par `README.md` kholein aur table se experiment folder (jaise `exp1_which_game`) chunein.","Har folder ka apna README batata hai ki kaun si file kaun se number ki hai."],"and":["Phone par browser mein GitHub kholkar padh sakte hain."]},"D4Vinci/Scrapling":{"t":"agent","r":"med","type":"Python library (website se data nikalne / web scraping ke liye)","kya":"Python mein ek library jo websites se data nikalne ka kaam asaan banati hai: ek seedhi request se lekar poori site crawl karne tak. Website badal jaye to bhi element dhoondh leti hai, aur AI agent ke liye skill/MCP bhi deti hai.","bani":"Scraping ke code aksar tab toot jate hain jab website thoda sa badalti hai. Is developer ne ek aisi library banayi jo ye badlav handle kar sake aur ek hi jagah sab fetchers de.","need":"Business ko online data chahiye hota hai, jaise doosri dukanon ke prices ya jobs ki list. Jaise ek chhota seller roz competitor ke 50 products ke daam apni sheet mein khud utarwa leta hai.","job":"Data analysts, Python developers, growth/marketing teams, AI automation freelancers.","kahan":"E-commerce price tracking, market research, news aur jobs monitoring, AI/RAG ke liye data collect karna.","rn":"Isme browser aur anti-bot (bot block karne wale system) ko bypass karne wale fetchers hain, isliye kisi site ke terms of service ya robots.txt ke khilaf use karna galat aur kabhi kabhi illegal ho sakta hai. Sirf allowed ya apni sites par use karein, rate limit ka dhyan rakhein. Install `pip` se aata hai (official PyPI).","plat":["Windows","Mac","Linux"],"lang":[["Python",99.5],["Other",0.5]],"win":["Python 3.10+ chahiye. Terminal mein: `pip install scrapling`","Browser wale fetchers ke liye: `pip install \"scrapling[fetchers]\"` aur phir `scrapling install`.","Pehle chhoti allowed site (jaise quotes.toscrape.com) par README ka example chalayein."],"and":["Android par Termux mein Python se chal sakta hai, par browser fetchers mushkil honge."]},"rerun-build/rerun":{"t":"agent","r":"med","type":"AI coworkers app (self-host kar sakte hain, AGPL license)","kya":"Aap apni team ke liye AI coworkers 'hire' karte hain. Ye aapke tools (Gmail, Calendar, Sheets, Slack, Stripe, Shopify, GitHub waghera) chalate hain, schedule par kaam karte hain aur zaroori kaam se pehle aapse puchte hain.","bani":"AI sirf chat mein jawab deta hai, par asli kaam to email, sheet aur CRM mein hota hai. Is team ne ek app banayi jahan AI ko role, memory aur schedule milta hai taaki wo repeat kaam khud kare.","need":"Chhoti teams ke paas roz ke repeat kaam bahut hote hain. Jaise ek online store owner chahta hai ki har subah ek AI coworker naye orders dekhe, Sheet update kare aur problem ho to usse pooche.","job":"Founders, operations teams, AI automation freelancers, agencies.","kahan":"Sales ops, customer support, e-commerce, marketing reports, back-office kaam.","rn":"Is app ko aapke email, drive, payment aur shop tools ka access dena padta hai, isliye galat permission ya galat instruction se nuksan ho sakta hai. Pehle kam permission aur test account se shuru karein. Self-host mein Docker, Node.js 22, Supabase project aur model API key lagti hain, keys `.env` mein rehti hain. Kuch premium features sirf cloud plan mein hain.","plat":["Windows","Mac","Linux","Web app"],"lang":[["TypeScript",97.2],["MDX",1.7],["Other",1.1]],"win":["Docker, Node.js 22 aur ek (free) Supabase project taiyar rakhein.","`git clone https://github.com/rerun-build/rerun.git` phir `cd rerun` aur `cp .env.example .env` karke Supabase URL/keys aur model key bharein.","`node scripts/self-host-check.mjs`, phir `npx supabase db push --include-seed`, phir `docker compose up -d --build` aur `http://localhost:3000` kholein."],"and":["Browser se web app kholkar use kar sakte hain jab server chal raha ho."]},"Verlintas/NOIR":{"t":"sec","r":"high","type":"Desktop audit tool (Android phone ki permissions aur data-leak check)","kya":"Computer par chalne wala tool jo USB se jude Android phone ke apps, permissions aur network addresses dekhkar ek report banata hai ki kaun sa app kya data bhej sakta hai.","bani":"Phone ke andar ke apps kya kya mangte aur bhejte hain ye aam user ko dikhta nahi. Is developer ne isko ek repeatable report mein badal diya.","need":"Jo log apne phone ki privacy check karna chahte hain unhe saaf list chahiye. Jaise koi apna purana phone bechne se pehle dekhna chahta hai ki kaun se apps location ya contacts tak pahunch rakhte hain.","job":"Security researchers, privacy-conscious users, Android developers, IT auditors.","kahan":"Personal privacy audit, app security review, authorised security research.","rn":"Ye security aur reverse-engineering (app ko khol kar dekhna) wala tool hai, isliye High risk label. README ke hisaab se ye sirf apne device aur authorised research ke liye hai. Doosre ke phone par bina permission use na karein. Pehli baar chalane par ye adb/jadx tools download karne ka puchta hai.","plat":["Windows","Mac","Linux"],"lang":[["Kotlin",66.2],["HTML",17.3],["JavaScript",8.8],["Other",7.7]],"win":["GitHub Releases se apne system ka portable package download karein, extract karein aur launcher chalayein.","Phone ko USB debugging on karke jodein; sirf apna phone use karein."],"and":["Android par nahi; ye computer se phone ko check karta hai."]},"datawhalechina/agentic-rl-lab":{"t":"agent","r":"low","type":"Tutorial + experiments (AI agents ko reinforcement learning se sikhana)","kya":"Ye ek seekhne ka repo hai jahan AI model/agent ko reward-penalty (reinforcement learning, RL) se behtar banane ke naye methods (jaise GRPO, DAPO, Search-R1) pehle samjhaye gaye hain aur phir chhote chalne wale code se dobara banaye gaye hain.","bani":"Agent RL ke research papers padhna aur unhe chalana mushkil hota hai, aur aam training setup ko 4-8 GPU chahiye hote hain. Is team ne kam compute mein chalne wale simple experiments aur likhit notes banaye.","need":"AI seekhne wale ko sirf theory nahi, chala kar dekhne wala code chahiye. Jaise ek student chhoti machine par dekhta hai ki reward badalne se agent ka jawab kaise improve karta hai.","job":"ML students, AI researchers, LLM engineers.","kahan":"University courses, AI research labs, LLM training ke experiments.","rn":"Ye seekhne ka code hai, koi installer ya bada risk nahi. README zyadatar Chinese mein hai (English version bhi hai). Kuch experiments remote training service (PyTRIO) aur tracking service (SwanLab) use karte hain, jinke account ya paid use ki zaroorat ho sakti hai.","plat":["Windows","Mac","Linux","Web app"],"lang":[["Python",100.0]],"win":["Pehle online manual padhein: `https://datawhalechina.github.io/agentic-rl-lab/en/`","Code chalane ke liye Python 3.13+ aur `uv` chahiye: `git clone https://github.com/datawhalechina/agentic-rl-lab.git` phir `uv sync`, phir `experiments` folder ke README follow karein."],"and":["Android par nahi; computer par chalta hai."]}},"L":{"daily":{"lbl":"Daily","rows":[["storytold/craft-anything","609"],["deepseek-ai/dsh-superagent-prototype","623"],["JiaFeiMiao-K-Cat/DiscImageStudio","288"],["vercel-labs/agent-desktop","511"],["RikiyaT/lm_understand-logs","97"],["D4Vinci/Scrapling","231"],["rerun-build/rerun","74"],["pingdotgg/t3code","342"],["datawhalechina/agentic-rl-lab","68"],["modelflare-ai/AnyModelBot","139"]]},"weekly":{"lbl":"Weekly","rows":[["storytold/craft-anything","3.6k"],["deepseek-ai/dsh-superagent-prototype","6.4k"],["pingdotgg/t3code","4.3k"],["JiaFeiMiao-K-Cat/DiscImageStudio","1.9k"],["vercel-labs/agent-desktop","3.3k"],["morluto/rea","4.6k"],["Verlintas/NOIR","1.1k"],["modelflare-ai/AnyModelBot","1k"],["caru-ini/stack-diagram","88"]]},"monthly":{"lbl":"Monthly","rows":[["deepseek-ai/dsh-superagent-prototype","6.2k"],["vercel-labs/agent-desktop","2.8k"],["hoochanlon/fq-book","1.2k"],["l0ng-ai/openidea","1.9k"],["morluto/rea","3.7k"],["pingdotgg/t3code","2.8k"],["patchy631/ai-engineering-hub","1.3k"],["patch-gg/pixelfx","1.3k"],["haydenschmitty/floorplan","1k"],["anomalyco/hex","1.4k"]]},"yearly":{"lbl":"Yearly","rows":[["openclaw/openclaw","398.2k"],["obra/superpowers","298.6k"],["NousResearch/hermes-agent","260.2k"],["morluto/rea","415.7k"],["affaan-m/ECC","295.5k"],["mattpocock/skills","306.4k"],["anomalyco/opencode","181k"],["multica-ai/andrej-karpathy-skills","228.6k"],["msitarzewski/agency-agents","165.3k"],["anthropics/skills","156.2k"]]}},"TAKE":["\u003cb>AI ab khud kaam karne laga hai:\u003c/b> [[storytold/craft-anything|craft-anything]] daily #1 hai, aur [[deepseek-ai/dsh-superagent-prototype|dsh-superagent]] daily, weekly aur monthly teeno mein upar hai. [[vercel-labs/agent-desktop|agent-desktop]], [[rerun-build/rerun|rerun]] aur [[modelflare-ai/AnyModelBot|AnyModelBot]] bhi AI ko computer ya apps chalana sikhate hain. Kyun: log ab sirf chat nahi, asli kaam karwana chahte hain.","\u003cb>Jo kai lists mein hai, wahi asli trend:\u003c/b> [[storytold/craft-anything|craft-anything]], [[deepseek-ai/dsh-superagent-prototype|dsh-superagent]], [[pingdotgg/t3code|t3code]], [[vercel-labs/agent-desktop|agent-desktop]], [[modelflare-ai/AnyModelBot|AnyModelBot]] aur [[JiaFeiMiao-K-Cat/DiscImageStudio|DiscImageStudio]] daily aur weekly dono mein hain. Kyun dekhein: ek din ka hype jaldi khatam hota hai, par lists mein tikna asli demand dikhata hai.","\u003cb>Aaj kya naya aaya:\u003c/b> [[JiaFeiMiao-K-Cat/DiscImageStudio|DiscImageStudio]], [[RikiyaT/lm_understand-logs|lm_understand-logs]], [[D4Vinci/Scrapling|Scrapling]], [[rerun-build/rerun|rerun]] aur [[datawhalechina/agentic-rl-lab|agentic-rl-lab]] daily mein new entry hain, aur weekly mein [[Verlintas/NOIR|NOIR]] naya hai. Pichhli list ke kai purane naam (jaise ruyiJS aur Mika) bahar ho gaye. Kyun: nayi repos se pata chalta hai ki aaj log kaunsa kaam sabse zyada karwana chahte hain.","\u003cb>Risky ya grey-zone repos:\u003c/b> [[storytold/craft-anything|craft-anything]] (kisi ki app ya site ka version banwana) aur [[Verlintas/NOIR|NOIR]] (reverse engineering wala security tool) High risk hain, aur [[morluto/rea|rea]] bhi software ko andar se kholne wala tool hai. [[D4Vinci/Scrapling|Scrapling]] bot-check ko bypass kar sakta hai, isliye sirf allowed sites par use karein. [[rerun-build/rerun|rerun]] ko email aur payment tools ka access dena padta hai. Yaad rakhein: trending hona safe hona nahi hota.","\u003cb>Learner ke liye aaj ka kaam:\u003c/b> [[D4Vinci/Scrapling|Scrapling]] se ek allowed site ka data nikalna try karein, aur [[caru-ini/stack-diagram|stack-diagram]] jaisi chhoti skill install karke uski SKILL.md padhein. Kyun: AI automation seekhne ka sabse tez raasta hai pehle ek chhota repeat kaam khud banana, phir [[rerun-build/rerun|rerun]] jaise bade setups aasani se samajh aate hain."],"DATA_DATE":"3 Nov 2026","DATA_ISO":"2026-11-03"}</script>
+<script>
+const THEMES={
+  agent:{n:"AI assistants & tools",c:"--c1"},
+  infra:{n:"AI engine & hardware",c:"--c2"},
+  media:{n:"Creative & media tools",c:"--c3"},
+  device:{n:"TV, gaming & devices",c:"--c4"},
+  sec:{n:"Security tools",c:"--c5"},
+  life:{n:"Productivity & learning",c:"--c6"}
+};
+const LC={TypeScript:"#3178c6",JavaScript:"#d9a520",Python:"#2a9d8f",Rust:"#d9773a",Go:"#1fa6c9",C:"#7d8590","C++":"#d6457a","C#":"#7b4fd0",Shell:"#5fa046",Java:"#b07219",Kotlin:"#a97bff","Objective-C":"#4a6fa5",Swift:"#f05138",HTML:"#e34c26",CSS:"#8e6fd8",CUDA:"#3a9d23",MDX:"#e8a33d",Assembly:"#8c6d3f","Markdown (sirf text)":"#9aa0a6",Other:"#b9b4ab"};
+/* verdict keys: yes / part / no */
+let R={},L={};
+/* DATA DATE + lists + R + TAKE: #radar-data JSON block se load hota hai (loadDataset). */
+let DATA_DATE="27 Oct 2026",DATA_ISO="2026-10-27";
+const STNOTE={daily:"aaj",weekly:"is hafte",monthly:"is mahine",yearly:"is saal"};
+let TAKE=[];
+const RL={low:"Low risk",med:"Medium risk",high:"High risk"};
+const CATE={agent:"🤖",infra:"⚙️",media:"🎨",device:"📺",sec:"🔐",life:"📚"};
+const TKI=["🤖","🔥","🆕","⚠️","🎯"];
+const hits=id=>Object.values(L).filter(l=>l.rows.some(r=>r[0]===id)).length;
+const VL={yes:"Chalega",part:"Chalega, par dhyaan",no:"Nahi chalega"};
+const STARCOL=["#6965db","#1971c2","#e8590c","#2f9e44","#c2255c","#0c8599","#f08c00","#7048e8","#5c940d","#a61e4d"];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=s=>esc(s).replace(/`([^`]+)`/g,"<code>$1</code>");
+const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const linkify=s=>s.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g,(m,id,t)=>own(R,id)?`<a href="#lists" class="rl" data-open="${esc(id)}">${t}</a>`:t);
+/* TAKE: sab kuch escape, sirf <b> <i> <strong> <em> wapas allow */
+const safeHtml=s=>linkify(esc(s).replace(/&lt;(\/?)(b|i|strong|em)&gt;/g,"<$1$2>"));
+const plain=s=>s.replace(/\[\[[^|\]]+\|([^\]]+)\]\]/g,"$1").replace(/<[^>]+>/g,"");
+const kNum=s=>{if(!s)return null;const m=/([\d.]+)(k?)/.exec(s);return m?parseFloat(m[1])*(m[2]?1000:1):null};
+const fmtK=n=>n>=1000?(n/1000).toFixed(n>=100000?0:1).replace(/\.0$/,"")+"k":String(Math.round(n));
+const short=id=>id.split("/")[1];
+const fitKey=id=>id.replace("/","__");
+const reduced=false;
+
+/* ---------- state ---------- */
+let cur="daily",onlyLap=false,catFilter=null,shareMode=false,priv=null;
+const devVisible=()=>!!priv&&!shareMode;
+const fitOf=id=>devVisible()&&priv.fit?priv.fit[fitKey(id)]:null;
+const $=id=>document.getElementById(id);
+function toast(t){const el=$("toast");el.textContent=t;el.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>el.hidden=true,3200)}
+
+/* ---------- donut ---------- */
+function donut(segs,size,stroke,opt={}){
+  const cx=size/2,r=(size-stroke)/2-4,c=2*Math.PI*r,tot=segs.reduce((a,s)=>a+s.v,0)||1;
+  let off=0;const arcs=[],labs=[];
+  segs.forEach(s=>{const len=s.v/tot*c,mid=(off+len/2)/c*2*Math.PI-Math.PI/2,pct=s.v/tot*100;
+    arcs.push(`<circle class="seg-arc${s.key?" click":""}" style="--sw:${stroke}px" ${s.key?`data-${s.kind||"open"}="${esc(s.key)}" tabindex="0" role="button" aria-label="${esc(s.label)}"`:""} cx="${cx}" cy="${cx}" r="${r}" fill="none" stroke="${s.col}" stroke-width="${stroke}" stroke-dasharray="${Math.max(len-1.5,0.6)} ${c}" stroke-dashoffset="${opt.animate&&!reduced?c:-off}" data-off="${-off}" transform="rotate(-90 ${cx} ${cx})"><title>${esc(s.label)}</title></circle>`);
+    if(opt.labels&&pct>=opt.labels)labs.push(`<text class="slabel" x="${(cx+r*Math.cos(mid)).toFixed(1)}" y="${(cx+r*Math.sin(mid)).toFixed(1)}" text-anchor="middle" dominant-baseline="central" style="font-size:${Math.max(stroke*.36,9).toFixed(0)}px">${Math.round(pct)}%</text>`);
+    off+=len});
+  const ctr=opt.center?`<text class="dtext" x="50%" y="${opt.sub?"45%":"50%"}" text-anchor="middle" dominant-baseline="central" font-size="${(size/7).toFixed(0)}">${esc(opt.center)}</text>${opt.sub?`<text class="dsub" x="50%" y="61%" text-anchor="middle" font-size="${(size/17).toFixed(0)}">${esc(opt.sub)}</text>`:""}`:"";
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(opt.aria||segs.map(s=>s.label).join(", "))}"><circle cx="${cx}" cy="${cx}" r="${r}" fill="none" stroke="var(--dot)" stroke-width="${stroke}"/>${arcs.join("")}${labs.join("")}${ctr}</svg>`;
+}
+function runDonut(host){if(!host)return;requestAnimationFrame(()=>requestAnimationFrame(()=>host.querySelectorAll(".seg-arc").forEach(a=>a.setAttribute("stroke-dashoffset",a.dataset.off))))}
+const lcol=n=>own(LC,n)?LC[n]:LC.Other;
+const langSegs=id=>R[id].lang.map(([n,p])=>({v:p,col:lcol(n),label:`${n} ${p}%`}));
+function countUp(el,to,f){if(reduced){el.textContent=f(to);return}const t0=performance.now();const step=t=>{const k=Math.min((t-t0)/900,1),e=1-Math.pow(1-k,3);el.textContent=f(to*e);if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+
+/* ---------- theme ---------- */
+const root=document.documentElement;
+function curDark(){const t=root.getAttribute("data-theme");return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+function setLbl(){$("themeLbl").textContent=curDark()?"Light mode":"Dark mode"}
+try{const s=localStorage.getItem("radar-theme");if(s)root.setAttribute("data-theme",s)}catch(e){}
+setLbl();
+$("themeBtn").onclick=()=>{const n=curDark()?"light":"dark";root.setAttribute("data-theme",n);try{localStorage.setItem("radar-theme",n)}catch(e){}setLbl();drawCat()};
+
+/* ---------- category ---------- */
+function catCounts(){const cnt={};Object.values(L).forEach(l=>l.rows.forEach(([id])=>{const t=R[id].t;cnt[t]=(cnt[t]||0)+1}));return Object.entries(cnt).sort((a,b)=>b[1]-a[1])}
+function drawCat(){
+  const ent=catCounts(),tot=ent.reduce((a,e)=>a+e[1],0);
+  const segs=ent.map(([k,v])=>({v,col:cssv(THEMES[k].c),label:`${THEMES[k].n}: ${v} (${Math.round(v/tot*100)}%)`,key:k,kind:"cat"}));
+  const host=$("catDonut");host.innerHTML=donut(segs,210,38,{animate:true,labels:6,center:Math.round(ent[0][1]/tot*100)+"%",sub:THEMES[ent[0][0]].n.split(" ")[0]+" "+(THEMES[ent[0][0]].n.split(" ")[1]||"")});runDonut(host);
+  if(catFilter)host.querySelectorAll(".seg-arc.click").forEach(a=>a.classList.toggle("dim",a.dataset.cat!==catFilter));
+  $("catLegend").innerHTML=ent.map(([k,v])=>`<button type="button" class="lrow${catFilter===k?" on":""}" data-cat="${k}"><i style="background:var(${THEMES[k].c})"></i><span>${THEMES[k].n}</span><em>${Math.round(v/tot*100)}% · ${v}</em></button>`).join("");
+}
+function setCat(k){catFilter=catFilter===k?null:k;drawCat();const ch=$("catChip");ch.hidden=!catFilter;if(catFilter)ch.innerHTML=`Filter: ${esc(THEMES[catFilter].n)} <span aria-hidden="true">✕</span>`;drawList(true)}
+$("catChip").onclick=()=>setCat(catFilter);
+
+/* ---------- signals ---------- */
+function renderTake(){$("take").innerHTML=TAKE.map((t,i)=>`<div class="tk"><span class="ic" aria-hidden="true">${TKI[i%TKI.length]}</span><div>${safeHtml(t)}</div></div>`).join("")}
+function drawStats(){
+  const ids=new Set(),cnt={};Object.values(L).forEach(l=>l.rows.forEach(([id])=>{ids.add(id);cnt[id]=(cnt[id]||0)+1}));
+  const multi=Object.values(cnt).filter(n=>n>1).length,high=[...ids].filter(id=>R[id].r==="high").length,top=L.daily.rows[0];
+  const cards=[["📦",ids.size,"projects aaj track ho rahe hain",""],["🔥",multi,"projects kai lists mein trending hain",""],["⚠️",high,"High risk (dhyaan se dekhein)",high?" warn":""]];
+  $("stats").innerHTML=cards.map(([e,n,l,c])=>`<div class="sk stat${c}"><div class="n">${e} <span class="cu2" data-n="${n}">0</span></div><div class="l">${l}</div></div>`).join("")+`<button type="button" class="sk stat" style="cursor:pointer;font:inherit;color:inherit" data-open="${esc(top[0])}"><div class="n" style="font-size:1.5rem">🥇 ${esc(short(top[0]))}</div><div class="l">Aaj daily #1${top[1]?" · ★ "+esc(top[1]):""}. Click karke dekhein</div></button>`;
+  $("stats").querySelectorAll(".cu2").forEach(el=>countUp(el,+el.dataset.n,v=>String(Math.round(v))));
+}
+function drawRiskEx(){
+  document.querySelectorAll(".rgx").forEach(el=>{const lv=el.dataset.lvl;const ids=[];
+    Object.values(L).forEach(l=>l.rows.forEach(([id])=>{if(R[id].r===lv&&!ids.includes(id))ids.push(id)}));
+    el.innerHTML=ids.length?`<b>Aaj ke examples:</b> `+ids.slice(0,3).map(id=>`<button type="button" class="jchip" data-open="${esc(id)}">${esc(short(id))}</button>`).join(""):`<span style="color:var(--muted)">Aaj is level ki koi repo nahi.</span>`});
+}
+function drawTop3(){
+  $("top3List").innerHTML=L.daily.rows.slice(0,3).map(([id,st],i)=>{const r=R[id];return `<button type="button" class="t3" data-open="${esc(id)}"><span class="t3n">${i+1}</span><span class="t3b"><b>${CATE[r.t]||""} ${esc(short(id))} <small style="color:var(--muted);font-weight:600">· ${esc(id.split("/")[0])}</small></b><span class="one">${esc(r.kya)}</span></span><span class="side"><span class="pill r-${r.r}">${RL[r.r]}</span><span class="st">${st?"★ "+esc(st)+" aaj":""}</span></span></button>`}).join("");
+}
+
+
+/* ---------- tabs ---------- */
+function drawTabs(){$("tabs").innerHTML=Object.entries(L).map(([k,l])=>`<button class="tab" role="tab" id="tab-${k}" aria-selected="${k===cur}" data-k="${k}">${esc(l.lbl)}</button>`).join("")}
+$("tabs").onclick=e=>{const b=e.target.closest(".tab");if(!b)return;cur=b.dataset.k;drawTabs();drawStars();drawList(true)};
+
+/* ---------- stars race ---------- */
+function drawStars(){
+  const l=L[cur],rows=l.rows.map(([id,st],i)=>({id,st,n:kNum(st),i}));
+  const valid=rows.filter(r=>r.n!=null),tot=valid.reduce((a,r)=>a+r.n,0),max=Math.max(...valid.map(r=>r.n));
+  $("starsTitle").textContent=`Stars race: ${l.lbl} top 10`;
+  const segs=valid.map(r=>({v:r.n,col:STARCOL[r.i],label:`${short(r.id)}: ${fmtK(r.n)} stars (${Math.round(r.n/tot*100)}%)`,key:r.id}));
+  const host=$("starDonut");host.innerHTML=donut(segs,250,44,{animate:true,labels:5,center:"0",sub:"stars "+STNOTE[cur]});runDonut(host);
+  const ct=host.querySelector(".dtext");if(ct)countUp(ct,tot,v=>"★ "+fmtK(v));
+  $("starLegend").innerHTML=rows.map(r=>r.n==null
+   ?`<button type="button" class="srow na" data-open="${esc(r.id)}"><span class="rk">${r.i+1}</span><span class="nmb"><b>${esc(short(r.id))}</b><span class="trk"></span></span><span class="num">—</span><span class="pc">n/a</span></button>`
+   :`<button type="button" class="srow" data-open="${esc(r.id)}" style="--col:${STARCOL[r.i]}"><span class="rk">${r.i+1}</span><span class="nmb"><b>${esc(short(r.id))}</b><span class="trk"><span class="fil" style="--w:${(r.n/max*100).toFixed(1)}%;animation-delay:${r.i*60}ms"></span></span></span><span class="num cu" data-n="${r.n}">0</span><span class="pc">${Math.round(r.n/tot*100)}%</span></button>`).join("");
+  $("starLegend").querySelectorAll(".cu").forEach(el=>countUp(el,+el.dataset.n,fmtK));
+  const miss=rows.length-valid.length;
+  $("starCap").textContent=`Kul ${fmtK(tot)} stars ${STNOTE[cur]} in ${valid.length} repos mein bante. `+(miss?`${miss} repo ke stars Trendshift par saaf nahi likhe the, isliye chart mein nahi hain.`:"")+` Sabse aage: ${short(valid.sort((a,b)=>b.n-a.n)[0].id)}.`;
+}
+
+/* ---------- list ---------- */
+const listEl=$("list"),fltBtn=$("fltBtn");
+fltBtn.onclick=()=>{onlyLap=!onlyLap;fltBtn.setAttribute("aria-pressed",onlyLap);drawList(true)};
+let qtxt="";const hay=id=>(id+" "+R[id].kya+" "+R[id].type+" "+R[id].job+" "+R[id].kahan).toLowerCase();
+function visibleRows(){return L[cur].rows.map((r,i)=>[...r,i]).filter(([id])=>(!qtxt||hay(id).includes(qtxt))&&(!catFilter||R[id].t===catFilter)&&(!onlyLap||!devVisible()||(fitOf(id)&&fitOf(id).lap[0]!=="no")))}
+document.addEventListener("input",e=>{if(e.target.id==="qbox"){qtxt=e.target.value.trim().toLowerCase();drawList(false)}});
+document.addEventListener("click",e=>{const a=e.target.closest&&e.target.closest('[data-go="intro"]');if(a){const d=document.getElementById("intro");if(d)d.open=true}});
+function drawList(anim){
+  const rows=visibleRows();
+  $("jumpChips").innerHTML=rows.map(([id,,i])=>`<button type="button" class="jchip" data-open="${esc(id)}"><b>#${i+1}</b>${esc(short(id))}</button>`).join("");
+  if(!rows.length){listEl.innerHTML=`<div class="sk empty">Is filter mein ${esc(L[cur].lbl)} list ki koi repo nahi hai. Filter hata kar dekhein.</div>`;return}
+  listEl.innerHTML=rows.map(([id,st,i],k)=>{const r=R[id],main=r.lang[0],f=fitOf(id);return `
+  <article class="sk row" style="--i:${anim?k:0}" tabindex="0" data-id="${esc(id)}" aria-expanded="false">
+   <div class="rh">
+    <div class="rank">${i+1}</div>
+    <div class="mini" title="${esc(r.lang.map(l=>l[0]+" "+l[1]+"%").join(" · "))}">${donut(langSegs(id),52,11)}</div>
+    <div style="min-width:0"><div class="nm"><a href="https://github.com/${esc(id)}" target="_blank" rel="noopener noreferrer">${esc(short(id))} ↗</a> <small>· ${esc(id.split("/")[0])}</small><span class="cat" title="${esc(THEMES[r.t].n)}">${CATE[r.t]||""} ${esc(THEMES[r.t].n.split(" ")[0])}</span>${hits(id)>1?`<span class="hot">🔥 ${hits(id)} lists mein</span>`:""}</div><div class="one">${esc(r.kya)}</div><div class="one"><b>${esc(main[0])} ${main[1]}%</b> · ${esc(r.type)}</div></div>
+    <div class="side"><span class="pill r-${r.r}">${RL[r.r]}</span>${f?`<div class="dvicons"><span class="dvi v-${f.lap[0]}" title="Computer: ${VL[f.lap[0]]}">💻 ${f.lap[0]==="yes"?"✓":f.lap[0]==="part"?"~":"✗"}</span><span class="dvi v-${f.tab[0]}" title="Tablet: ${VL[f.tab[0]]}">📱 ${f.tab[0]==="yes"?"✓":f.tab[0]==="part"?"~":"✗"}</span></div>`:""}<span class="st">${st?"★ "+esc(st)+" "+STNOTE[cur]:"★ —"}</span></div>
+   </div>
+   <div class="det"><div class="inner"></div></div>
+  </article>`}).join("");
+}
+const WARN={
+ low:"Ye repo aam taur par theek maani jaati hai, phir bhi kuch install karne se pehle uska README khud padhein aur security scan zaroor karein.",
+ med:"Is repo mein kuch risks hain (upar likhe hain). Install se pehle poora README padhein, aur unknown script ya unsigned file na chalayein. Warna aapka data ya account risk mein aa sakta hai.",
+ high:"HIGH RISK. Ye information sirf padhne ke liye hai. Ise install ya run karne se computer kharab ho sakta hai, password ya data chori ho sakta hai, device ki warranty ja sakti hai, ya legal problem aa sakti hai. Phir bhi dekhna ho to sirf alag (virtual) machine mein, kisi expert ke saath, apni responsibility par. Final decision hamesha aapka hai: ise chalane se koi bhi nuksaan ho, to uski responsibility is page ya iske owner ki nahi hogi."};
+const WARN_PIPE="Ye command internet se ek script download karke seedha chala deti hai. Agar wo website ya script badal di gayi ya fake nikli, to aapke computer par virus lag sakta hai, passwords chori ho sakte hain, ya files delete ho sakti hain. Sirf official website se hi chalayein, aur chalane se pehle script khud padh lein. Final decision hamesha aapka hai: koi bhi nuksaan hone par responsibility is page ya iske owner ki nahi hogi.";
+const WARN_INST="Kuch bhi install karne se pehle: official GitHub page se hi download karein, aur kisi unknown jagah se command copy na karein.";
+const PIPE=/\|\s*(iex|sh|bash|zsh)\b|\biex\b|\biwr\b|\birm\b|curl[^|]*\||wget[^|]*\||-ExecutionPolicy/i;
+function detail(id){const r=R[id];
+ const list=a=>`<ol class="steps">${a.map(s=>`<li>${fmt(s)}</li>`).join("")}</ol>`;
+ const hasAnd=r.and&&r.and.length&&!/nahi/i.test(r.and.join(" "));
+ const piped=(r.win||[]).concat(r.and||[]).some(s=>PIPE.test(s));
+ const inst=(r.win&&r.win.length)
+  ?`<div class="box" style="border-style:dashed"><h3>🧰 How to install (sirf technical users ke liye)</h3><div class="where"><b>Windows</b></div>${list(r.win)}${hasAnd?`<div class="where"><b>Android</b></div>${list(r.and)}`:""}${piped?`<div class="warnbox r-high"><b>⚠ Is command se nuksaan ho sakta hai:</b> ${WARN_PIPE}</div>`:""}<div class="warnbox r-med">${WARN_INST}</div></div>`
+  :`<p class="note">Is repo ke install steps is page par nahi hain. Official README dekhein.</p>`;
+ return `
+ <div class="two">
+  <div class="box"><h3>💻 Kis language mein bana hai</h3><div class="langbox"><div class="lg-d">${donut(langSegs(id),130,26,{animate:true,labels:8,center:r.lang[0][1]+"%",sub:r.lang[0][0].split(" ")[0]})}</div><div class="legend">${r.lang.map(([n,p])=>`<div><i style="background:${lcol(n)}"></i><span>${esc(n)}</span><em>${p}%</em></div>`).join("")}</div></div></div>
+  <div class="box"><h3>📦 Quick info</h3><div class="where"><b>Type:</b> ${esc(r.type)}</div><div class="badges">${r.plat.map(p=>`<span class="tg">${esc(p)}</span>`).join("")}</div><div class="where"><a class="rl" href="https://github.com/${esc(id)}#readme" target="_blank" rel="noopener noreferrer">Read README ↗</a></div></div>
+ </div>
+ <dl class="q">
+  <dt>⚡ Ye kya karta hai?</dt><dd>${esc(r.kya)}</dd>
+  <dt>🛠 Kyun bana?</dt><dd>${esc(r.bani)}</dd>
+  <dt>💡 Kyun zaroorat padi?</dt><dd>${esc(r.need)}</dd>
+  <dt>👤 Kiske kaam ka hai?</dt><dd>${esc(r.job)}</dd>
+  <dt>🏭 Kahan use hota hai?</dt><dd>${esc(r.kahan)}</dd>
+ </dl>
+ <div class="attn">
+  <h3>⚠ Zaroor padhein</h3>
+  <div class="sec r-${r.r}"><b>Security: ${RL[r.r]}.</b> ${esc(r.rn)} <a class="rl" href="#riskguide" data-go="riskguide">Ye label kaise decide hua? →</a></div>
+  <div class="warnbox r-${r.r}"><b>⚠ Warning:</b> ${WARN[r.r]}</div>
+  ${inst}
+ </div>
+ <div class="acts"><a class="btn pri" href="https://github.com/${esc(id)}" target="_blank" rel="noopener noreferrer">Open on GitHub ↗</a></div>`}
+function toggle(row,force){const d=row.querySelector(".det"),open=d.classList.contains("open");const want=force===undefined?!open:force;if(want===open)return;
+ if(want){const inner=d.querySelector(".inner");if(!inner.childElementCount)inner.innerHTML=detail(row.dataset.id);d.classList.add("open");row.setAttribute("aria-expanded","true");runDonut(inner.querySelector(".lg-d"))}
+ else{d.classList.remove("open");row.setAttribute("aria-expanded","false")}}
+function openRepo(id){
+  if(!own(R,id))return;
+  if(catFilter&&R[id].t!==catFilter){catFilter=null;$("catChip").hidden=true;drawCat()}
+  if(onlyLap){const f=fitOf(id);if(f&&f.lap[0]==="no"){onlyLap=false;fltBtn.setAttribute("aria-pressed","false")}}
+  if(!L[cur].rows.some(r=>r[0]===id)){const nk=Object.keys(L).find(k=>L[k].rows.some(r=>r[0]===id));if(!nk)return;cur=nk;drawTabs();drawStars()}
+  drawList(false);
+  const row=listEl.querySelector(`[data-id="${CSS.escape(id)}"]`);if(!row)return;
+  toggle(row,true);row.scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});
+  row.classList.remove("pulse");void row.offsetWidth;row.classList.add("pulse");
+}
+
+/* ---------- global clicks ---------- */
+document.addEventListener("click",e=>{
+  const go=e.target.closest("[data-go]");if(go){e.preventDefault();$(go.dataset.go).scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});return}
+  const op=e.target.closest("[data-open]");if(op){e.preventDefault();openRepo(op.dataset.open);return}
+  const ca=e.target.closest("[data-cat]");if(ca){setCat(ca.dataset.cat);$("lists").scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});return}
+});
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches(".seg-arc.click")){e.preventDefault();e.target.dispatchEvent(new MouseEvent("click",{bubbles:true}))}});
+listEl.addEventListener("click",e=>{
+ const os=e.target.closest("[data-os]");
+ if(os){const box=os.closest(".box");box.querySelectorAll("[data-os]").forEach(b=>b.setAttribute("aria-selected",b===os));box.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==os.dataset.os);return}
+ if(e.target.closest("a,button,input,form,.ai,.det"))return;
+ const row=e.target.closest(".row");if(row)toggle(row)});
+listEl.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.classList.contains("row")){e.preventDefault();toggle(e.target)}});
+
+/* ---------- private devices (only the owner's own storage) ---------- */
+function applyPriv(){
+  const show=devVisible();
+  $("shareBtn").hidden=!priv;$("shareBtn").setAttribute("aria-pressed",shareMode);
+  $("shareLbl").textContent=shareMode?"Share mode: on (devices hidden)":"Share mode: off";
+  fltBtn.hidden=!show;if(!show&&onlyLap){onlyLap=false;fltBtn.setAttribute("aria-pressed","false")}
+  const dv=$("devs");dv.hidden=!show;
+  dv.innerHTML=show?`<div class="sk dev"><span class="ic">💻</span><b>${esc(priv.computer.title)}</b><span>${esc(priv.computer.detail)}</span></div><div class="sk dev"><span class="ic">📱</span><b>${esc(priv.tablet.title)}</b><span>${esc(priv.tablet.detail)}</span></div>`:"";
+  drawList(false);
+}
+$("shareBtn").onclick=()=>{shareMode=!shareMode;try{localStorage.setItem("radar-share",shareMode?"1":"0")}catch(e){}applyPriv();toast(shareMode?"Share mode on: device information hide ho gayi":"Share mode off")};
+async function loadPriv(){}
+
+/* ---------- dataset load ---------- */
+const ID_RE=/^[A-Za-z0-9_.-]{1,100}\/[A-Za-z0-9_.-]{1,100}$/;
+const own=(o,k)=>o!=null&&Object.prototype.hasOwnProperty.call(o,k);
+const S=(v,n=4000)=>typeof v==="string"?v.slice(0,n):"";
+const A=v=>Array.isArray(v)?v.filter(x=>typeof x==="string").slice(0,12).map(x=>S(x,1500)):[];
+function cleanData(d){
+  const R0=Object.create(null),L0=Object.create(null);
+  const src=d&&typeof d==="object"?d:{};
+  Object.entries(src.R&&typeof src.R==="object"?src.R:{}).forEach(([id,e])=>{
+    if(!ID_RE.test(id)||!e||typeof e!=="object")return;
+    const lang=(Array.isArray(e.lang)?e.lang:[]).filter(x=>Array.isArray(x)&&typeof x[0]==="string"&&isFinite(+x[1])).slice(0,6).map(x=>[x[0].slice(0,40),Math.max(0,Math.min(100,+x[1]))]);
+    R0[id]={t:own(THEMES,e.t)?e.t:"life",r:["low","med","high"].includes(e.r)?e.r:"med",lang:lang.length?lang:[["Other",100]],
+      type:S(e.type,300),kya:S(e.kya),bani:S(e.bani),need:S(e.need),job:S(e.job,600),kahan:S(e.kahan,600),rn:S(e.rn),plat:A(e.plat),win:A(e.win),and:A(e.and)}});
+  ["daily","weekly","monthly","yearly"].forEach(k=>{const l=src.L&&src.L[k];if(!l||typeof l!=="object")return;
+    const rows=(Array.isArray(l.rows)?l.rows:[]).filter(r=>Array.isArray(r)&&typeof r[0]==="string"&&own(R0,r[0])).slice(0,10).map(r=>[r[0],typeof r[1]==="string"&&/^[0-9][0-9.,]{0,8}k?$/i.test(r[1])?r[1]:null]);
+    if(rows.length)L0[k]={lbl:S(l.lbl,20).replace(/[^A-Za-z ]/g,"")||k,rows}});
+  return {R:R0,L:L0,TAKE:(Array.isArray(src.TAKE)?src.TAKE:[]).filter(t=>typeof t==="string").slice(0,5).map(t=>S(t,1500)),
+    DATE:S(src.DATA_DATE,30).replace(/[^A-Za-z0-9 ]/g,""),ISO:/^\d{4}-\d{2}-\d{2}$/.test(src.DATA_ISO)?src.DATA_ISO:""};
+}
+async function loadDataset(){
+  let raw=null;try{raw=JSON.parse(document.getElementById("radar-data").textContent)}catch(e){}
+  const c=cleanData(raw);R=c.R;L=c.L;TAKE=c.TAKE;DATA_DATE=c.DATE;DATA_ISO=c.ISO;
+}
+/* ---------- boot ---------- */
+async function boot(){
+  await loadDataset();
+  if(!L.daily){listEl.innerHTML='<div class="sk empty">Data load nahi ho paaya. Thodi der baad page refresh karein.</div>';return}
+  try{const h=location.hash.slice(1);if(own(L,h))cur=h}catch(e){}
+  renderTake();drawStats();drawTop3();drawRiskEx();
+  document.querySelectorAll("[data-date]").forEach(e=>e.textContent=DATA_DATE);
+  drawCat();drawTabs();drawStars();drawList(true);document.querySelectorAll(".wrap > section,.wrap > details,.wrap > footer,.grid2 > *").forEach((e,i)=>{e.classList.add("rv");e.style.transitionDelay=Math.min(i%4,3)*70+"ms"});if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.05});document.querySelectorAll(".rv").forEach(e=>io.observe(e))}else document.querySelectorAll(".rv").forEach(e=>e.classList.add("in"));
+  const first=listEl.querySelector(".row");if(first)toggle(first,true);
+  loadPriv();
+}
+boot();
+</script>
+
+</body></html>

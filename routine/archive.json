@@ -115,6 +115,81 @@
   },
   "archived": "2026-11-13"
  },
+ "QwenLM/qwen-code": {
+  "EN": {
+   "and": [
+    "Install Node.js in Termux, then run the same `npm install -g @qwen-code/qwen-code@latest` (see the official README)."
+   ],
+   "bani": "Coding agents can be costly or closed. The Qwen team built an open one that can read, write and change your code.",
+   "job": "developers, AI learners, automation builders, freelancers",
+   "kahan": "Software teams, startups, students.",
+   "kya": "An open-source AI coding agent that works in the terminal, editor, desktop, browser and chat.",
+   "need": "If you are learning to code or building automations, it is a helper. Example: you say 'fix the error in this script' and the agent edits the file.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Terminal",
+    "VS Code",
+    "Android (Termux)"
+   ],
+   "rn": "Medium risk because the agent can read and change your files (question 2) and one install option runs a script from the internet (question 3). The npm way is safer.",
+   "type": "AI coding agent (open-source)",
+   "win": [
+    "Needs Node.js 22 or newer. `npm install -g @qwen-code/qwen-code@latest`",
+    "The other installer runs a script from the internet, so that command is not shown here."
+   ]
+  },
+  "R": {
+   "and": [
+    "Termux mein Node.js install karke wahi `npm install -g @qwen-code/qwen-code@latest` chalayein (official README dekhein)."
+   ],
+   "bani": "Coding agents mehenge ya band hote hain. Qwen team ne ek khula (open) agent banaya jo aapke code ko padh kar likh aur badal sakta hai.",
+   "job": "Developers, AI learners, automation builders, freelancers.",
+   "kahan": "Software teams, startups, students.",
+   "kya": "Ek open-source AI coding agent jo terminal, editor, desktop, browser aur chat mein kaam karta hai.",
+   "lang": [
+    [
+     "TypeScript",
+     73.8
+    ],
+    [
+     "Java",
+     14.4
+    ],
+    [
+     "JavaScript",
+     4.7
+    ],
+    [
+     "Rust",
+     3.7
+    ],
+    [
+     "Other",
+     3.4
+    ]
+   ],
+   "need": "Agar aap code likhna seekh rahe hain ya automation banate hain, ye ek helper hai. Example: aap bolte hain 'is script mein error theek karo' aur agent file badal deta hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Terminal",
+    "VS Code",
+    "Android (Termux)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki agent aapki files padh aur badal sakta hai (sawaal 2) aur ek install option internet se script chalata hai (sawaal 3). npm wala tareeka behtar hai.",
+   "t": "agent",
+   "type": "AI coding agent (open-source)",
+   "win": [
+    "Node.js 22 ya naya chahiye. `npm install -g @qwen-code/qwen-code@latest`",
+    "Doosra installer script internet se chalata hai, isliye woh command yahan nahi di gayi."
+   ]
+  },
+  "archived": "2026-11-14"
+ },
  "Renhuai123/ziwei-doushu": {
   "EN": {
    "and": [
@@ -294,65 +369,6 @@
   },
   "archived": "2026-11-13"
  },
- "ZhuLinsen/daily_stock_analysis": {
-  "EN": {
-   "and": [
-    "Please see the official README"
-   ],
-   "bani": "Checking news, prices and indicators (chart signals) separately every day is tiring. This project collects the data, makes an AI report and sends it to WeChat, Telegram, Slack or email.",
-   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
-   "kahan": "Fintech, trading research and personal investing.",
-   "kya": "Uses AI to analyse your chosen stocks (mainly China, US and HK markets) every day and sends a dashboard.",
-   "need": "If you are learning about stocks, a daily summary saves time. Example: each morning your phone gets 'watch these 5 stocks today'. This is not financial advice.",
-   "plat": [
-    "Web app",
-    "Docker",
-    "GitHub Actions"
-   ],
-   "rn": "Low risk because there is no exploit or script, but trading on such signals can cause money loss, so use it only to learn.",
-   "type": "AI stock analysis bot",
-   "win": [
-    "Please see the official README"
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein"
-   ],
-   "bani": "Roz news, price aur indicators (chart ke signals) alag alag dekhna thakane wala hai. Yeh project data jodta hai, AI se report banata hai aur WeChat, Telegram, Slack ya email par bhejta hai.",
-   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
-   "kahan": "Fintech, trading research aur personal investing.",
-   "kya": "AI se aapki chuni hui stocks (India nahi, mainly China/US/HK markets) ka roz analysis karke dashboard bhejta hai.",
-   "lang": [
-    [
-     "Python",
-     66.3
-    ],
-    [
-     "TypeScript",
-     31.4
-    ],
-    [
-     "Other",
-     2.3
-    ]
-   ],
-   "need": "Agar aap stocks ke baare mein seekhna chahte hain, to roz ka summary time bachata hai. Example: subah aapke phone par 'aaj in 5 stocks par yeh dhyan dein' ka message aa jata hai. Yeh financial advice nahi hai.",
-   "plat": [
-    "Web app",
-    "Docker",
-    "GitHub Actions"
-   ],
-   "r": "low",
-   "rn": "Low risk kyunki koi exploit ya script nahi hai, par stock signals par depend karke paisa lagana loss kara sakta hai, isliye sirf seekhne ke liye use karein.",
-   "t": "life",
-   "type": "AI stock analysis bot",
-   "win": [
-    "Official README dekhein"
-   ]
-  },
-  "archived": "2026-11-13"
- },
  "anthropics/claude-quickstarts": {
   "EN": {
    "and": [
@@ -417,6 +433,71 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "ashhart/TensorFold": {
+  "EN": {
+   "and": [
+    "Please see the official README (not made for Android)."
+   ],
+   "bani": "Running a model often needs a heavy Python setup. TensorFold serves models from one small binary file.",
+   "job": "AI developers, infra engineers, AI learners",
+   "kahan": "Local AI setups, research labs, startups.",
+   "kya": "A program that runs language models on Apple Silicon and NVIDIA GPUs without Python or MLX.",
+   "need": "If you want to run an AI model on your own computer. Example: you run a Qwen model locally and connect your app, with no internet.",
+   "plat": [
+    "Mac (Apple Silicon)",
+    "Linux (NVIDIA GPU)"
+   ],
+   "rn": "Low risk. Model weights have their own licenses. Contributor agent check-ins go to a public radar anonymously.",
+   "type": "AI model server (Zig program)",
+   "win": [
+    "Please see the official README (check there for Windows steps)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein (Android ke liye nahi bana)."
+   ],
+   "bani": "Model chalane ke liye aksar bhaari Python setup chahiye. TensorFold ek hi chhoti binary file se model serve karta hai.",
+   "job": "AI developers, infra engineers, AI learners.",
+   "kahan": "Local AI setups, research labs, startups.",
+   "kya": "Ek program jo language models ko Apple Silicon aur NVIDIA GPU par bina Python ya MLX ke chalata hai.",
+   "lang": [
+    [
+     "Zig",
+     62.8
+    ],
+    [
+     "TypeScript",
+     24.5
+    ],
+    [
+     "Python",
+     5.8
+    ],
+    [
+     "CUDA",
+     3.2
+    ],
+    [
+     "Other",
+     3.7
+    ]
+   ],
+   "need": "Agar aap apne computer par AI model chalana chahte hain. Example: aap Qwen model local chalakar apni app ko jodte hain, internet ke bina.",
+   "plat": [
+    "Mac (Apple Silicon)",
+    "Linux (NVIDIA GPU)"
+   ],
+   "r": "low",
+   "rn": "Low risk. Model weights ke apne licenses hote hain. Contributors ke liye agent check-in anonymous public radar par jata hai.",
+   "t": "infra",
+   "type": "AI model server (Zig program)",
+   "win": [
+    "Official README dekhein (Windows ka tareeka wahan dekhein)."
+   ]
+  },
+  "archived": "2026-11-14"
  },
  "dsx-ai-factory/nvke": {
   "EN": {
@@ -544,6 +625,69 @@
   },
   "archived": "2026-11-11"
  },
+ "google/skills": {
+  "EN": {
+   "and": [
+    "Please see the official README."
+   ],
+   "bani": "AI agents often do not know the right way on Google Cloud. Google wrote ready-made skills (instruction files).",
+   "job": "cloud developers, AI agent builders, automation builders",
+   "kahan": "Cloud teams, startups, data teams.",
+   "kya": "A collection of Agent Skills for Google products, mainly Google Cloud, that teach AI agents how to do tasks.",
+   "need": "If you ask an AI agent to work on Google Cloud. Example: you say 'deploy a secure app' and a skill guides the agent.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code",
+    "Gemini CLI"
+   ],
+   "rn": "Low risk. Skills change how your agent works, so check which skills you pick before installing.",
+   "type": "Agent Skills collection (Google)",
+   "win": [
+    "`npx skills add google/skills` (needs Node.js)"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein."
+   ],
+   "bani": "AI agents ko Google Cloud ka sahi tareeka nahi pata hota. Google ne ready-made skills (instruction files) banayi.",
+   "job": "Cloud developers, AI agent builders, automation builders.",
+   "kahan": "Cloud teams, startups, data teams.",
+   "kya": "Google ke products, khaas kar Google Cloud, ke liye Agent Skills ka collection jo AI agents ko sikhata hai kaam kaise karna hai.",
+   "lang": [
+    [
+     "Python",
+     79.4
+    ],
+    [
+     "Shell",
+     17.6
+    ],
+    [
+     "Other",
+     3.0
+    ]
+   ],
+   "need": "Agar aap AI agent se Google Cloud par kaam karwate hain. Example: agent se bolein 'ek secure app deploy karo' aur skill use hoti hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code",
+    "Gemini CLI"
+   ],
+   "r": "low",
+   "rn": "Low risk. Skills agent ke kaam badalti hain, isliye install se pehle dekh lein kaun si skill chunni hai.",
+   "t": "agent",
+   "type": "Agent Skills collection (Google)",
+   "win": [
+    "`npx skills add google/skills` (Node.js chahiye)"
+   ]
+  },
+  "archived": "2026-11-14"
+ },
  "homeassistant-ai/ha-mcp": {
   "EN": {
    "and": [
@@ -663,6 +807,258 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "meta/astryx": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "Meta needed more than 13,000 apps to look consistent. This system grew inside Meta over 8 years. Now it is open to everyone, so people and AI assistants can build apps in the same way.",
+   "job": "Frontend developers, UI designers, product teams.",
+   "kahan": "Web apps, dashboards, product teams in startups and big companies.",
+   "kya": "Astryx is Meta's design system (a set of ready UI parts like buttons, forms and menus). It has 150+ React components, themes, dark mode and a CLI.",
+   "need": "If you build a website or app, making every button from scratch takes time. For example, you are making a booking app; with ready forms and menus, a day of work can take a few hours.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. It is an official Meta project and comes from npm. It does not need control of any account or computer.",
+   "type": "Meta's open source design system",
+   "win": [
+    "You need Node.js and React 19. In your project folder: `npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex`",
+    "Then the CLI: `npm install -D @astryxdesign/cli`",
+    "To have the CLI on your whole computer: `npm i -g @astryxdesign/cli`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "Meta ko 13,000 se zyada apps ek jaisa dikhane the. Ye system 8 saal mein Meta ke andar bana. Ab use sabke liye open kiya gaya hai, taaki log aur AI assistants dono ek hi tarah se app bana sakein.",
+   "job": "Frontend developers, UI designers, product teams.",
+   "kahan": "Web apps, dashboards, startups aur badi companies ke product teams.",
+   "kya": "Astryx Meta ka design system (buttons, forms, menus jaise ready UI parts ka set) hai. Isme 150 se zyada React components, themes, dark mode aur ek CLI hai.",
+   "lang": [
+    [
+     "TypeScript",
+     58
+    ],
+    [
+     "JavaScript",
+     40
+    ],
+    [
+     "Other",
+     2
+    ]
+   ],
+   "need": "Agar aap website ya app bana rahe hain, to har button alag se banana time lagata hai. Jaise aap ek booking app bana rahe hain; ready form aur menu laga kar aap din bhar ka kaam ghante mein kar sakte hain.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Ye Meta ka official project hai aur npm se aata hai. Koi account ya computer control nahi chahiye.",
+   "t": "infra",
+   "type": "Meta ka open source design system",
+   "win": [
+    "Node.js aur React 19 chahiye. Project folder mein: `npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex`",
+    "Phir CLI: `npm install -D @astryxdesign/cli`",
+    "Poore computer par CLI chahiye to: `npm i -g @astryxdesign/cli`"
+   ]
+  },
+  "archived": "2026-11-14"
+ },
+ "nodejs/node": {
+  "EN": {
+   "and": [
+    "Please see the official README."
+   ],
+   "bani": "JavaScript used to run only in browsers. Node.js made it run on servers and in tools.",
+   "job": "developers, automation builders, AI learners, freelancers",
+   "kahan": "Websites, APIs, startups, build tools.",
+   "kya": "Node.js is an engine that runs JavaScript outside the browser, on servers and computers.",
+   "need": "Many AI and automation tools run on Node.js. Example: n8n or npm packages need Node.js.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. Download it only from the official website.",
+   "type": "JavaScript runtime",
+   "win": [
+    "Please see the official README (installer from nodejs.org)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein."
+   ],
+   "bani": "JavaScript pehle sirf browser mein chalti thi. Node.js ne use server aur tools ke liye chalane layak banaya.",
+   "job": "Developers, automation builders, AI learners, freelancers.",
+   "kahan": "Websites, APIs, startups, build tools.",
+   "kya": "Node.js JavaScript ko browser ke bahar server aur computer par chalane wala engine hai.",
+   "lang": [
+    [
+     "JavaScript",
+     57.6
+    ],
+    [
+     "C",
+     24.2
+    ],
+    [
+     "C++",
+     9.7
+    ],
+    [
+     "HTML",
+     3.7
+    ],
+    [
+     "Other",
+     4.8
+    ]
+   ],
+   "need": "Bahut saare AI aur automation tools Node.js par chalte hain. Example: n8n ya npm packages chalane ke liye Node.js chahiye.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Official website se download karein, kisi aur jagah se nahi.",
+   "t": "infra",
+   "type": "JavaScript runtime",
+   "win": [
+    "Official README dekhein (nodejs.org se installer)."
+   ]
+  },
+  "archived": "2026-11-14"
+ },
+ "nvm-sh/nvm": {
+  "EN": {
+   "and": [
+    "Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
+   ],
+   "bani": "Different projects need different Node.js versions. Keeping only one version broke older projects. nvm makes switching a one-line command.",
+   "job": "developers, automation builders, AI learners",
+   "kahan": "Web teams, startups, freelancers, AI tool setups.",
+   "kya": "A tool that lets you install and switch between different versions of Node.js (an engine that runs JavaScript) on one computer.",
+   "need": "Many AI automation tools need a recent Node.js. Example: one tool needs Node 22 while an older project runs on Node 18; nvm keeps both.",
+   "plat": [
+    "Mac",
+    "Linux",
+    "Windows (WSL)"
+   ],
+   "rn": "Medium risk because the install runs a script from the internet (question 3). The project is old and well known, but check the script first.",
+   "type": "Node.js version manager (command line)",
+   "win": [
+    "nvm-sh does not run directly on Windows; use WSL (Linux inside Windows). Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ],
+   "bani": "Alag projects ko alag Node.js version chahiye hota hai. Ek hi version rakhne se purane projects toot jate the. nvm ne ek command se version badalna aasaan bana diya.",
+   "job": "Developers, automation builders, AI learners.",
+   "kahan": "Web development teams, startups, freelancers, AI tool setups.",
+   "kya": "Ek tool jo ek computer par Node.js (JavaScript chalane wala engine) ke alag-alag versions install karke badalne deta hai.",
+   "lang": [
+    [
+     "Shell",
+     88.9
+    ],
+    [
+     "JavaScript",
+     11.1
+    ]
+   ],
+   "need": "Agar aap AI automation tools chalate hain, to unhe aksar naya Node.js chahiye. Example: ek tool ko Node 22 chahiye aur purana project Node 18 par chalta hai, nvm dono rakh deta hai.",
+   "plat": [
+    "Mac",
+    "Linux",
+    "Windows (WSL)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki install internet se seedhi script chalata hai (sawaal 3). Project purana aur jaana-maana hai, par script ka check zaroor karein.",
+   "t": "infra",
+   "type": "Node.js version manager (command line)",
+   "win": [
+    "Windows par nvm-sh seedha nahi chalta; WSL (Windows ke andar Linux) use karein. Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ]
+  },
+  "archived": "2026-11-14"
+ },
+ "pookjw/HermesEnabler": {
+  "EN": {
+   "and": [
+    "It does not run on Android, because an iPhone and Apple Watch are needed."
+   ],
+   "bani": "Apple does not give this feature to normal users. The developer built an app that helps turn it on with Developer Mode.",
+   "job": "iOS developers, Apple Watch testers, tinkerers",
+   "kahan": "Developer testing, hobby experiments.",
+   "kya": "An app installed from an iPhone that switches on a hidden feature (Hermes) on a supported Apple Watch beta.",
+   "need": "Only for curious developers testing beta watchOS. Example: a developer wants to try a new Watch feature on their own Watch.",
+   "plat": [
+    "iPhone",
+    "Apple Watch",
+    "Mac",
+    "Windows"
+   ],
+   "rn": "Medium risk because the app is installed from outside the App Store (question 4) and needs Developer Mode on the Watch. Works only on watchOS 27.0 to 27.3 beta 1.",
+   "type": "Apple Watch hidden-feature app (sideloaded)",
+   "win": [
+    "According to the README, Windows uses the community tool WatchBridge (github.com/AdminZachary/iloader-for-windows). Please see the official README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par ye nahi chalta, kyunki iPhone aur Apple Watch chahiye."
+   ],
+   "bani": "Apple ne ye feature normal users ko nahi diya. Developer ne ek app banayi jo Watch par developer mode ke saath ise on karne mein madad karti hai.",
+   "job": "iOS developers, Apple Watch testers, tinkerers.",
+   "kahan": "Developer testing, hobby experiments.",
+   "kya": "Ek app jo supported Apple Watch beta par ek chhupa hua feature (Hermes) chalu karne ke liye iPhone se install hota hai.",
+   "lang": [
+    [
+     "Swift",
+     74.3
+    ],
+    [
+     "C",
+     11.4
+    ],
+    [
+     "Python",
+     5.7
+    ],
+    [
+     "Other",
+     8.6
+    ]
+   ],
+   "need": "Sirf curious developers ke liye, jo beta watchOS par test karte hain. Example: koi developer naye Watch feature ko apni Watch par try karna chahta hai.",
+   "plat": [
+    "iPhone",
+    "Apple Watch",
+    "Mac",
+    "Windows"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki app App Store ke bahar se sideload hoti hai (sawaal 4) aur Watch par Developer Mode chahiye. Sirf watchOS 27.0 se 27.3 beta 1 par chalti hai.",
+   "t": "device",
+   "type": "Apple Watch hidden-feature app (sideloaded)",
+   "win": [
+    "README ke hisaab se Windows par community tool WatchBridge use hota hai (github.com/AdminZachary/iloader-for-windows). Official README dekhein."
+   ]
+  },
+  "archived": "2026-11-14"
  },
  "ranxianglei/billion-context": {
   "EN": {
@@ -853,67 +1249,6 @@
   },
   "archived": "2026-11-13"
  },
- "sherlock-project/sherlock": {
-  "EN": {
-   "and": [
-    "Not available on Android."
-   ],
-   "bani": "Finding one person's or brand's accounts across many sites takes a long time. This project automates it, so one command checks all the sites.",
-   "job": "Security researchers, OSINT analysts (people who research using public information), journalists, brand teams.",
-   "kahan": "Security research, investigations, brand protection, digital safety training.",
-   "kya": "Sherlock takes a username and checks 400+ social networks to see where an account with that name exists. The accounts it finds are saved in a text file.",
-   "need": "If you want to protect your brand name or do research, you need to see where a username is used. For example, you start a new business and check whether the name is free on Instagram, X and GitHub.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Linux",
-    "Docker"
-   ],
-   "rn": "Medium risk because it automatically checks many sites (question 5), and some sites' rules may not allow that. It can affect someone's privacy, so use it only on your own names or with permission. It can also include 18+ sites (this is controlled by an option).",
-   "type": "Tool that finds social media accounts from a username",
-   "win": [
-    "You need Python. In the terminal: `pipx install sherlock-project`",
-    "Or with Docker: `docker run -it --rm sherlock/sherlock`",
-    "To run it: `sherlock user123` (replace user123 with the username)"
-   ]
-  },
-  "R": {
-   "and": [
-    "Android par nahi."
-   ],
-   "bani": "Kisi ek person ya brand ke accounts alag alag sites par dhundna bahut time leta hai. Is project ne ye kaam automatic kar diya, taaki ek command se saari sites check ho jayein.",
-   "job": "Security researchers, OSINT analysts (public jaankari se research karne wale), journalists, brand teams.",
-   "kahan": "Security research, investigations, brand protection, digital safety training.",
-   "kya": "Sherlock ek username leta hai aur 400 se zyada social networks par check karta hai ki us naam ka account kahan bana hua hai. Mile hue accounts ki list ek text file mein save ho jati hai.",
-   "lang": [
-    [
-     "Python",
-     94
-    ],
-    [
-     "Shell",
-     6
-    ]
-   ],
-   "need": "Agar aap apna brand naam bachana chahte hain ya research karte hain, to dekhna hota hai ki wo username kahan lagaa hua hai. Jaise aap naya business shuru kar rahe hain aur check karte hain ki wo naam Instagram, X aur GitHub par free hai ya nahi.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Linux",
-    "Docker"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki ye bahut sari sites par automatic check karta hai (sawaal 5), kuch sites ke rules ise rok sakte hain. Ye kisi ki privacy par effect daal sakta hai, isliye sirf apne ya permission wale naam par use karein. Isme 18+ sites bhi ho sakti hain (option se control hota hai).",
-   "t": "sec",
-   "type": "Username se social media accounts dhundne ka tool",
-   "win": [
-    "Python chahiye. Terminal mein: `pipx install sherlock-project`",
-    "Ya Docker se: `docker run -it --rm sherlock/sherlock`",
-    "Chalane ke liye: `sherlock user123` (user123 ki jagah wo username likhein)"
-   ]
-  },
-  "archived": "2026-11-12"
- },
  "tokio-rs/topcoat": {
   "EN": {
    "and": [
@@ -978,5 +1313,127 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "vercel-labs/agent-desktop": {
+  "EN": {
+   "and": [
+    "Please see the official README: this is a desktop tool; the README does not mention Android."
+   ],
+   "bani": "Older AI agents looked at screenshots and guessed where to click, which often failed. This tool reads the app's accessibility tree (the list a screen reader uses) as JSON and gives each button a ref (a short ID).",
+   "job": "AI automation engineer, QA tester, RPA (robotic process automation) developer, operations team.",
+   "kahan": "Software testing, back-office work, companies with repeated desktop tasks.",
+   "kya": "Lets an AI agent see and operate desktop apps without using screenshots.",
+   "need": "If you want AI to do daily computer chores, it must understand the app's layout. Example: you say 'open the folder and rename a file', and the agent uses the ref to press the right button.",
+   "plat": [
+    "Windows",
+    "macOS",
+    "Linux"
+   ],
+   "rn": "Medium risk because the tool controls apps on your whole computer and can read private screen content (question 2).",
+   "type": "Computer-use tool (CLI)",
+   "win": [
+    "`npm install -g agent-desktop`",
+    "`agent-desktop status`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: yeh desktop tool hai, Android tablet par chalne ka zikr README mein nahi hai."
+   ],
+   "bani": "Pehle AI agents screenshot dekh kar guess karte the ki kahan click karna hai, jo aksar galat hota tha. Yeh tool app ke accessibility tree (screen reader jo list use karta hai) ko JSON mein padhta hai aur har button ko ek ref (pehchaan naam) deta hai.",
+   "job": "AI automation engineer, QA tester, RPA (robotic process automation) developer, Operations team.",
+   "kahan": "Software testing, back-office kaam, repetitive desktop tasks wali companies.",
+   "kya": "AI agent ko desktop apps (jaise Finder ya Notepad) dekhne aur chalane ki power deta hai, bina screenshot ke.",
+   "lang": [
+    [
+     "Rust",
+     83.2
+    ],
+    [
+     "PowerShell",
+     5.1
+    ],
+    [
+     "Python",
+     5.0
+    ],
+    [
+     "Other",
+     6.7
+    ]
+   ],
+   "need": "Agar aap AI se roz ke computer kaam karwana chahte hain, to AI ko app ka structure samajhna padta hai. Example: aap bolein 'folder kholo aur file rename karo', agent ref pakad kar sahi button dabata hai.",
+   "plat": [
+    "Windows",
+    "macOS",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki yeh tool aapke poore computer ke apps ko control karta hai aur private screen content padh sakta hai (sawaal 2).",
+   "t": "agent",
+   "type": "Computer-use tool (CLI)",
+   "win": [
+    "`npm install -g agent-desktop`",
+    "`agent-desktop status`"
+   ]
+  },
+  "archived": "2026-11-14"
+ },
+ "zed-industries/zed": {
+  "EN": {
+   "and": [
+    "Zed is not available on Android (the README lists only macOS, Linux and Windows)."
+   ],
+   "bani": "Older editors get slow and make teamwork hard.\nZed is written in Rust (a fast language) and built for speed, with live editing together.",
+   "job": "Developers, programmers, students, software teams",
+   "kahan": "Software companies, startups, schools and coding bootcamps.",
+   "kya": "Zed is a fast code editor where several people can work together, made by the creators of Atom and Tree-sitter.",
+   "need": "Developers spend hours each day in a code editor.\nExample: two people edit the same file at once, like in Google Docs.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. Download from the official site zed.dev; no risk question applies. License is GPL/Apache.",
+   "type": "Code editor app",
+   "win": [
+    "Download the installer from the official page zed.dev/download.",
+    "Or use a Windows package manager; please see the official README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par Zed available nahi hai (README ke hisaab se sirf macOS, Linux, Windows)."
+   ],
+   "bani": "Purane editors dheere ho jate hain aur saath kaam karna mushkil hota hai.\nZed Rust mein bana hai aur speed ke liye design hua hai, saath mein team ke saath live editing deta hai.",
+   "job": "Developers, programmers, students, software teams",
+   "kahan": "Software companies, startups, schools aur coding bootcamps.",
+   "kya": "Zed ek tez, multiplayer code editor hai jo Atom aur Tree-sitter banane walon ne banaya.",
+   "lang": [
+    [
+     "Rust",
+     94.7
+    ],
+    [
+     "Other",
+     5.3
+    ]
+   ],
+   "need": "Developers ko roz ghanto code editor mein kaam karna padta hai.\nExample: do log ek hi file ek saath edit kar sakte hain, jaise Google Docs mein.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Official website zed.dev se download hota hai; koi risky sawaal lagu nahi. Licence GPL/Apache hai.",
+   "t": "agent",
+   "type": "Code editor app",
+   "win": [
+    "Official download page zed.dev/download se installer lein.",
+    "Ya Windows package manager use karein; official README dekhein."
+   ]
+  },
+  "archived": "2026-11-14"
  }
 }

@@ -2244,6 +2244,196 @@
     "src": "Trendshift",
     "upd": "2026-11-05"
    }
+  },
+  "2026-11-15": {
+   "daily": {
+    "lbl": "Daily",
+    "src": "GitHub",
+    "upd": "2026-11-15",
+    "rows": [
+     [
+      "backnotprop/plannotator",
+      "408"
+     ],
+     [
+      "GoogleChrome/modern-web-guidance-src",
+      "1.2k"
+     ],
+     [
+      "tradermonty/claude-trading-skills",
+      "553"
+     ],
+     [
+      "ChromeDevTools/chrome-devtools-mcp",
+      "664"
+     ],
+     [
+      "alibaba/open-code-review",
+      "893"
+     ],
+     [
+      "QwenLM/qwen-code",
+      "64"
+     ],
+     [
+      "dream-num/univer",
+      "495"
+     ],
+     [
+      "ag-ui-protocol/ag-ui",
+      "9"
+     ],
+     [
+      "ashhart/TensorFold",
+      "37"
+     ],
+     [
+      "JuliusBrussee/caveman",
+      "227"
+     ]
+    ]
+   },
+   "weekly": {
+    "lbl": "Weekly",
+    "src": "GitHub",
+    "upd": "2026-11-15",
+    "rows": [
+     [
+      "meta/astryx",
+      "13.7k"
+     ],
+     [
+      "sherlock-project/sherlock",
+      "12.4k"
+     ],
+     [
+      "anthropics/skills",
+      "6.2k"
+     ],
+     [
+      "vercel-labs/agent-browser",
+      "4.6k"
+     ],
+     [
+      "google/elephant-goldfish-model",
+      "5.5k"
+     ],
+     [
+      "milind-soni/OpenMausBot",
+      "6.4k"
+     ],
+     [
+      "ZhuLinsen/daily_stock_analysis",
+      "4.5k"
+     ],
+     [
+      "google-deepmind/mujoco",
+      "1.9k"
+     ],
+     [
+      "backnotprop/plannotator",
+      "818"
+     ],
+     [
+      "addyosmani/agent-skills",
+      "3.7k"
+     ]
+    ]
+   },
+   "monthly": {
+    "lbl": "Monthly",
+    "rows": [
+     [
+      "morluto/rea",
+      "425.1k"
+     ],
+     [
+      "Nutlope/hallmark",
+      "21.1k"
+     ],
+     [
+      "cloudflare/security-audit-skill",
+      "40.3k"
+     ],
+     [
+      "storytold/artcraft",
+      "33.8k"
+     ],
+     [
+      "heygen-com/hyperframes",
+      "22.4k"
+     ],
+     [
+      "debpalash/VoiceStudio",
+      "50.2k"
+     ],
+     [
+      "pingdotgg/t3code",
+      "25.8k"
+     ],
+     [
+      "thedotmack/claude-mem",
+      "17.3k"
+     ],
+     [
+      "boykopovar/AnyPS5",
+      "39.4k"
+     ],
+     [
+      "pbakaus/impeccable",
+      "28.0k"
+     ]
+    ],
+    "src": "GitHub",
+    "upd": "2026-11-09"
+   },
+   "yearly": {
+    "lbl": "Yearly",
+    "rows": [
+     [
+      "openclaw/openclaw",
+      "398.6k"
+     ],
+     [
+      "obra/superpowers",
+      "301.1k"
+     ],
+     [
+      "morluto/rea",
+      "432.3k"
+     ],
+     [
+      "NousResearch/hermes-agent",
+      "261.7k"
+     ],
+     [
+      "mattpocock/skills",
+      "311.8k"
+     ],
+     [
+      "affaan-m/ECC",
+      "298.8k"
+     ],
+     [
+      "anomalyco/opencode",
+      "182.1k"
+     ],
+     [
+      "multica-ai/andrej-karpathy-skills",
+      "230.7k"
+     ],
+     [
+      "msitarzewski/agency-agents",
+      "166.3k"
+     ],
+     [
+      "anthropics/skills",
+      "157.9k"
+     ]
+    ],
+    "src": "Trendshift",
+    "upd": "2026-11-05"
+   }
   }
  }
 }

@@ -115,80 +115,70 @@
   },
   "archived": "2026-11-13"
  },
- "QwenLM/qwen-code": {
+ "NVIDIA/auto-ontology": {
   "EN": {
    "and": [
-    "Install Node.js in Termux, then run the same `npm install -g @qwen-code/qwen-code@latest` (see the official README)."
+    "It does not run on a phone; it runs on a server or computer with Docker."
    ],
-   "bani": "Coding agents can be costly or closed. The Qwen team built an open one that can read, write and change your code.",
-   "job": "developers, AI learners, automation builders, freelancers",
-   "kahan": "Software teams, startups, students.",
-   "kya": "An open-source AI coding agent that works in the terminal, editor, desktop, browser and chat.",
-   "need": "If you are learning to code or building automations, it is a helper. Example: you say 'fix the error in this script' and the agent edits the file.",
+   "bani": "An AI agent can give a wrong number because it does not know what 'revenue' means in which table. NVIDIA built a context layer that adds the meaning, the source and the proof.",
+   "job": "Data engineers, analytics teams, AI developers.",
+   "kahan": "Large companies, banks, retail analytics.",
+   "kya": "Tells the AI agent what company data (tables, metrics) really means, so it answers from the right database. It works through MCP (a way to plug tools into AI), CLI and API.",
+   "need": "A business team asks in chat, 'What were sales this month?'. The agent must know which number is official. Example: two systems write 'revenue' differently, and the tool matches their meanings.",
    "plat": [
-    "Windows",
-    "Mac",
     "Linux",
-    "Terminal",
-    "VS Code",
-    "Android (Termux)"
+    "Mac",
+    "Windows (with Docker)"
    ],
-   "rn": "Medium risk because the agent can read and change your files (question 2) and one install option runs a script from the internet (question 3). The npm way is safer.",
-   "type": "AI coding agent (open-source)",
+   "rn": "Medium risk because you must connect it to your databases and give it API keys (a secret password for a service) (question 2). Try it on a test database first.",
+   "type": "A library that makes company data understandable for AI agents",
    "win": [
-    "Needs Node.js 22 or newer. `npm install -g @qwen-code/qwen-code@latest`",
-    "The other installer runs a script from the internet, so that command is not shown here."
+    "`git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology`",
+    "`cp .env.example .env`",
+    "`docker compose up -d --build`",
+    "You must put an NVIDIA API key in `.env`."
    ]
   },
   "R": {
    "and": [
-    "Termux mein Node.js install karke wahi `npm install -g @qwen-code/qwen-code@latest` chalayein (official README dekhein)."
+    "Phone par nahi; ye server ya computer par Docker se chalta hai."
    ],
-   "bani": "Coding agents mehenge ya band hote hain. Qwen team ne ek khula (open) agent banaya jo aapke code ko padh kar likh aur badal sakta hai.",
-   "job": "Developers, AI learners, automation builders, freelancers.",
-   "kahan": "Software teams, startups, students.",
-   "kya": "Ek open-source AI coding agent jo terminal, editor, desktop, browser aur chat mein kaam karta hai.",
+   "bani": "AI agent kabhi galat number de deta hai kyunki use pata nahi hota ki 'revenue' ka matlab kis table mein kya hai. NVIDIA ne ek context layer banayi jo meaning, source aur proof saath deti hai.",
+   "job": "Data engineers, analytics teams, AI developers.",
+   "kahan": "Enterprise companies, banks, retail analytics.",
+   "kya": "Company ke data (tables, metrics) ka matlab AI agent ko batata hai, taaki wo sawaal ka jawab sahi database se de. MCP, CLI aur API se kaam karta hai.",
    "lang": [
     [
+     "Python",
+     52.9
+    ],
+    [
      "TypeScript",
-     73.8
-    ],
-    [
-     "Java",
-     14.4
-    ],
-    [
-     "JavaScript",
-     4.7
-    ],
-    [
-     "Rust",
-     3.7
+     46.4
     ],
     [
      "Other",
-     3.4
+     0.7
     ]
    ],
-   "need": "Agar aap code likhna seekh rahe hain ya automation banate hain, ye ek helper hai. Example: aap bolte hain 'is script mein error theek karo' aur agent file badal deta hai.",
+   "need": "Business team chat mein poochti hai 'is mahine ki sales?'. Agent ko pata hona chahiye kaunsa number official hai. Example: do systems mein 'revenue' alag likha hai, tool unka matlab milata hai.",
    "plat": [
-    "Windows",
-    "Mac",
     "Linux",
-    "Terminal",
-    "VS Code",
-    "Android (Termux)"
+    "Mac",
+    "Windows (Docker ke saath)"
    ],
    "r": "med",
-   "rn": "Medium risk kyunki agent aapki files padh aur badal sakta hai (sawaal 2) aur ek install option internet se script chalata hai (sawaal 3). npm wala tareeka behtar hai.",
+   "rn": "Medium risk kyunki ise aapke databases se connect karna padta hai aur API keys chahiye (sawaal 2). Pehle test database par chalayein.",
    "t": "agent",
-   "type": "AI coding agent (open-source)",
+   "type": "Data ko AI agent ke liye samajhne layak banane wala library",
    "win": [
-    "Node.js 22 ya naya chahiye. `npm install -g @qwen-code/qwen-code@latest`",
-    "Doosra installer script internet se chalata hai, isliye woh command yahan nahi di gayi."
+    "`git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology`",
+    "`cp .env.example .env`",
+    "`docker compose up -d --build`",
+    "`.env` mein NVIDIA API key daalni hoti hai."
    ]
   },
-  "archived": "2026-11-14"
+  "archived": "2026-11-15"
  },
  "Renhuai123/ziwei-doushu": {
   "EN": {
@@ -434,70 +424,80 @@
   },
   "archived": "2026-11-12"
  },
- "ashhart/TensorFold": {
+ "block/buzz": {
   "EN": {
    "and": [
-    "Please see the official README (not made for Android)."
+    "Please see the official README (for the mobile app see mobile/README.md)"
    ],
-   "bani": "Running a model often needs a heavy Python setup. TensorFold serves models from one small binary file.",
-   "job": "AI developers, infra engineers, AI learners",
-   "kahan": "Local AI setups, research labs, startups.",
-   "kya": "A program that runs language models on Apple Silicon and NVIDIA GPUs without Python or MLX.",
-   "need": "If you want to run an AI model on your own computer. Example: you run a Qwen model locally and connect your app, with no internet.",
+   "bani": "AI agents are often hidden in separate tools. Block built a workspace where an agent has its own identity, its own permissions and its own record, just like a teammate.",
+   "job": "Developers, software teams, AI automation builders, self-hosters",
+   "kahan": "Software companies, startups, open-source teams.",
+   "kya": "A team-chat style workspace where people and AI agents work together, all stored on your own server (a relay).",
+   "need": "To bring agents into team work safely. Example: an agent looks at a bug, sends a patch, and everything is recorded in one channel.",
    "plat": [
-    "Mac (Apple Silicon)",
-    "Linux (NVIDIA GPU)"
+    "Docker",
+    "Linux",
+    "macOS",
+    "Desktop app",
+    "Mobile app"
    ],
-   "rn": "Low risk. Model weights have their own licenses. Contributor agent check-ins go to a public radar anonymously.",
-   "type": "AI model server (Zig program)",
+   "rn": "Medium risk because agents get permission to act on repos and workflows (question 2) and the setup downloads tools automatically.",
+   "type": "Team workspace for humans + AI agents",
    "win": [
-    "Please see the official README (check there for Windows steps)."
+    "`git clone https://github.com/block/buzz.git && cd buzz`",
+    "`. ./bin/activate-hermit`",
+    "`just setup && just build`"
    ]
   },
   "R": {
    "and": [
-    "Official README dekhein (Android ke liye nahi bana)."
+    "Official README dekhein (mobile app ke liye mobile/README.md)"
    ],
-   "bani": "Model chalane ke liye aksar bhaari Python setup chahiye. TensorFold ek hi chhoti binary file se model serve karta hai.",
-   "job": "AI developers, infra engineers, AI learners.",
-   "kahan": "Local AI setups, research labs, startups.",
-   "kya": "Ek program jo language models ko Apple Silicon aur NVIDIA GPU par bina Python ya MLX ke chalata hai.",
+   "bani": "AI agents aksar alag tools mein chhupe hote hain. Block ne ek workspace banaya jahan agent ki apni pehchaan, apni permission aur apna record hota hai, bilkul ek teammate ki tarah.",
+   "job": "Developers, software teams, AI automation builders, self-hosters",
+   "kahan": "Software companies, startups, open-source teams.",
+   "kya": "Team chat jaisa workspace jahan log aur AI agents saath kaam karte hain, aur sab kuch aapke apne server (relay) par rehta hai.",
    "lang": [
     [
-     "Zig",
-     62.8
-    ],
-    [
      "TypeScript",
-     24.5
+     36.5
     ],
     [
-     "Python",
-     5.8
+     "Rust",
+     22.3
     ],
     [
-     "CUDA",
-     3.2
+     "Dart",
+     20.9
+    ],
+    [
+     "JavaScript",
+     14.4
     ],
     [
      "Other",
-     3.7
+     5.9
     ]
    ],
-   "need": "Agar aap apne computer par AI model chalana chahte hain. Example: aap Qwen model local chalakar apni app ko jodte hain, internet ke bina.",
+   "need": "Agents ko team ke kaam mein safe tareeke se jodne ke liye. Example: ek agent bug dekhta hai, patch bhejta hai, aur sab kuch ek channel mein record hota hai.",
    "plat": [
-    "Mac (Apple Silicon)",
-    "Linux (NVIDIA GPU)"
+    "Docker",
+    "Linux",
+    "macOS",
+    "Desktop app",
+    "Mobile app"
    ],
-   "r": "low",
-   "rn": "Low risk. Model weights ke apne licenses hote hain. Contributors ke liye agent check-in anonymous public radar par jata hai.",
-   "t": "infra",
-   "type": "AI model server (Zig program)",
+   "r": "med",
+   "rn": "Medium risk kyunki agents ko repos aur workflows par kaam karne ki permission milti hai (sawaal 2) aur setup mein tools apne aap download hote hain.",
+   "t": "agent",
+   "type": "Team workspace for humans + AI agents",
    "win": [
-    "Official README dekhein (Windows ka tareeka wahan dekhein)."
+    "`git clone https://github.com/block/buzz.git && cd buzz`",
+    "`. ./bin/activate-hermit`",
+    "`just setup && just build`"
    ]
   },
-  "archived": "2026-11-14"
+  "archived": "2026-11-15"
  },
  "dsx-ai-factory/nvke": {
   "EN": {
@@ -745,6 +745,77 @@
   },
   "archived": "2026-11-13"
  },
+ "louislam/uptime-kuma": {
+  "EN": {
+   "and": [
+    "Please see the official README (Docker usually does not run on an Android tablet; run it on a server and open it in the tablet's browser)"
+   ],
+   "bani": "When a website goes down, people often learn late. Uptime Kuma pings your site every few seconds and sends an alert through Telegram, Discord or email when it stops.",
+   "job": "Developers, IT admins, small business owners, freelancers, homelab users",
+   "kahan": "Small online businesses, IT teams, agencies, self-hosting hobbyists.",
+   "kya": "A free dashboard that checks 24/7 whether your websites and servers are up or down.",
+   "need": "To know about downtime (when a site is not working) right away. Example: your online shop goes down at night; you get a message on your phone.",
+   "plat": [
+    "Docker",
+    "Linux",
+    "Windows",
+    "macOS"
+   ],
+   "rn": "Low risk because it installs with a few official Docker (software container) steps. Note: the top Google result uptimekuma.co is not the official website.",
+   "type": "Self-hosted monitoring tool",
+   "win": [
+    "`mkdir uptime-kuma`",
+    "`cd uptime-kuma`",
+    "`curl -o compose.yaml https://raw.githubusercontent.com/louislam/uptime-kuma/master/compose.yaml`",
+    "`docker compose up -d`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein (Android tablet par Docker aam taur par nahi chalta; ise server par chalakar tablet ke browser se kholein)"
+   ],
+   "bani": "Website gir jaye to aksar pata der se chalta hai. Uptime Kuma har kuch second mein site ko ping karta hai aur band hone par Telegram, Discord ya email se alert bhejta hai.",
+   "job": "Developers, IT admins, small business owners, freelancers, homelab users",
+   "kahan": "Small online businesses, IT teams, agencies, self-hosting hobbyists.",
+   "kya": "Aapki websites aur servers chal rahe hain ya band, ye 24x7 check karne wala free dashboard.",
+   "lang": [
+    [
+     "JavaScript",
+     60.8
+    ],
+    [
+     "Vue",
+     26.6
+    ],
+    [
+     "TypeScript",
+     10.2
+    ],
+    [
+     "Other",
+     2.4
+    ]
+   ],
+   "need": "Apni site ya app ka downtime (band rehna) turant jaanne ke liye. Example: aapki dukaan ki online site raat mein band ho gayi; aapko phone par message aa jata hai.",
+   "plat": [
+    "Docker",
+    "Linux",
+    "Windows",
+    "macOS"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki 2 official steps (Docker) se install hota hai. Dhyan rahe: Google par top result uptimekuma.co official website nahi hai.",
+   "t": "infra",
+   "type": "Self-hosted monitoring tool",
+   "win": [
+    "`mkdir uptime-kuma`",
+    "`cd uptime-kuma`",
+    "`curl -o compose.yaml https://raw.githubusercontent.com/louislam/uptime-kuma/master/compose.yaml`",
+    "`docker compose up -d`"
+   ]
+  },
+  "archived": "2026-11-15"
+ },
  "max-sixty/worktrunk": {
   "EN": {
    "and": [
@@ -807,71 +878,6 @@
    ]
   },
   "archived": "2026-11-12"
- },
- "meta/astryx": {
-  "EN": {
-   "and": [
-    "Not available on Android."
-   ],
-   "bani": "Meta needed more than 13,000 apps to look consistent. This system grew inside Meta over 8 years. Now it is open to everyone, so people and AI assistants can build apps in the same way.",
-   "job": "Frontend developers, UI designers, product teams.",
-   "kahan": "Web apps, dashboards, product teams in startups and big companies.",
-   "kya": "Astryx is Meta's design system (a set of ready UI parts like buttons, forms and menus). It has 150+ React components, themes, dark mode and a CLI.",
-   "need": "If you build a website or app, making every button from scratch takes time. For example, you are making a booking app; with ready forms and menus, a day of work can take a few hours.",
-   "plat": [
-    "Web app",
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "rn": "Low risk. It is an official Meta project and comes from npm. It does not need control of any account or computer.",
-   "type": "Meta's open source design system",
-   "win": [
-    "You need Node.js and React 19. In your project folder: `npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex`",
-    "Then the CLI: `npm install -D @astryxdesign/cli`",
-    "To have the CLI on your whole computer: `npm i -g @astryxdesign/cli`"
-   ]
-  },
-  "R": {
-   "and": [
-    "Android par nahi."
-   ],
-   "bani": "Meta ko 13,000 se zyada apps ek jaisa dikhane the. Ye system 8 saal mein Meta ke andar bana. Ab use sabke liye open kiya gaya hai, taaki log aur AI assistants dono ek hi tarah se app bana sakein.",
-   "job": "Frontend developers, UI designers, product teams.",
-   "kahan": "Web apps, dashboards, startups aur badi companies ke product teams.",
-   "kya": "Astryx Meta ka design system (buttons, forms, menus jaise ready UI parts ka set) hai. Isme 150 se zyada React components, themes, dark mode aur ek CLI hai.",
-   "lang": [
-    [
-     "TypeScript",
-     58
-    ],
-    [
-     "JavaScript",
-     40
-    ],
-    [
-     "Other",
-     2
-    ]
-   ],
-   "need": "Agar aap website ya app bana rahe hain, to har button alag se banana time lagata hai. Jaise aap ek booking app bana rahe hain; ready form aur menu laga kar aap din bhar ka kaam ghante mein kar sakte hain.",
-   "plat": [
-    "Web app",
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "r": "low",
-   "rn": "Low risk. Ye Meta ka official project hai aur npm se aata hai. Koi account ya computer control nahi chahiye.",
-   "t": "infra",
-   "type": "Meta ka open source design system",
-   "win": [
-    "Node.js aur React 19 chahiye. Project folder mein: `npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex`",
-    "Phir CLI: `npm install -D @astryxdesign/cli`",
-    "Poore computer par CLI chahiye to: `npm i -g @astryxdesign/cli`"
-   ]
-  },
-  "archived": "2026-11-14"
  },
  "nodejs/node": {
   "EN": {
@@ -994,6 +1000,79 @@
    ]
   },
   "archived": "2026-11-14"
+ },
+ "openai/codex-security": {
+  "EN": {
+   "and": [
+    "Mainly for computers; on Android, Termux with Node.js may run the same npm command, but please see the official README."
+   ],
+   "bani": "Finding and fixing security bugs by hand is slow. This tool scans, checks each finding, writes patches and verifies old fixes in one place.\nIt works as a command-line tool, a TypeScript SDK (code kit) and a GitHub Action (automatic check).",
+   "job": "Developers, security teams, DevOps engineers, startup founders",
+   "kahan": "Banks, fintech, software companies and any team that ships code.",
+   "kya": "An OpenAI tool that finds, checks and fixes vulnerabilities (security weak spots) in your code.",
+   "need": "You want to know about holes in your app before it goes live.\nExample: a mistake in a login page shows up in the scan report with a suggested patch.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Codex",
+    "GitHub Actions"
+   ],
+   "rn": "Medium risk because it needs a login or API key and scans your whole code (question 2). It is a defensive tool.",
+   "type": "Security scanner CLI + SDK",
+   "win": [
+    "`npm install --global @openai/codex-security`",
+    "`cs login`",
+    "`cs scan .`",
+    "Needs Node.js 22.13+ and Python 3.10+."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android tablet par mainly nahi; Termux mein Node.js ho to same npm command try kar sakte hain, par official README dekhein."
+   ],
+   "bani": "Code mein security bugs dhoondhna aur fix karna slow hota hai. Is tool mein scan, finding ki validation, patch banana aur purane fix verify karna ek jagah hai.\nCLI, TypeScript SDK aur GitHub Action teen tareeke se chalta hai.",
+   "job": "Developers, security teams, DevOps engineers, startup founders",
+   "kahan": "Banks, fintech, SaaS companies, har wo team jo apna code ship karti hai.",
+   "kya": "OpenAI ka tool jo aapke code mein vulnerabilities (suraksha ki kamiyan) dhoondhta, check karta aur fix karta hai.",
+   "lang": [
+    [
+     "TypeScript",
+     73.3
+    ],
+    [
+     "Python",
+     14.2
+    ],
+    [
+     "JavaScript",
+     9.5
+    ],
+    [
+     "Other",
+     3.0
+    ]
+   ],
+   "need": "Aap apna app live karne se pehle jaanna chahte hain ki koi chhed to nahi.\nExample: login page mein koi galti ho to scan report mein dikh jayegi aur patch ka suggestion milega.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Codex",
+    "GitHub Actions"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki login/API key chahiye aur aapka poora code scan hota hai (sawaal 2). Ye defensive tool hai.",
+   "t": "sec",
+   "type": "Security scanner CLI + SDK",
+   "win": [
+    "`npm install --global @openai/codex-security`",
+    "`cs login`",
+    "`cs scan .`",
+    "Node.js 22.13+ aur Python 3.10+ chahiye."
+   ]
+  },
+  "archived": "2026-11-15"
  },
  "pookjw/HermesEnabler": {
   "EN": {
@@ -1249,6 +1328,63 @@
   },
   "archived": "2026-11-13"
  },
+ "tailscale/tailcat": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Sending a file or text between two machines is often hard because of routers and firewalls. Tailcat uses Tailscale's WireGuard tunnel (a secure pipe) to connect them directly.",
+   "job": "Developers, IT admins, network engineers, tech hobbyists",
+   "kahan": "IT teams, developers, remote work setups.",
+   "kya": "A tool that makes a direct, encrypted (private) connection between two computers, without a Tailscale account.",
+   "need": "To send data from one computer to another without making an account. Example: send a file from your home computer straight to an office server.",
+   "plat": [
+    "Windows",
+    "Linux",
+    "macOS",
+    "Web browser"
+   ],
+   "rn": "Low risk because it is Tailscale's official open-source repo. Note: the free relay servers are rate-limited, and anyone who gets your address can connect.",
+   "type": "Networking tool (netcat over Tailscale)",
+   "win": [
+    "Please see the official README (INSTALL.md lists prebuilt binaries)"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Do machines ke beech file ya text bhejna aksar router aur firewall ki wajah se mushkil hota hai. Tailcat Tailscale ke WireGuard tunnel ka istemal karke seedha connection banata hai.",
+   "job": "Developers, IT admins, network engineers, tech hobbyists",
+   "kahan": "IT teams, developers, remote work setups.",
+   "kya": "Do computers ke beech seedha, encrypted (surakshit) connection banane wala tool, bina Tailscale account ke.",
+   "lang": [
+    [
+     "Go",
+     93.1
+    ],
+    [
+     "Other",
+     6.9
+    ]
+   ],
+   "need": "Bina account banaye ek computer se doosre par data bhejne ke liye. Example: ghar ke computer se office ke server par ek file seedha bhejna.",
+   "plat": [
+    "Windows",
+    "Linux",
+    "macOS",
+    "Web browser"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki ye Tailscale ki official open-source repo hai. Dhyan rahe: free relay servers rate-limited hain aur address dusron ko dene par wo connect kar sakte hain.",
+   "t": "infra",
+   "type": "Networking tool (netcat over Tailscale)",
+   "win": [
+    "Official README dekhein (INSTALL.md mein prebuilt binaries hain)"
+   ]
+  },
+  "archived": "2026-11-15"
+ },
  "tokio-rs/topcoat": {
   "EN": {
    "and": [
@@ -1378,6 +1514,75 @@
    ]
   },
   "archived": "2026-11-14"
+ },
+ "we-promise/sure": {
+  "EN": {
+   "and": [
+    "Please see the official README: this is a server app, so you must host it on a server and open it in the tablet browser"
+   ],
+   "bani": "The Maybe Finance team built this app, but the business did not work and the project stopped. The community forked (copied and continued) the code so people can host it free on their own server.",
+   "job": "Everyday users who budget, freelancers, finance bloggers, self-hosting fans, Ruby developers.",
+   "kahan": "Home budgets, small business accounts, personal investing tracking.",
+   "kya": "A personal finance and wealth app. The dashboard shows cashflow, net worth and spending, and an AI assistant answers questions.",
+   "need": "If you want to track money, spending and savings in one place without giving data to a company, this self-hosted app helps. It is like turning a household notebook into a smart dashboard.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "Linux",
+    "Mac",
+    "Windows"
+   ],
+   "rn": "Medium risk because the app holds your financial data and AI API keys (question 2). If you host it, server security is your responsibility.",
+   "type": "Personal finance app",
+   "win": [
+    "See the official hosting guide (Docker); for developer setup run `cp .env.local.example .env.local`, `bin/setup`, `bin/dev`",
+    "See the official README"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye server app hai, tablet par browser se chalane ke liye kisi server par host karna padega"
+   ],
+   "bani": "Maybe Finance team ne ye app banaya tha, par business nahi chala aur project band ho gaya. Community ne is code ko fork karke zinda rakha, taaki log ise apne server par free host kar sakein.",
+   "job": "Aam users jo budget track karte hain, freelancers, finance bloggers, self-hosting shauqeen, Ruby developers.",
+   "kahan": "Ghar ka budget, small business ka hisaab, personal investing tracking.",
+   "kya": "Personal finance aur wealth management app: dashboard mein cashflow, net worth, spending dikhta hai, aur ek AI assistant sawaal ka jawab deta hai.",
+   "lang": [
+    [
+     "Ruby",
+     89.4
+    ],
+    [
+     "JavaScript",
+     4.8
+    ],
+    [
+     "Dart",
+     4.2
+    ],
+    [
+     "Other",
+     1.6
+    ]
+   ],
+   "need": "Agar aap apna paisa, kharche aur savings ek jagah dekhna chahte hain aur data kisi company ko nahi dena, to ye self-host app kaam aati hai. Jaise ghar ka kharcha ek diary ke bajay ek smart dashboard mein dikhe.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "Linux",
+    "Mac",
+    "Windows"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki app aapka financial data aur AI API keys sambhalta hai (sawaal 2). Self-host karein to server ki security aapki responsibility hai.",
+   "t": "life",
+   "type": "Personal finance app",
+   "win": [
+    "Official hosting guide dekhein (docker) aur developer setup ke liye `cp .env.local.example .env.local`, `bin/setup`, `bin/dev`",
+    "Official README dekhein"
+   ]
+  },
+  "archived": "2026-11-15"
  },
  "zed-industries/zed": {
   "EN": {

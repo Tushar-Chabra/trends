@@ -260,10 +260,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
  #stars .donutwrap{gap:12px}
  .radcol{flex-basis:100%;gap:14px}
  #starDonut svg.p3{max-width:300px}
- .audbar{flex-wrap:wrap;overflow:visible;gap:6px;padding:0}
- .audbar .al{flex-basis:100%;position:static;box-shadow:none;margin:0}
- .audbar .ach{min-height:34px;padding:.2rem .5rem;font-size:.76rem;gap:4px}
- .audbar .clr{min-height:34px}
+ .audbar{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;gap:6px;padding:2px 12px 8px 0;margin:0 -10px 6px 0;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;overscroll-behavior-x:contain}
+ .audbar::-webkit-scrollbar{display:none}
+ .audbar .al{flex:0 0 auto;position:static;box-shadow:none;margin:0;order:-2}
+ .audbar .clr{flex:0 0 auto;min-height:34px;order:-1;white-space:nowrap}
+ .audbar .ach{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start;min-height:34px;padding:.2rem .55rem;font-size:.76rem;gap:4px}
  .slegend{gap:2px}
  .srw{padding:4px 0}
  .srow{grid-template-columns:1.4rem minmax(0,1fr) 3.4rem 2.4rem;gap:6px;padding:.4rem .3rem;min-height:44px}

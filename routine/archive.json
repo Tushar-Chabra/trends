@@ -115,6 +115,83 @@
   },
   "archived": "2026-11-13"
  },
+ "JuliusBrussee/caveman": {
+  "EN": {
+   "and": [
+    "Please see the official README: for Android tablet steps look at INSTALL.md, because this mainly runs on a computer."
+   ],
+   "bani": "AI agents talk a lot and read very long logs, which raises the bill. Caveman came up with 'say less, read less', and it now has 6 parts: short answers, less input, choosing the right model, reusing scripts, finding waste and compressed web pages.",
+   "job": "Claude Code users, developers, freelancers, AI power users",
+   "kahan": "Software teams, AI automation freelancers, startups that want a smaller agent bill.",
+   "kya": "Makes an AI coding agent give short answers and read less, so it uses fewer tokens (the units an AI uses, which you pay for). The code stays exact.",
+   "need": "If you use Claude Code or Codex every day and your monthly bill or limit runs out fast, this can cut the cost. Example: instead of a long test log, the agent gets only the useful lines, so the work is the same and tokens are saved. The numbers in the README (like 33.2% fewer input tokens) come from the authors, so test it yourself.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "Gemini CLI",
+    "OpenCode",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because the setup looks for your agents' settings and logins and changes them (question 2). There is also an optional desktop app that is downloaded from caveman.so, so check it before installing (question 4). Read the changes it shows before you press Enter.",
+   "type": "Command-line tool + agent skill (makes an AI agent use fewer tokens)",
+   "win": [
+    "Install Node.js 22.13 or newer, then run: `npx @caveman-ai/cli@latest`",
+    "The setup shows what it will change, so read it before pressing Enter."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: Android tablet ke liye alag steps INSTALL.md mein dekhein, kyunki ye mainly computer par chalta hai."
+   ],
+   "bani": "AI agents bahut lamba bolte hain aur lambe logs padhte hain, jisse bill badhta hai. Caveman ne 'kam bolo, kam padho' ka idea banaya, aur ab 6 parts hain: chhote jawab, kam input, sahi model chunna, scripts dobara use karna, waste dhoondhna aur compressed web pages.",
+   "job": "Claude Code users, developers, freelancers, AI power users",
+   "kahan": "Software teams, AI automation freelancers, startups jo agent ka bill kam karna chahte hain.",
+   "kya": "AI coding agent ko chhote jawab dene aur kam padhne par laata hai, taaki tokens (AI ka usage unit, jo paise se judta hai) kam kharch hon. Code exact rehta hai.",
+   "lang": [
+    [
+     "Go",
+     53.0
+    ],
+    [
+     "JavaScript",
+     30.2
+    ],
+    [
+     "Python",
+     8.7
+    ],
+    [
+     "TypeScript",
+     6.4
+    ],
+    [
+     "Other",
+     1.7
+    ]
+   ],
+   "need": "Agar aap roz Claude Code ya Codex use karte hain aur monthly bill ya limit jaldi khatam hoti hai, to ye kharch kam kar sakta hai. Example: long test log ki jagah agent ko sirf zaroori line milti hai, to kaam same hota hai aur tokens bachte hain. README ke apne numbers hain (jaise 33.2% kam input tokens), unhe khud test karke dekhein.",
+   "plat": [
+    "Claude Code",
+    "Codex",
+    "Gemini CLI",
+    "OpenCode",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki setup aapke agents ki settings aur logins dhoondhta hai aur badalta hai (sawaal 2). Ek optional desktop app bhi hai jo caveman.so se download hoti hai, wo official page ke bahar ki file nahi hai lekin install se pehle check karein (sawaal 4). Setup chalane se pehle dikhaye gaye changes dhyan se padhein.",
+   "t": "agent",
+   "type": "Command-line tool + agent skill (AI agent ko kam tokens use karwata hai)",
+   "win": [
+    "Node.js 22.13+ install karein, phir: `npx @caveman-ai/cli@latest`",
+    "Setup aapko dikhata hai kya badlega, Enter dabane se pehle padh lein."
+   ]
+  },
+  "archived": "2026-11-16"
+ },
  "NVIDIA/auto-ontology": {
   "EN": {
    "and": [
@@ -179,6 +256,81 @@
    ]
   },
   "archived": "2026-11-15"
+ },
+ "QwenLM/qwen-code": {
+  "EN": {
+   "and": [
+    "Install Node.js in Termux, then run the same `npm install -g @qwen-code/qwen-code@latest` (see the official README)."
+   ],
+   "bani": "Coding agents can be costly or closed. The Qwen team built an open one that can read, write and change your code.",
+   "job": "developers, AI learners, automation builders, freelancers",
+   "kahan": "Software teams, startups, students.",
+   "kya": "An open-source AI coding agent that works in the terminal, editor, desktop, browser and chat.",
+   "need": "If you are learning to code or building automations, it is a helper. Example: you say 'fix the error in this script' and the agent edits the file.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Terminal",
+    "VS Code",
+    "Android (Termux)"
+   ],
+   "rn": "Medium risk because the agent can read and change your files (question 2) and one install option runs a script from the internet (question 3). The npm way is safer.",
+   "type": "AI coding agent (open-source)",
+   "win": [
+    "Needs Node.js 22 or newer. `npm install -g @qwen-code/qwen-code@latest`",
+    "The other installer runs a script from the internet, so that command is not shown here."
+   ]
+  },
+  "R": {
+   "and": [
+    "Termux mein Node.js install karke wahi `npm install -g @qwen-code/qwen-code@latest` chalayein (official README dekhein)."
+   ],
+   "bani": "Coding agents mehenge ya band hote hain. Qwen team ne ek khula (open) agent banaya jo aapke code ko padh kar likh aur badal sakta hai.",
+   "job": "Developers, AI learners, automation builders, freelancers.",
+   "kahan": "Software teams, startups, students.",
+   "kya": "Ek open-source AI coding agent jo terminal, editor, desktop, browser aur chat mein kaam karta hai.",
+   "lang": [
+    [
+     "TypeScript",
+     73.8
+    ],
+    [
+     "Java",
+     14.4
+    ],
+    [
+     "JavaScript",
+     4.7
+    ],
+    [
+     "Rust",
+     3.7
+    ],
+    [
+     "Other",
+     3.4
+    ]
+   ],
+   "need": "Agar aap code likhna seekh rahe hain ya automation banate hain, ye ek helper hai. Example: aap bolte hain 'is script mein error theek karo' aur agent file badal deta hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Terminal",
+    "VS Code",
+    "Android (Termux)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki agent aapki files padh aur badal sakta hai (sawaal 2) aur ek install option internet se script chalata hai (sawaal 3). npm wala tareeka behtar hai.",
+   "t": "agent",
+   "type": "AI coding agent (open-source)",
+   "win": [
+    "Node.js 22 ya naya chahiye. `npm install -g @qwen-code/qwen-code@latest`",
+    "Doosra installer script internet se chalata hai, isliye woh command yahan nahi di gayi."
+   ]
+  },
+  "archived": "2026-11-16"
  },
  "Renhuai123/ziwei-doushu": {
   "EN": {
@@ -359,6 +511,73 @@
   },
   "archived": "2026-11-13"
  },
+ "addyosmani/agent-skills": {
+  "EN": {
+   "and": [
+    "Please see the official README: these agent tools usually do not run on an Android tablet, so use a computer"
+   ],
+   "bani": "AI agents write code fast but often skip key steps like specs, tests and reviews. This packs senior engineers' workflows into skills so the agent follows the same quality steps every time.",
+   "job": "Software developers, freelancers who build with AI, startup teams, QA and code reviewers.",
+   "kahan": "Web development, app building, automation projects, agencies and solo builders.",
+   "kya": "A pack of 25 ready-made skills (guides for how to work) and 9 slash commands such as /spec, /plan, /build, /test, /review, /ship for AI coding agents.",
+   "need": "If you build apps or automations with AI, this gives the agent a checklist: plan first, then build, then test. It is like a house: you make a plan and get it inspected before you move in.",
+   "plat": [
+    "Claude Code",
+    "Cursor",
+    "Codex",
+    "Copilot"
+   ],
+   "rn": "Low risk because these are text guides and install uses the official npx skills command. Still, check the skills' content before installing.",
+   "type": "Skills pack",
+   "win": [
+    "Install Node.js, then run `npx skills add addyosmani/agent-skills` in a terminal",
+    "See the official README for details"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: Android tablet par ye agent tools aam taur par nahi chalte, isliye computer par use karein"
+   ],
+   "bani": "Aksar AI agent code jaldi likh deta hai, par spec, test aur review jaise zaroori steps chhod deta hai. Isme senior engineers ke workflows ko skills ki shakal mein pack kiya gaya hai, taaki agent har baar wahi quality steps follow kare.",
+   "job": "Software developer, freelancer jo AI se projects banate hain, startup teams, QA aur code review karne wale.",
+   "kahan": "Web development, app building, automation projects, agencies aur solo builders.",
+   "kya": "AI coding agent ke liye 25 ready-made skills (kaam karne ke tareeke ki guides) aur 9 slash commands, jaise /spec, /plan, /build, /test, /review, /ship.",
+   "lang": [
+    [
+     "JavaScript",
+     69.1
+    ],
+    [
+     "Shell",
+     14.5
+    ],
+    [
+     "Python",
+     12.7
+    ],
+    [
+     "Other",
+     3.7
+    ]
+   ],
+   "need": "Agar aap AI se app ya automation banwate hain, to ye agent ko ek checklist deta hai: pehle plan, phir build, phir test. Jaise ghar banane se pehle plan aur inspection hota hai, waise hi code ke liye bhi.",
+   "plat": [
+    "Claude Code",
+    "Cursor",
+    "Codex",
+    "Copilot"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki ye text guides hain aur install official npx skills command se hota hai. Phir bhi install se pehle skills ka content ek baar check kar lein.",
+   "t": "agent",
+   "type": "Skills pack",
+   "win": [
+    "Node.js install karein, phir terminal mein `npx skills add addyosmani/agent-skills` chalayein",
+    "Details ke liye official README dekhein"
+   ]
+  },
+  "archived": "2026-11-16"
+ },
  "anthropics/claude-quickstarts": {
   "EN": {
    "and": [
@@ -423,6 +642,71 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "ashhart/TensorFold": {
+  "EN": {
+   "and": [
+    "Please see the official README (not made for Android)."
+   ],
+   "bani": "Running a model often needs a heavy Python setup. TensorFold serves models from one small binary file.",
+   "job": "AI developers, infra engineers, AI learners",
+   "kahan": "Local AI setups, research labs, startups.",
+   "kya": "A program that runs language models on Apple Silicon and NVIDIA GPUs without Python or MLX.",
+   "need": "If you want to run an AI model on your own computer. Example: you run a Qwen model locally and connect your app, with no internet.",
+   "plat": [
+    "Mac (Apple Silicon)",
+    "Linux (NVIDIA GPU)"
+   ],
+   "rn": "Low risk. Model weights have their own licenses. Contributor agent check-ins go to a public radar anonymously.",
+   "type": "AI model server (Zig program)",
+   "win": [
+    "Please see the official README (check there for Windows steps)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein (Android ke liye nahi bana)."
+   ],
+   "bani": "Model chalane ke liye aksar bhaari Python setup chahiye. TensorFold ek hi chhoti binary file se model serve karta hai.",
+   "job": "AI developers, infra engineers, AI learners.",
+   "kahan": "Local AI setups, research labs, startups.",
+   "kya": "Ek program jo language models ko Apple Silicon aur NVIDIA GPU par bina Python ya MLX ke chalata hai.",
+   "lang": [
+    [
+     "Zig",
+     62.8
+    ],
+    [
+     "TypeScript",
+     24.5
+    ],
+    [
+     "Python",
+     5.8
+    ],
+    [
+     "CUDA",
+     3.2
+    ],
+    [
+     "Other",
+     3.7
+    ]
+   ],
+   "need": "Agar aap apne computer par AI model chalana chahte hain. Example: aap Qwen model local chalakar apni app ko jodte hain, internet ke bina.",
+   "plat": [
+    "Mac (Apple Silicon)",
+    "Linux (NVIDIA GPU)"
+   ],
+   "r": "low",
+   "rn": "Low risk. Model weights ke apne licenses hote hain. Contributors ke liye agent check-in anonymous public radar par jata hai.",
+   "t": "infra",
+   "type": "AI model server (Zig program)",
+   "win": [
+    "Official README dekhein (Windows ka tareeka wahan dekhein)."
+   ]
+  },
+  "archived": "2026-11-16"
  },
  "block/buzz": {
   "EN": {
@@ -498,6 +782,138 @@
    ]
   },
   "archived": "2026-11-15"
+ },
+ "boykopovar/AnyPS5": {
+  "EN": {
+   "and": [
+    "It does not run on Android (it is a computer tool)."
+   ],
+   "bani": "The developer saw that console programs only run on one machine. He built a relinker (the part that changes the file format) and copies of the system libraries, so those programs can run on another computer too.",
+   "job": "Reverse engineering researchers, system programmers, game preservation community.",
+   "kahan": "Compatibility research, learning low-level programming, game preservation.",
+   "kya": "This tool opens a program file from the inside (reverse engineering) and changes its native format, without an emulator.",
+   "need": "For people who do research and preservation (saving old things). For example, someone who wants to run a game file they bought on another system. But where the file comes from matters a lot.",
+   "plat": [
+    "Windows",
+    "Linux",
+    "Mac"
+   ],
+   "rn": "High risk because it opens console software from the inside and changes it (question 1). The README says it has no copyrighted software or keys, and using only files you got legally is your own responsibility. Not for beginners.",
+   "type": "A tool that converts PS5 programs (executables) so they can run on Linux and Windows",
+   "win": [
+    "Please see the official README (build instructions are in the docs, not for beginners)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi chalta (ye computer ka tool hai)."
+   ],
+   "bani": "Developer ne dekha ki console ke programs sirf ek hi machine par chalte hain. Usne ek relinker (file ka format badalne wala hissa) aur system libraries ki copy banayi, taaki wo programs doosre computer par bhi chal sakein.",
+   "job": "Reverse engineering researchers, system programmers, game preservation community.",
+   "kahan": "Compatibility research, low-level programming seekhna, game preservation.",
+   "kya": "Ye tool kisi program ki file ko andar se padhkar (reverse engineering) uska native format badal deta hai, bina emulator ke.",
+   "lang": [
+    [
+     "C++",
+     93.2
+    ],
+    [
+     "Python",
+     5.9
+    ],
+    [
+     "Other",
+     0.9
+    ]
+   ],
+   "need": "Research aur preservation (purani cheezein bachana) karne walon ke liye. Jaise koi apni khareedi hui game file ko doosre system par chalane ki koshish kare. Lekin sahi file kahan se aayi, ye bahut matlab rakhta hai.",
+   "plat": [
+    "Windows",
+    "Linux",
+    "Mac"
+   ],
+   "r": "high",
+   "rn": "High risk kyunki ye console software ko andar se kholkar badalta hai (sawaal 1). README ke hisaab se isme copyrighted software ya keys nahi hain, aur use legal tarike se milne wali files par hi karna aapki responsibility hai. Beginners ke liye sahi nahi.",
+   "t": "sec",
+   "type": "Tool jo PS5 ke programs (executables) ko Linux aur Windows ke liye convert karta hai",
+   "win": [
+    "Official README dekhein (build instructions docs mein hain, beginners ke liye nahi)."
+   ]
+  },
+  "archived": "2026-11-16"
+ },
+ "debpalash/VoiceStudio": {
+  "EN": {
+   "and": [
+    "For Android/iPhone: Please see the official README."
+   ],
+   "bani": "The developer felt voice tools are costly and you have to send your data to the cloud. So he made an app that runs locally (on your own device).",
+   "job": "Content creators, video editors, teachers, developers.",
+   "kahan": "YouTube and reels, dubbing studios, podcasts, accessibility (audio for people who cannot read).",
+   "kya": "This app can make a copy of someone's voice, turn spoken voice into written text, and turn text into voice in 646 languages. Everything runs on your own device.",
+   "need": "For people who make voiceovers, dubbing or audio notes. For example, you want an English voiceover for a Hindi video.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Android",
+    "iPhone"
+   ],
+   "rn": "Medium risk because some install options in the README run a script straight from the internet (question 3). Voice cloning can be misused, so never clone someone's voice without their permission.",
+   "type": "AI voice app (voice clone, dubbing, transcription)",
+   "win": [
+    "On a Mac with Homebrew: `brew tap debpalash/tap`",
+    "Then: `brew trust --cask debpalash/tap/voicestudio`",
+    "Then: `brew install --cask debpalash/tap/voicestudio`",
+    "Windows and Linux: Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android/iPhone ke liye Official README dekhein."
+   ],
+   "bani": "Developer ko lagta tha ki awaaz ke tools mahange hain aur data cloud par bhejna padta hai. Isliye usne ek aisa app banaya jo local (aapke apne device par) chalta hai.",
+   "job": "Content creators, video editors, teachers, developers.",
+   "kahan": "YouTube aur reels, dubbing studios, podcasts, accessibility (padh na paane walon ke liye audio).",
+   "kya": "Ye app kisi ki awaaz ki copy bana sakti hai, bolne wali awaaz se likha hua text bana sakti hai, aur 646 languages mein text ko awaaz mein badal sakti hai. Sab kuch aapke apne device par chalta hai.",
+   "lang": [
+    [
+     "Python",
+     36.3
+    ],
+    [
+     "TypeScript",
+     30.5
+    ],
+    [
+     "JavaScript",
+     21.6
+    ],
+    [
+     "Other",
+     11.6
+    ]
+   ],
+   "need": "Un logon ke liye jo voiceover, dubbing ya audio notes banate hain. Jaise aap Hindi video ka English voiceover banana chahte hain.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Android",
+    "iPhone"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki README ke install options mein internet se script seedhi chalane wali commands hain (sawaal 3). Voice cloning galat use ho sakti hai, kisi ki awaaz uski marzi ke bina clone na karein.",
+   "t": "media",
+   "type": "AI voice app (awaaz clone, dubbing, transcription)",
+   "win": [
+    "Mac par Homebrew se: `brew tap debpalash/tap`",
+    "Phir: `brew trust --cask debpalash/tap/voicestudio`",
+    "Phir: `brew install --cask debpalash/tap/voicestudio`",
+    "Windows aur Linux: Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ]
+  },
+  "archived": "2026-11-16"
  },
  "dsx-ai-factory/nvke": {
   "EN": {
@@ -1328,6 +1744,67 @@
   },
   "archived": "2026-11-13"
  },
+ "storytold/artcraft": {
+  "EN": {
+   "and": [
+    "There is no mobile app; it is a desktop app."
+   ],
+   "bani": "Only writing prompts does not give control over composition and characters. ArtCraft added visual tools to build the scene first.",
+   "job": "Digital artists, filmmakers, designers, content creators.",
+   "kahan": "Film pre-production, ads, game art, social media content.",
+   "kya": "An 'IDE' (a workspace) for artists: compose in 2D, set up scenes in 3D, then pick the AI model you like to make an image or video.",
+   "need": "You need many shots in the same room. Example: show one character in one location from different camera angles, without guessing a new prompt each time.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. The download is from the official website. Still, check which service is running when you add your own accounts for the AI models.",
+   "type": "A desktop app for making AI images and videos",
+   "win": [
+    "Download the stable version from the official website (the Download link in the README).",
+    "To build from source, see the repo's dev setup guide."
+   ]
+  },
+  "R": {
+   "and": [
+    "Mobile app nahi; ye desktop app hai."
+   ],
+   "bani": "Sirf prompt likhne se composition aur character par control nahi milta. ArtCraft ne scene pehle banane ke visual tools diye.",
+   "job": "Digital artists, filmmakers, designers, content creators.",
+   "kahan": "Film pre-production, ads, game art, social media content.",
+   "kya": "Artists ke liye 'IDE': 2D mein compose karo, 3D mein scene lagao, phir apni pasand ka AI model chunkar image ya video banao.",
+   "lang": [
+    [
+     "Rust",
+     65.2
+    ],
+    [
+     "TypeScript",
+     33.2
+    ],
+    [
+     "Other",
+     1.6
+    ]
+   ],
+   "need": "Aapko ek hi kamre mein kai shots chahiye. Example: ek character ko ek hi location mein alag camera angles se dikhana, bina har baar naya prompt guess kiye.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. Download official website se hota hai. Phir bhi AI models ke liye apne accounts daalte time check karein ki kaun si service chal rahi hai.",
+   "t": "media",
+   "type": "AI image aur video banane ka desktop app",
+   "win": [
+    "Official website se stable version download karein (README ka Download link).",
+    "Ya source se build karna ho to repo ki dev setup guide dekhein."
+   ]
+  },
+  "archived": "2026-11-16"
+ },
  "tailscale/tailcat": {
   "EN": {
    "and": [
@@ -1450,6 +1927,59 @@
   },
   "archived": "2026-11-12"
  },
+ "tradermonty/claude-trading-skills": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Most investors have little time. This project gives ready workflows that build a disciplined process. It does not give buy/sell signals.",
+   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
+   "kahan": "Personal investing, finance learners, hobby traders.",
+   "kya": "A set of Claude skills that helps investors with market review, risk checks, trade plans and journaling.",
+   "need": "To give structure to your investing habit. Example: a daily market summary and a portfolio risk check in one flow.",
+   "plat": [
+    "Claude Code",
+    "Claude.ai"
+   ],
+   "rn": "Medium risk because it relates to money decisions (you can lose money; this is not financial advice) and some skills need API keys (access passwords) (question 2).",
+   "type": "Claude Skills for investing",
+   "win": [
+    "Please see the official README: download a `.skill` file from the release and upload it in Claude"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Zyada tar investors ke paas time kam hota hai. Is project mein ready workflows hain jo ek disciplined process banate hain. Ye buy/sell signal nahi deta.",
+   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
+   "kahan": "Personal investing, finance learners, hobby traders.",
+   "kya": "Claude ke liye skills ka set jo investors ko market review, risk check, trade plan aur journal banane mein madad karta hai.",
+   "lang": [
+    [
+     "Python",
+     99.1
+    ],
+    [
+     "Other",
+     0.9
+    ]
+   ],
+   "need": "Investing ki aadat ko structure dene ke liye. Example: roz subah market ka summary aur apne portfolio ka risk check ek hi flow mein.",
+   "plat": [
+    "Claude Code",
+    "Claude.ai"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye financial decisions se juda hai (loss ho sakta hai, ye financial advice nahi hai) aur kuch skills ke liye API keys chahiye (sawaal 2).",
+   "t": "agent",
+   "type": "Claude Skills for investing",
+   "win": [
+    "Official README dekhein: release se `.skill` file download karke Claude mein upload karein"
+   ]
+  },
+  "archived": "2026-11-16"
+ },
  "vercel-labs/agent-desktop": {
   "EN": {
    "and": [
@@ -1514,75 +2044,6 @@
    ]
   },
   "archived": "2026-11-14"
- },
- "we-promise/sure": {
-  "EN": {
-   "and": [
-    "Please see the official README: this is a server app, so you must host it on a server and open it in the tablet browser"
-   ],
-   "bani": "The Maybe Finance team built this app, but the business did not work and the project stopped. The community forked (copied and continued) the code so people can host it free on their own server.",
-   "job": "Everyday users who budget, freelancers, finance bloggers, self-hosting fans, Ruby developers.",
-   "kahan": "Home budgets, small business accounts, personal investing tracking.",
-   "kya": "A personal finance and wealth app. The dashboard shows cashflow, net worth and spending, and an AI assistant answers questions.",
-   "need": "If you want to track money, spending and savings in one place without giving data to a company, this self-hosted app helps. It is like turning a household notebook into a smart dashboard.",
-   "plat": [
-    "Web app",
-    "Docker",
-    "Linux",
-    "Mac",
-    "Windows"
-   ],
-   "rn": "Medium risk because the app holds your financial data and AI API keys (question 2). If you host it, server security is your responsibility.",
-   "type": "Personal finance app",
-   "win": [
-    "See the official hosting guide (Docker); for developer setup run `cp .env.local.example .env.local`, `bin/setup`, `bin/dev`",
-    "See the official README"
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein: ye server app hai, tablet par browser se chalane ke liye kisi server par host karna padega"
-   ],
-   "bani": "Maybe Finance team ne ye app banaya tha, par business nahi chala aur project band ho gaya. Community ne is code ko fork karke zinda rakha, taaki log ise apne server par free host kar sakein.",
-   "job": "Aam users jo budget track karte hain, freelancers, finance bloggers, self-hosting shauqeen, Ruby developers.",
-   "kahan": "Ghar ka budget, small business ka hisaab, personal investing tracking.",
-   "kya": "Personal finance aur wealth management app: dashboard mein cashflow, net worth, spending dikhta hai, aur ek AI assistant sawaal ka jawab deta hai.",
-   "lang": [
-    [
-     "Ruby",
-     89.4
-    ],
-    [
-     "JavaScript",
-     4.8
-    ],
-    [
-     "Dart",
-     4.2
-    ],
-    [
-     "Other",
-     1.6
-    ]
-   ],
-   "need": "Agar aap apna paisa, kharche aur savings ek jagah dekhna chahte hain aur data kisi company ko nahi dena, to ye self-host app kaam aati hai. Jaise ghar ka kharcha ek diary ke bajay ek smart dashboard mein dikhe.",
-   "plat": [
-    "Web app",
-    "Docker",
-    "Linux",
-    "Mac",
-    "Windows"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki app aapka financial data aur AI API keys sambhalta hai (sawaal 2). Self-host karein to server ki security aapki responsibility hai.",
-   "t": "life",
-   "type": "Personal finance app",
-   "win": [
-    "Official hosting guide dekhein (docker) aur developer setup ke liye `cp .env.local.example .env.local`, `bin/setup`, `bin/dev`",
-    "Official README dekhein"
-   ]
-  },
-  "archived": "2026-11-15"
  },
  "zed-industries/zed": {
   "EN": {

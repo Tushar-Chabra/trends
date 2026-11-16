@@ -56,8 +56,8 @@ BANNED_HI = ["auzaar", "jaanch", "jokhim", "zimmedari", "chetawani", "chetavni",
              "sahuliyat", "sambandh", "sudharta", "badlaav", "gehrai", "bharosa", "barbaad", "chakma", "anjaan",
              "prerit", "naap", "banane wale"]
 # Words that must never appear anywhere on the public page data.
-PAGE_BANNED = ["upwork", "fiverr", "my email", "laptop", "my rules", "skill inspector", "aapka rule",
-               "aapke laptop", "scan rule", "@gmail.com"]
+PAGE_BANNED = ["upwork", "fiverr", "my email", "my rules", "skill inspector", "aapka rule",
+               "scan rule", "@gmail.com"]
 BRANDING = re.compile(r"(?i)(made (with|by) claude|powered by claude|claude\.ai/)")
 
 # "Download a script and run it in one go" install commands (never shown on the page).

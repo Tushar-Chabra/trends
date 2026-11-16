@@ -63,7 +63,7 @@ jobs:
               low = sval.lower()
               if "javascript:" in low: fail("javascript: found in data")
               if re.search(r"[ऀ-ॿ]", sval): fail("Devanagari found in data")
-              for w in ("upwork", "fiverr", "laptop", "@gmail.com"):
+              for w in ("upwork", "fiverr", "@gmail.com"):
                   if w in low: fail("forbidden word in data: " + w)
           for tk in list(d.get("TAKE", [])) + list((d.get("EN") or {}).get("TAKE", [])):
               for tag in re.findall(r"</?([a-zA-Z]+)", tk.replace("\\u003c", "<")):

@@ -21,16 +21,18 @@ const { chromium } = require("playwright");
       const tag = `${width}px ${scheme}`;
       const r = await page.evaluate(() => ({
         rows: document.querySelectorAll(".row").length,
-        top3: document.querySelectorAll("#top3List .t3").length,
+        stories: document.querySelectorAll("#stTrack .story").length,
+        bubbles: document.querySelectorAll("#galSvg .bub").length,
         take: document.querySelectorAll("#take .tk").length,
-        stats: document.querySelectorAll("#stats .stat").length,
+        archive: !!document.querySelector('#pastBtn[href$="/trends/archive/"]'),
         wide: document.documentElement.scrollWidth > window.innerWidth,
         badge: (document.getElementById("langBadge") || {}).textContent,
       }));
       if (r.rows !== dailyRows) fails.push(`${tag}: rows ${r.rows} (expected ${dailyRows})`);
-      if (r.top3 !== 3) fails.push(`${tag}: top3 ${r.top3}`);
+      if (r.stories < 3) fails.push(`${tag}: stories ${r.stories} (expected at least 3)`);
+      if (r.bubbles !== dailyRows) fails.push(`${tag}: galaxy bubbles ${r.bubbles} (expected ${dailyRows})`);
       if (r.take !== 5) fails.push(`${tag}: signals ${r.take}`);
-      if (r.stats !== 4) fails.push(`${tag}: stats ${r.stats}`);
+      if (!r.archive) fails.push(`${tag}: Past trends button missing`);
       if (r.wide) fails.push(`${tag}: page wider than the screen`);
       if (r.badge !== "EN") fails.push(`${tag}: language badge is "${r.badge}" (expected EN, page opens in English)`);
       if (shots) await page.screenshot({ path: `${shots}/${width}-${scheme}.png` });

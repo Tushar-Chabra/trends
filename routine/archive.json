@@ -1,4 +1,75 @@
 {
+ "ChromeDevTools/chrome-devtools-mcp": {
+  "EN": {
+   "and": [
+    "Please see the official README: this tool runs with Node.js and Chrome on a computer, and the README gives no direct install steps for an Android tablet."
+   ],
+   "bani": "An AI agent could write code but could not see how a website really behaves in a browser. The Chrome team at Google opened Chrome DevTools (the developer panel inside the browser) to agents, so they can find errors and slow parts by themselves.",
+   "job": "Web developers, Claude Code users, QA testers, freelancers",
+   "kahan": "Web agencies, online shops (e-commerce), startups, testing teams.",
+   "kya": "Gives your AI coding agent the power to run and inspect a real Chrome browser: open pages, click, take screenshots and measure speed.",
+   "need": "Before this, you had to open the browser, hunt for the bug and paste screenshots to the agent. Now the agent opens the page, reads console errors (messages the browser prints when something breaks) and records a performance trace (a record of speed). Example: your shop website feels slow, so you tell the agent 'check the speed' and it tests in Chrome and tells you which image is too heavy.",
+   "plat": [
+    "Claude Code",
+    "Cursor",
+    "VS Code (Copilot)",
+    "Gemini CLI",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because the agent can see and change everything inside your browser (question 2). The README itself says not to share sensitive or personal information. Google also collects usage statistics by default (turn off with `--no-usage-statistics`).",
+   "type": "MCP server + CLI (an add-on that lets a coding agent use Chrome)",
+   "win": [
+    "Install Node.js (LTS version) and Chrome.",
+    "In Claude Code run: `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp` then `/plugin install chrome-devtools-mcp@chrome-devtools-plugins`",
+    "For other agents, see the Client Configurations Guide in the official README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye tool computer par Node.js aur Chrome ke saath chalta hai, Android tablet par seedha install ka tareeka README mein nahi diya gaya."
+   ],
+   "bani": "AI agent code to likh leta tha, lekin ye nahi dekh pata tha ki website browser mein asal mein kaisi chal rahi hai. Google ki Chrome team ne Chrome DevTools (browser ke andar ka developer panel) ko agent ke liye khol diya, taaki wo khud errors aur slow parts dekh sake.",
+   "job": "Web developers, Claude Code users, QA testers, freelancers",
+   "kahan": "Website banane wali agencies, online shops (e-commerce), startups, testing teams.",
+   "kya": "Aapke AI coding agent ko ek asli Chrome browser chalane aur check karne ki power deta hai: page kholna, click karna, screenshot lena, speed measure karna.",
+   "lang": [
+    [
+     "TypeScript",
+     93.2
+    ],
+    [
+     "JavaScript",
+     5.8
+    ],
+    [
+     "Other",
+     1.0
+    ]
+   ],
+   "need": "Bina iske aapko khud browser kholkar bug dhoondhna padta tha aur agent ko screenshot copy-paste karna padta tha. Ab agent khud page kholta hai, console ke errors padhta hai aur performance trace (speed ka record) banata hai. Example: aapki dukaan ki website slow hai, to agent ko bolein 'speed check karo' aur wo Chrome mein khud test karke batayega kaunsi image bhaari hai.",
+   "plat": [
+    "Claude Code",
+    "Cursor",
+    "VS Code (Copilot)",
+    "Gemini CLI",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki agent aapke browser ke andar ka sab kuch dekh aur badal sakta hai (sawaal 2). README khud kehta hai ki sensitive ya personal info share na karein. Google default mein usage statistics bhi collect karta hai (band karne ke liye `--no-usage-statistics`).",
+   "t": "agent",
+   "type": "MCP server + CLI (add-on jo coding agent ko Chrome chalane deta hai)",
+   "win": [
+    "Node.js (LTS version) aur Chrome install karein.",
+    "Claude Code mein: `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp` phir `/plugin install chrome-devtools-mcp@chrome-devtools-plugins`",
+    "Dusre agents ke liye official README ka Client Configurations Guide dekhein."
+   ]
+  },
+  "archived": "2026-11-17"
+ },
  "D4Vinci/Scrapling": {
   "EN": {
    "and": [
@@ -393,6 +464,81 @@
   },
   "archived": "2026-11-10"
  },
+ "Tencent/LoopForge": {
+  "EN": {
+   "and": [
+    "Does not run on a tablet; it runs on a server. You can open the server in a browser."
+   ],
+   "bani": "When coding agents run alone, there is no record, review or approval. LoopForge adds roles, sandboxes and checkpoints, and saves a good way of working as an SOP (a standard step-by-step workflow).",
+   "job": "Software teams, engineering managers, DevOps (people who run servers) engineers, automation builders.",
+   "kahan": "Software companies, startups, IT teams that want code and data on their own servers.",
+   "kya": "A workspace where you describe the work in chat, and coding agents write code inside a sandbox (a separate safe box) and open a PR (a request to add the code change).",
+   "need": "When 5 people use agents, each one works differently. For example: make an SOP for bug fixes, and next time the same steps run, with review and approval built in.",
+   "plat": [
+    "Linux",
+    "Mac",
+    "Docker (self-hosted)"
+   ],
+   "rn": "Medium risk because it runs Docker, asks for GitHub authorization and gives your code to agents (question 2). Its install script can also install Linux packages.",
+   "type": "Self-hosted workspace (runs on your own server)",
+   "win": [
+    "The README is for Linux and Mac; on Windows you may need WSL (Linux inside Windows), so see the official README.",
+    "Install Docker and Git, then: `git clone https://github.com/Tencent/LoopForge.git`",
+    "`cd LoopForge`",
+    "`./start.sh`",
+    "After the start, set your model API keys and GitHub authorization."
+   ]
+  },
+  "R": {
+   "and": [
+    "Tablet par nahi chalta; ye server par chalta hai. Browser se aap server ko khol sakte hain."
+   ],
+   "bani": "Coding agents akele chalate time kaam ka record, review aur approval nahi hota. LoopForge roles, sandboxes aur checkpoints jodta hai, aur achha tareeka SOP (step-by-step standard workflow) ke roop mein save kar deta hai.",
+   "job": "Software teams, engineering managers, DevOps (server sambhalne wale) engineers, AI automation builders.",
+   "kahan": "Software companies, startups, IT teams jo apne servers par code aur data rakhna chahte hain.",
+   "kya": "Aisa workspace jahan aap chat mein kaam batate hain aur coding agents sandbox (alag surakshit dabba) mein code likhkar PR (code change ki request) khol dete hain.",
+   "lang": [
+    [
+     "Go",
+     61.4
+    ],
+    [
+     "JavaScript",
+     23.1
+    ],
+    [
+     "Python",
+     7.4
+    ],
+    [
+     "CSS",
+     3.6
+    ],
+    [
+     "Other",
+     4.5
+    ]
+   ],
+   "need": "Team mein jab 5 log agents se kaam karwate hain, to har kisi ka tareeka alag hota hai. Jaise: ek bug fix ka SOP bana lo, to agli baar bhi wahi steps, review aur approval ke saath chalenge.",
+   "plat": [
+    "Linux",
+    "Mac",
+    "Docker (self-hosted)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye Docker chalata hai, GitHub authorization maangta hai aur apka code agents ko deta hai (sawaal 2). Install script alag se Linux packages bhi install kar sakti hai.",
+   "t": "agent",
+   "type": "Self-hosted workspace (aapke apne server par chalne wala)",
+   "win": [
+    "README Linux aur Mac ke liye hai; Windows par shayad WSL (Windows ke andar Linux) chahiye, official README dekhein.",
+    "Docker aur Git install karein, phir: `git clone https://github.com/Tencent/LoopForge.git`",
+    "`cd LoopForge`",
+    "`./start.sh`",
+    "Start ke baad model API keys aur GitHub authorization set karein."
+   ]
+  },
+  "archived": "2026-11-17"
+ },
  "The-PR-Agent/pr-agent": {
   "EN": {
    "and": [
@@ -577,6 +723,75 @@
    ]
   },
   "archived": "2026-11-16"
+ },
+ "alibaba/open-code-review": {
+  "EN": {
+   "and": [
+    "`npm install -g @alibaba-group/open-code-review`"
+   ],
+   "bani": "Developers must review a lot of code and it is slow. Alibaba built a command-line tool (a text-based program) that works with AI agents such as Claude Code to check code.",
+   "job": "Developers, software teams, AI coding agent users",
+   "kahan": "Software companies, startups, online shops, freelance developers.",
+   "kya": "An AI tool that checks code and finds bugs and mistakes.",
+   "need": "To catch bugs before they reach production (the live app). Example: you changed the payment code of a shop website; this tool can warn you about a mistake.",
+   "plat": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "Claude Code"
+   ],
+   "rn": "Low risk because it installs only from the official npm package (a public software store). The tool may send your code to an AI, so be careful with private code.",
+   "type": "Code review tool",
+   "win": [
+    "`npm install -g @alibaba-group/open-code-review`"
+   ]
+  },
+  "R": {
+   "and": [
+    "`npm install -g @alibaba-group/open-code-review`"
+   ],
+   "bani": "Developers ko roz bahut code review karna padta hai, jo slow hota hai. Alibaba ne ek command-line tool banaya jo AI agents (jaise Claude Code) ke saath mil kar code check karta hai.",
+   "job": "Developers, software teams, AI coding agent users",
+   "kahan": "Software companies, startups, e-commerce teams, freelance developers.",
+   "kya": "AI se code ka check (review) karne wala tool jo bugs aur galtiyan dhundhta hai.",
+   "lang": [
+    [
+     "Go",
+     69.5
+    ],
+    [
+     "TypeScript",
+     15.6
+    ],
+    [
+     "Kotlin",
+     6.8
+    ],
+    [
+     "JavaScript",
+     4.1
+    ],
+    [
+     "Other",
+     4.0
+    ]
+   ],
+   "need": "Bug production (live app) tak pohonchne se pehle pakadne ke liye. Example: aapne shop ki website mein payment ka code badla; ye tool bata sakta hai ki kahin galti to nahi.",
+   "plat": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "Claude Code"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki install sirf official npm package se hota hai. Tool aapka code AI ko bhej sakta hai, isliye private code par check karke chalayein.",
+   "t": "agent",
+   "type": "Code review tool",
+   "win": [
+    "`npm install -g @alibaba-group/open-code-review`"
+   ]
+  },
+  "archived": "2026-11-17"
  },
  "anthropics/claude-quickstarts": {
   "EN": {
@@ -1041,6 +1256,83 @@
   },
   "archived": "2026-11-11"
  },
+ "ggml-org/ggml": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Running big AI models needed costly GPUs and heavy software. ggml wrote simple C/C++ code that runs on CPU, GPU and in the browser, and uses quantization (making a model smaller) to save memory.",
+   "job": "C/C++ developers, AI engineers, tool builders, researchers.",
+   "kahan": "AI app companies, on-device AI (AI on phones and computers), research labs.",
+   "kya": "A small, fast machine learning library that lets AI models run on normal computers and phones with no extra dependencies.",
+   "need": "Say you want to run a small AI model offline on your computer. ggml is the engine under many such local AI tools.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Android",
+    "Web (WebAssembly)"
+   ],
+   "rn": "Low risk. It is a library, not an app; you build the code on your own computer (all five questions are no).",
+   "type": "C/C++ library (a building block for developers)",
+   "win": [
+    "`git clone https://github.com/ggml-org/ggml`",
+    "`cd ggml`",
+    "`mkdir build && cd build`",
+    "`cmake ..`",
+    "`cmake --build . --config Release -j 8`",
+    "CMake and a C++ compiler must be installed first."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Bade AI models chalane ke liye mehngi GPU aur bhaari software chahiye hoti thi. ggml ne simple C/C++ mein aisa code banaya jo CPU, GPU aur browser par chalta hai aur quantization (model ko chhota karna) se memory bachata hai.",
+   "job": "C/C++ developers, AI engineers, tool builders, researchers.",
+   "kahan": "AI app companies, on-device AI (phone aur computer par AI), research labs.",
+   "kya": "Machine learning ke liye chhoti, tez library jo bina extra dependencies ke AI models ko aam computer aur phone par chalane deti hai.",
+   "lang": [
+    [
+     "C++",
+     36.5
+    ],
+    [
+     "C",
+     30.7
+    ],
+    [
+     "CUDA",
+     28.5
+    ],
+    [
+     "Other",
+     4.3
+    ]
+   ],
+   "need": "Jaise aap ek chhota AI model apne computer par offline chalana chahte hain. ggml wo engine hai jis par aise local AI tools chalte hain.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Android",
+    "Web (WebAssembly)"
+   ],
+   "r": "low",
+   "rn": "Low risk. Ye library hai, koi app nahi; apne computer par code build karna padta hai (sawaal 1-5 sab no).",
+   "t": "infra",
+   "type": "C/C++ library (developers ke liye building block)",
+   "win": [
+    "`git clone https://github.com/ggml-org/ggml`",
+    "`cd ggml`",
+    "`mkdir build && cd build`",
+    "`cmake ..`",
+    "`cmake --build . --config Release -j 8`",
+    "Pehle CMake aur C++ compiler install hona chahiye."
+   ]
+  },
+  "archived": "2026-11-17"
+ },
  "google/skills": {
   "EN": {
    "and": [
@@ -1294,6 +1586,61 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "milind-soni/OpenMausBot": {
+  "EN": {
+   "and": [
+    "Please see the official README."
+   ],
+   "bani": "Running many AI agents and watching their work is hard. This project built a chat app where all bots sit in one sidebar and ask you to approve before they act. It is an independent project inspired by Grok Bot.",
+   "job": "Freelancers, founders, people learning AI automation, power users.",
+   "kahan": "Productivity, small business, research, content teams.",
+   "kya": "An open-source app where every bot is a real agent (Claude or Codex, running on your computer). Each bot has its own name, model, cloud computer and connected apps. You talk to them like contacts.",
+   "need": "If you want AI to do many jobs, it is easier to manage all bots in one place. For example, a freelancer has one bot write emails, another do research, and approves only the important actions.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Ubuntu"
+   ],
+   "rn": "Medium risk because the bots can get control of your connected apps and accounts (question 2). The README itself says the project has no crypto token and that coins using its name are fake. Keep approval for important actions turned ON.",
+   "type": "Desktop chat app (your team of AI bots, like a chat)",
+   "win": [
+    "Please see the official README (the installer is downloaded from GitHub releases)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein."
+   ],
+   "bani": "Alag alag AI agents ko chalana aur unka kaam dekhna mushkil hai. Is project ne ek chat app banayi jahan sab bots ek sidebar mein hote hain aur kaam karne se pehle aapse approval maangte hain. Ye Grok Bot se inspired ek independent project hai.",
+   "job": "Freelancers, founders, AI automation learners, power users.",
+   "kahan": "Productivity, small business, research, content teams.",
+   "kya": "Ek open-source app jisme har bot ek asli agent hota hai (Claude ya Codex, aapke computer par chalta hai). Har bot ka apna naam, model, cloud computer aur jude hue apps hote hain. Aap unse contacts ki tarah baat karte hain.",
+   "lang": [
+    [
+     "TypeScript",
+     91
+    ],
+    [
+     "JavaScript",
+     9
+    ]
+   ],
+   "need": "Agar aap kai kaam AI se karwana chahte hain, to ek jagah se sab bots sambhalna aasaan hota hai. Jaise ek freelancer ek bot se emails, doosre se research karwata hai aur sirf zaroori kaam approve karta hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Ubuntu"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki bots ko aapke connected apps aur accounts ka control mil sakta hai (sawaal 2). README khud kehta hai ki is project ka koi crypto token nahi hai; us naam ke coins fake hain. Zaroori kaam ke approval ko ON rakhein.",
+   "t": "agent",
+   "type": "Desktop chat app (aapki AI bots ki team, chat ki tarah)",
+   "win": [
+    "Official README dekhein (installer GitHub releases se download hota hai)."
+   ]
+  },
+  "archived": "2026-11-17"
  },
  "nodejs/node": {
   "EN": {
@@ -1926,59 +2273,6 @@
    ]
   },
   "archived": "2026-11-12"
- },
- "tradermonty/claude-trading-skills": {
-  "EN": {
-   "and": [
-    "Please see the official README"
-   ],
-   "bani": "Most investors have little time. This project gives ready workflows that build a disciplined process. It does not give buy/sell signals.",
-   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
-   "kahan": "Personal investing, finance learners, hobby traders.",
-   "kya": "A set of Claude skills that helps investors with market review, risk checks, trade plans and journaling.",
-   "need": "To give structure to your investing habit. Example: a daily market summary and a portfolio risk check in one flow.",
-   "plat": [
-    "Claude Code",
-    "Claude.ai"
-   ],
-   "rn": "Medium risk because it relates to money decisions (you can lose money; this is not financial advice) and some skills need API keys (access passwords) (question 2).",
-   "type": "Claude Skills for investing",
-   "win": [
-    "Please see the official README: download a `.skill` file from the release and upload it in Claude"
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein"
-   ],
-   "bani": "Zyada tar investors ke paas time kam hota hai. Is project mein ready workflows hain jo ek disciplined process banate hain. Ye buy/sell signal nahi deta.",
-   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
-   "kahan": "Personal investing, finance learners, hobby traders.",
-   "kya": "Claude ke liye skills ka set jo investors ko market review, risk check, trade plan aur journal banane mein madad karta hai.",
-   "lang": [
-    [
-     "Python",
-     99.1
-    ],
-    [
-     "Other",
-     0.9
-    ]
-   ],
-   "need": "Investing ki aadat ko structure dene ke liye. Example: roz subah market ka summary aur apne portfolio ka risk check ek hi flow mein.",
-   "plat": [
-    "Claude Code",
-    "Claude.ai"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki ye financial decisions se juda hai (loss ho sakta hai, ye financial advice nahi hai) aur kuch skills ke liye API keys chahiye (sawaal 2).",
-   "t": "agent",
-   "type": "Claude Skills for investing",
-   "win": [
-    "Official README dekhein: release se `.skill` file download karke Claude mein upload karein"
-   ]
-  },
-  "archived": "2026-11-16"
  },
  "vercel-labs/agent-desktop": {
   "EN": {

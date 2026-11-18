@@ -1,75 +1,4 @@
 {
- "ChromeDevTools/chrome-devtools-mcp": {
-  "EN": {
-   "and": [
-    "Please see the official README: this tool runs with Node.js and Chrome on a computer, and the README gives no direct install steps for an Android tablet."
-   ],
-   "bani": "An AI agent could write code but could not see how a website really behaves in a browser. The Chrome team at Google opened Chrome DevTools (the developer panel inside the browser) to agents, so they can find errors and slow parts by themselves.",
-   "job": "Web developers, Claude Code users, QA testers, freelancers",
-   "kahan": "Web agencies, online shops (e-commerce), startups, testing teams.",
-   "kya": "Gives your AI coding agent the power to run and inspect a real Chrome browser: open pages, click, take screenshots and measure speed.",
-   "need": "Before this, you had to open the browser, hunt for the bug and paste screenshots to the agent. Now the agent opens the page, reads console errors (messages the browser prints when something breaks) and records a performance trace (a record of speed). Example: your shop website feels slow, so you tell the agent 'check the speed' and it tests in Chrome and tells you which image is too heavy.",
-   "plat": [
-    "Claude Code",
-    "Cursor",
-    "VS Code (Copilot)",
-    "Gemini CLI",
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "rn": "Medium risk because the agent can see and change everything inside your browser (question 2). The README itself says not to share sensitive or personal information. Google also collects usage statistics by default (turn off with `--no-usage-statistics`).",
-   "type": "MCP server + CLI (an add-on that lets a coding agent use Chrome)",
-   "win": [
-    "Install Node.js (LTS version) and Chrome.",
-    "In Claude Code run: `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp` then `/plugin install chrome-devtools-mcp@chrome-devtools-plugins`",
-    "For other agents, see the Client Configurations Guide in the official README."
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein: ye tool computer par Node.js aur Chrome ke saath chalta hai, Android tablet par seedha install ka tareeka README mein nahi diya gaya."
-   ],
-   "bani": "AI agent code to likh leta tha, lekin ye nahi dekh pata tha ki website browser mein asal mein kaisi chal rahi hai. Google ki Chrome team ne Chrome DevTools (browser ke andar ka developer panel) ko agent ke liye khol diya, taaki wo khud errors aur slow parts dekh sake.",
-   "job": "Web developers, Claude Code users, QA testers, freelancers",
-   "kahan": "Website banane wali agencies, online shops (e-commerce), startups, testing teams.",
-   "kya": "Aapke AI coding agent ko ek asli Chrome browser chalane aur check karne ki power deta hai: page kholna, click karna, screenshot lena, speed measure karna.",
-   "lang": [
-    [
-     "TypeScript",
-     93.2
-    ],
-    [
-     "JavaScript",
-     5.8
-    ],
-    [
-     "Other",
-     1.0
-    ]
-   ],
-   "need": "Bina iske aapko khud browser kholkar bug dhoondhna padta tha aur agent ko screenshot copy-paste karna padta tha. Ab agent khud page kholta hai, console ke errors padhta hai aur performance trace (speed ka record) banata hai. Example: aapki dukaan ki website slow hai, to agent ko bolein 'speed check karo' aur wo Chrome mein khud test karke batayega kaunsi image bhaari hai.",
-   "plat": [
-    "Claude Code",
-    "Cursor",
-    "VS Code (Copilot)",
-    "Gemini CLI",
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki agent aapke browser ke andar ka sab kuch dekh aur badal sakta hai (sawaal 2). README khud kehta hai ki sensitive ya personal info share na karein. Google default mein usage statistics bhi collect karta hai (band karne ke liye `--no-usage-statistics`).",
-   "t": "agent",
-   "type": "MCP server + CLI (add-on jo coding agent ko Chrome chalane deta hai)",
-   "win": [
-    "Node.js (LTS version) aur Chrome install karein.",
-    "Claude Code mein: `/plugin marketplace add ChromeDevTools/chrome-devtools-mcp` phir `/plugin install chrome-devtools-mcp@chrome-devtools-plugins`",
-    "Dusre agents ke liye official README ka Client Configurations Guide dekhein."
-   ]
-  },
-  "archived": "2026-11-17"
- },
  "D4Vinci/Scrapling": {
   "EN": {
    "and": [
@@ -128,6 +57,69 @@
    ]
   },
   "archived": "2026-11-13"
+ },
+ "DeanChensj/jiangshan-map": {
+  "EN": {
+   "and": [
+    "Open the live demo link from the README in your phone or tablet browser.",
+    "The agent skill step is not for Android, only for a computer."
+   ],
+   "bani": "Small maps in textbooks make history hard to follow. This project puts 18 historical periods, ancient cities, battle sites and rulers on one map. It also has an agent skill (a small add-on for AI helpers) that opens the right year and place from a link.",
+   "job": "students, teachers, history lovers, researchers, content creators",
+   "kahan": "Schools, history blogs, museum projects, history YouTube channels.",
+   "kya": "A map-style atlas of 2,400 years of Chinese history: drag the timeline and watch cities, mountain passes and borders change.",
+   "need": "Say you read a poem from the Tang era and wonder where that place is today. Type the year and the place, and a pin drops on the map, like a Google Maps for the past.",
+   "plat": [
+    "Web app",
+    "Claude Code",
+    "Gemini CLI"
+   ],
+   "rn": "Low risk. It is mostly a website that runs in your browser. Only the optional skill command copies files into your own skills folder.",
+   "type": "Web app (an interactive history map)",
+   "win": [
+    "Open the live demo link from the README in a browser; no install needed.",
+    "For the agent skill (in a Linux/Mac-style shell): `mkdir -p ~/.claude/skills ~/.gemini/config/skills && cp -r skills/jiangshan-atlas ~/.claude/skills/ && cp -r skills/jiangshan-atlas ~/.gemini/config/skills/`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Phone ya tablet ke browser mein README ka live demo link kholein.",
+    "Agent skill wala step Android par nahi hai, sirf computer par."
+   ],
+   "bani": "Kitaabon ke chhote maps se itihas samajhna mushkil tha. Is project mein 18 dauron ke territory snapshots, purane shahar, jung ke maidan aur raja-mahraja ek hi map par jode gaye hain. Ek agent skill bhi hai jo URL se sahi saal aur jagah kholti hai.",
+   "job": "students, teachers, history lovers, researchers, content creators",
+   "kahan": "Schools, history blogs, museum projects, YouTube history channels.",
+   "kya": "China ke 2,400 saal ke itihas ka interactive nakshe jaisa atlas: timeline khiskao aur shahar, darre aur raaste dekho.",
+   "lang": [
+    [
+     "JavaScript",
+     53.6
+    ],
+    [
+     "HTML",
+     42.9
+    ],
+    [
+     "Other",
+     3.5
+    ]
+   ],
+   "need": "Maan lijiye aap Tang kaal ki ek kavita padh rahe hain aur jaanna chahte hain ki wo jagah aaj ke map par kahan hai. Yahan saal aur jagah ka naam daalte hi pin lag jata hai, bilkul Google Maps jaisa lekin purane zamane ka.",
+   "plat": [
+    "Web app",
+    "Claude Code",
+    "Gemini CLI"
+   ],
+   "r": "low",
+   "rn": "Low risk. Ye mostly ek website hai jo browser mein chalti hai. Sirf optional skill copy karne wali command aapki skills folder mein files rakhti hai.",
+   "t": "life",
+   "type": "Web app (interactive history map)",
+   "win": [
+    "Browser mein README ka live demo link kholein, install ki zaroorat nahi.",
+    "Agent skill ke liye (Linux/Mac jaisi shell mein): `mkdir -p ~/.claude/skills ~/.gemini/config/skills && cp -r skills/jiangshan-atlas ~/.claude/skills/ && cp -r skills/jiangshan-atlas ~/.gemini/config/skills/`"
+   ]
+  },
+  "archived": "2026-11-18"
  },
  "Donchitos/Claude-Code-Game-Studios": {
   "EN": {
@@ -262,6 +254,73 @@
    ]
   },
   "archived": "2026-11-16"
+ },
+ "NVIDIA/SkillEvaluator": {
+  "EN": {
+   "and": [
+    "Please see the official README: this tool runs in a computer's terminal.",
+    "On Android, reading the docs and the NVIDIA blog is the practical option."
+   ],
+   "bani": "People build new skills every day, but nobody knows if they are really good. NVIDIA made a tool that can score a skill even without an AI key, and can also run an agent with and without the skill to measure the difference.",
+   "job": "AI engineers, developers, automation builders, AI learners, QA testers",
+   "kahan": "AI product teams, companies that publish their own skills, CI pipelines (automatic checks that run on every change).",
+   "kya": "Gives AI agent skills a report card: quality, security, overlap and real effect, all checked in one go.",
+   "need": "Just as an exam shows how much a student learned, checking a skill before sharing it helps you avoid sending out a weak one.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code",
+    "Codex"
+   ],
+   "rn": "Low risk. The basic check runs without any key. If you use the optional NVIDIA Build step, the skill's text is sent to their model, so be careful with private skills.",
+   "type": "Command-line tool (a program you run by typing commands, made with Python)",
+   "win": [
+    "You need Python 3.12 or newer. Then: `pip install skillevaluator`",
+    "To check a skill: `skillevaluator validate ./my-skill --tiers 1`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye tool computer ke terminal mein chalta hai.",
+    "Android par sirf docs padhna aur NVIDIA ka blog dekhna practical hai."
+   ],
+   "bani": "Log har din nayi skills bana rahe hain, par kisi ko pata nahi hota ki wo sach mein achhi hain ya nahi. NVIDIA ne ek tool banaya jo skill ko bina AI key ke bhi score de sakta hai, aur skill ke saath aur uske bina agent chalakar farak check kar sakta hai.",
+   "job": "AI engineers, developers, automation builders, AI learners, QA testers",
+   "kahan": "AI product teams, companies jo apni skills publish karti hain, CI pipelines.",
+   "kya": "AI agent skills ka report card banata hai: quality, security, overlap aur asli asar, sab check karke.",
+   "lang": [
+    [
+     "Python",
+     96.5
+    ],
+    [
+     "MDX",
+     3.1
+    ],
+    [
+     "Other",
+     0.4
+    ]
+   ],
+   "need": "Jaise school mein exam se pata chalta hai ki student kitna seekha, waise hi skill ko chalane se pehle uski quality check ho jaye to bekaar skill share karne se bachaa ja sakta hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code",
+    "Codex"
+   ],
+   "r": "low",
+   "rn": "Low risk. Basic check bina key ke chalta hai. Agar NVIDIA Build ka optional step lein to skill ka text unke model ko bheja jata hai, isliye private skill ho to dhyan rakhein.",
+   "t": "agent",
+   "type": "Command-line tool (Python)",
+   "win": [
+    "Python 3.12 ya naya hona chahiye. Phir: `pip install skillevaluator`",
+    "Skill check karne ke liye: `skillevaluator validate ./my-skill --tiers 1`"
+   ]
+  },
+  "archived": "2026-11-18"
  },
  "NVIDIA/auto-ontology": {
   "EN": {
@@ -464,81 +523,6 @@
   },
   "archived": "2026-11-10"
  },
- "Tencent/LoopForge": {
-  "EN": {
-   "and": [
-    "Does not run on a tablet; it runs on a server. You can open the server in a browser."
-   ],
-   "bani": "When coding agents run alone, there is no record, review or approval. LoopForge adds roles, sandboxes and checkpoints, and saves a good way of working as an SOP (a standard step-by-step workflow).",
-   "job": "Software teams, engineering managers, DevOps (people who run servers) engineers, automation builders.",
-   "kahan": "Software companies, startups, IT teams that want code and data on their own servers.",
-   "kya": "A workspace where you describe the work in chat, and coding agents write code inside a sandbox (a separate safe box) and open a PR (a request to add the code change).",
-   "need": "When 5 people use agents, each one works differently. For example: make an SOP for bug fixes, and next time the same steps run, with review and approval built in.",
-   "plat": [
-    "Linux",
-    "Mac",
-    "Docker (self-hosted)"
-   ],
-   "rn": "Medium risk because it runs Docker, asks for GitHub authorization and gives your code to agents (question 2). Its install script can also install Linux packages.",
-   "type": "Self-hosted workspace (runs on your own server)",
-   "win": [
-    "The README is for Linux and Mac; on Windows you may need WSL (Linux inside Windows), so see the official README.",
-    "Install Docker and Git, then: `git clone https://github.com/Tencent/LoopForge.git`",
-    "`cd LoopForge`",
-    "`./start.sh`",
-    "After the start, set your model API keys and GitHub authorization."
-   ]
-  },
-  "R": {
-   "and": [
-    "Tablet par nahi chalta; ye server par chalta hai. Browser se aap server ko khol sakte hain."
-   ],
-   "bani": "Coding agents akele chalate time kaam ka record, review aur approval nahi hota. LoopForge roles, sandboxes aur checkpoints jodta hai, aur achha tareeka SOP (step-by-step standard workflow) ke roop mein save kar deta hai.",
-   "job": "Software teams, engineering managers, DevOps (server sambhalne wale) engineers, AI automation builders.",
-   "kahan": "Software companies, startups, IT teams jo apne servers par code aur data rakhna chahte hain.",
-   "kya": "Aisa workspace jahan aap chat mein kaam batate hain aur coding agents sandbox (alag surakshit dabba) mein code likhkar PR (code change ki request) khol dete hain.",
-   "lang": [
-    [
-     "Go",
-     61.4
-    ],
-    [
-     "JavaScript",
-     23.1
-    ],
-    [
-     "Python",
-     7.4
-    ],
-    [
-     "CSS",
-     3.6
-    ],
-    [
-     "Other",
-     4.5
-    ]
-   ],
-   "need": "Team mein jab 5 log agents se kaam karwate hain, to har kisi ka tareeka alag hota hai. Jaise: ek bug fix ka SOP bana lo, to agli baar bhi wahi steps, review aur approval ke saath chalenge.",
-   "plat": [
-    "Linux",
-    "Mac",
-    "Docker (self-hosted)"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki ye Docker chalata hai, GitHub authorization maangta hai aur apka code agents ko deta hai (sawaal 2). Install script alag se Linux packages bhi install kar sakti hai.",
-   "t": "agent",
-   "type": "Self-hosted workspace (aapke apne server par chalne wala)",
-   "win": [
-    "README Linux aur Mac ke liye hai; Windows par shayad WSL (Windows ke andar Linux) chahiye, official README dekhein.",
-    "Docker aur Git install karein, phir: `git clone https://github.com/Tencent/LoopForge.git`",
-    "`cd LoopForge`",
-    "`./start.sh`",
-    "Start ke baad model API keys aur GitHub authorization set karein."
-   ]
-  },
-  "archived": "2026-11-17"
- },
  "The-PR-Agent/pr-agent": {
   "EN": {
    "and": [
@@ -723,75 +707,6 @@
    ]
   },
   "archived": "2026-11-16"
- },
- "alibaba/open-code-review": {
-  "EN": {
-   "and": [
-    "`npm install -g @alibaba-group/open-code-review`"
-   ],
-   "bani": "Developers must review a lot of code and it is slow. Alibaba built a command-line tool (a text-based program) that works with AI agents such as Claude Code to check code.",
-   "job": "Developers, software teams, AI coding agent users",
-   "kahan": "Software companies, startups, online shops, freelance developers.",
-   "kya": "An AI tool that checks code and finds bugs and mistakes.",
-   "need": "To catch bugs before they reach production (the live app). Example: you changed the payment code of a shop website; this tool can warn you about a mistake.",
-   "plat": [
-    "Windows",
-    "macOS",
-    "Linux",
-    "Claude Code"
-   ],
-   "rn": "Low risk because it installs only from the official npm package (a public software store). The tool may send your code to an AI, so be careful with private code.",
-   "type": "Code review tool",
-   "win": [
-    "`npm install -g @alibaba-group/open-code-review`"
-   ]
-  },
-  "R": {
-   "and": [
-    "`npm install -g @alibaba-group/open-code-review`"
-   ],
-   "bani": "Developers ko roz bahut code review karna padta hai, jo slow hota hai. Alibaba ne ek command-line tool banaya jo AI agents (jaise Claude Code) ke saath mil kar code check karta hai.",
-   "job": "Developers, software teams, AI coding agent users",
-   "kahan": "Software companies, startups, e-commerce teams, freelance developers.",
-   "kya": "AI se code ka check (review) karne wala tool jo bugs aur galtiyan dhundhta hai.",
-   "lang": [
-    [
-     "Go",
-     69.5
-    ],
-    [
-     "TypeScript",
-     15.6
-    ],
-    [
-     "Kotlin",
-     6.8
-    ],
-    [
-     "JavaScript",
-     4.1
-    ],
-    [
-     "Other",
-     4.0
-    ]
-   ],
-   "need": "Bug production (live app) tak pohonchne se pehle pakadne ke liye. Example: aapne shop ki website mein payment ka code badla; ye tool bata sakta hai ki kahin galti to nahi.",
-   "plat": [
-    "Windows",
-    "macOS",
-    "Linux",
-    "Claude Code"
-   ],
-   "r": "low",
-   "rn": "Low risk kyunki install sirf official npm package se hota hai. Tool aapka code AI ko bhej sakta hai, isliye private code par check karke chalayein.",
-   "t": "agent",
-   "type": "Code review tool",
-   "win": [
-    "`npm install -g @alibaba-group/open-code-review`"
-   ]
-  },
-  "archived": "2026-11-17"
  },
  "anthropics/claude-quickstarts": {
   "EN": {
@@ -1332,6 +1247,146 @@
    ]
   },
   "archived": "2026-11-17"
+ },
+ "google-deepmind/mujoco": {
+  "EN": {
+   "and": [
+    "There is no separate Android app; the browser version may also open on a phone."
+   ],
+   "bani": "Testing a robot in the real world is costly and risky. Researchers needed a fast and accurate simulation.",
+   "job": "Robotics researchers, ML engineers, game and animation developers.",
+   "kahan": "Universities, robotics labs, AI research.",
+   "kya": "Google DeepMind's physics engine: it simulates robots and things with joints inside a computer, fast and accurately.",
+   "need": "A robot or AI first has to learn inside a computer. Example: teaching a robot hand to pick up an object without breaking a real machine.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web (browser)"
+   ],
+   "rn": "Low risk. It is an official Google DeepMind project. It needs no account or computer control; install is through pip (Python's package tool).",
+   "type": "Physics simulator (for robots)",
+   "win": [
+    "`pip install mujoco`",
+    "Or try it in the browser on the official website, with no install."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android ke liye alag app nahi; browser version mobile par bhi khul sakta hai."
+   ],
+   "bani": "Robot ko asli duniya mein test karna mehnga aur risky hai. Researchers ko ek tez aur sahi simulation chahiye tha.",
+   "job": "Robotics researchers, ML engineers, game aur animation developers.",
+   "kahan": "Universities, robotics labs, AI research.",
+   "kya": "Google DeepMind ka physics engine: robot aur jodon (joints) wali cheezon ko computer mein tezi se aur sahi tarah simulate karta hai.",
+   "lang": [
+    [
+     "C++",
+     30.5
+    ],
+    [
+     "C",
+     27.1
+    ],
+    [
+     "Python",
+     24.9
+    ],
+    [
+     "C#",
+     13.0
+    ],
+    [
+     "Other",
+     4.5
+    ]
+   ],
+   "need": "Robot ya AI ko pehle computer mein seekhna hota hai. Example: robot haath ko cheez uthana sikhana, bina asli machine toote.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web (browser)"
+   ],
+   "r": "low",
+   "rn": "Low risk. Official Google DeepMind project hai. Koi account ya computer control nahi chahiye; install pip se hota hai.",
+   "t": "infra",
+   "type": "Physics simulator (robots ke liye)",
+   "win": [
+    "`pip install mujoco`",
+    "Ya official website par browser mein bina install ke try karein."
+   ]
+  },
+  "archived": "2026-11-18"
+ },
+ "google/elephant-goldfish-model": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "When an AI works through a long chat, it cannot see its own mistakes. Google made two roles: Elephant (remembers everything and writes the draft) and Goldfish (reviews with fresh eyes, without the earlier chat).",
+   "job": "Developers, AI coding agent users, software architects, AI learners",
+   "kahan": "Software teams, startups, product teams, students who build with AI.",
+   "kya": "An AI plugin that writes a project plan (specification) first and then asks fresh 'forgetful' reviewers to check it.",
+   "need": "To make a plan solid before writing code. Example: you plan a booking app; the Goldfish reviewer finds things you assumed but never wrote down.",
+   "plat": [
+    "Claude Code",
+    "Codex CLI",
+    "Antigravity"
+   ],
+   "rn": "Low risk because it is an official Google plugin installed with official commands. Still, a plugin lets an AI agent act on your files, so check what it does.",
+   "type": "AI plugin (design + review)",
+   "win": [
+    "`claude plugin marketplace add google/elephant-goldfish-model`",
+    "`claude plugin install egm@egm`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "AI jab lambi baat ke baad kuch likhta hai to apni galtiyan nahi dekh pata. Google ne do roles banaye: Elephant (sab yaad rakhta hai aur draft likhta hai) aur Goldfish (bina purani baat ke fresh nazar se review karta hai).",
+   "job": "Developers, AI coding agent users, software architects, AI learners",
+   "kahan": "Software teams, startups, product teams, students jo AI se build karte hain.",
+   "kya": "AI plugin jo pehle project ka design (specification) likhta hai aur phir naye 'bhoolne wale' reviewers se check karwata hai.",
+   "lang": [
+    [
+     "Python",
+     63.3
+    ],
+    [
+     "JavaScript",
+     20.4
+    ],
+    [
+     "CSS",
+     8.2
+    ],
+    [
+     "TypeScript",
+     6.1
+    ],
+    [
+     "Other",
+     2.0
+    ]
+   ],
+   "need": "Code likhne se pehle plan ko pakka karne ke liye. Example: aap ek booking app plan kar rahe hain; Goldfish reviewer wo cheezein pakadta hai jo aapne maan li thi par likhi nahi.",
+   "plat": [
+    "Claude Code",
+    "Codex CLI",
+    "Antigravity"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki Google ka official plugin hai aur install official commands se hota hai. Phir bhi plugin AI agent ko kaam karne ki permission deta hai, isliye check karein.",
+   "t": "agent",
+   "type": "AI plugin (design + review)",
+   "win": [
+    "`claude plugin marketplace add google/elephant-goldfish-model`",
+    "`claude plugin install egm@egm`"
+   ]
+  },
+  "archived": "2026-11-18"
  },
  "google/skills": {
   "EN": {
@@ -2273,6 +2328,59 @@
    ]
   },
   "archived": "2026-11-12"
+ },
+ "tradermonty/claude-trading-skills": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Most investors have little time. This project gives ready workflows that build a disciplined process. It does not give buy/sell signals.",
+   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
+   "kahan": "Personal investing, finance learners, hobby traders.",
+   "kya": "A set of Claude skills that helps investors with market review, risk checks, trade plans and journaling.",
+   "need": "To give structure to your investing habit. Example: a daily market summary and a portfolio risk check in one flow.",
+   "plat": [
+    "Claude Code",
+    "Claude.ai"
+   ],
+   "rn": "Medium risk because it relates to money decisions (you can lose money; this is not financial advice) and some skills need API keys (access passwords) (question 2).",
+   "type": "Claude Skills for investing",
+   "win": [
+    "Please see the official README: download a `.skill` file from the release and upload it in Claude"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Zyada tar investors ke paas time kam hota hai. Is project mein ready workflows hain jo ek disciplined process banate hain. Ye buy/sell signal nahi deta.",
+   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
+   "kahan": "Personal investing, finance learners, hobby traders.",
+   "kya": "Claude ke liye skills ka set jo investors ko market review, risk check, trade plan aur journal banane mein madad karta hai.",
+   "lang": [
+    [
+     "Python",
+     99.1
+    ],
+    [
+     "Other",
+     0.9
+    ]
+   ],
+   "need": "Investing ki aadat ko structure dene ke liye. Example: roz subah market ka summary aur apne portfolio ka risk check ek hi flow mein.",
+   "plat": [
+    "Claude Code",
+    "Claude.ai"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye financial decisions se juda hai (loss ho sakta hai, ye financial advice nahi hai) aur kuch skills ke liye API keys chahiye (sawaal 2).",
+   "t": "agent",
+   "type": "Claude Skills for investing",
+   "win": [
+    "Official README dekhein: release se `.skill` file download karke Claude mein upload karein"
+   ]
+  },
+  "archived": "2026-11-18"
  },
  "vercel-labs/agent-desktop": {
   "EN": {

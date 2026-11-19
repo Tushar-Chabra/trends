@@ -255,73 +255,6 @@
   },
   "archived": "2026-11-16"
  },
- "NVIDIA/SkillEvaluator": {
-  "EN": {
-   "and": [
-    "Please see the official README: this tool runs in a computer's terminal.",
-    "On Android, reading the docs and the NVIDIA blog is the practical option."
-   ],
-   "bani": "People build new skills every day, but nobody knows if they are really good. NVIDIA made a tool that can score a skill even without an AI key, and can also run an agent with and without the skill to measure the difference.",
-   "job": "AI engineers, developers, automation builders, AI learners, QA testers",
-   "kahan": "AI product teams, companies that publish their own skills, CI pipelines (automatic checks that run on every change).",
-   "kya": "Gives AI agent skills a report card: quality, security, overlap and real effect, all checked in one go.",
-   "need": "Just as an exam shows how much a student learned, checking a skill before sharing it helps you avoid sending out a weak one.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Linux",
-    "Claude Code",
-    "Codex"
-   ],
-   "rn": "Low risk. The basic check runs without any key. If you use the optional NVIDIA Build step, the skill's text is sent to their model, so be careful with private skills.",
-   "type": "Command-line tool (a program you run by typing commands, made with Python)",
-   "win": [
-    "You need Python 3.12 or newer. Then: `pip install skillevaluator`",
-    "To check a skill: `skillevaluator validate ./my-skill --tiers 1`"
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein: ye tool computer ke terminal mein chalta hai.",
-    "Android par sirf docs padhna aur NVIDIA ka blog dekhna practical hai."
-   ],
-   "bani": "Log har din nayi skills bana rahe hain, par kisi ko pata nahi hota ki wo sach mein achhi hain ya nahi. NVIDIA ne ek tool banaya jo skill ko bina AI key ke bhi score de sakta hai, aur skill ke saath aur uske bina agent chalakar farak check kar sakta hai.",
-   "job": "AI engineers, developers, automation builders, AI learners, QA testers",
-   "kahan": "AI product teams, companies jo apni skills publish karti hain, CI pipelines.",
-   "kya": "AI agent skills ka report card banata hai: quality, security, overlap aur asli asar, sab check karke.",
-   "lang": [
-    [
-     "Python",
-     96.5
-    ],
-    [
-     "MDX",
-     3.1
-    ],
-    [
-     "Other",
-     0.4
-    ]
-   ],
-   "need": "Jaise school mein exam se pata chalta hai ki student kitna seekha, waise hi skill ko chalane se pehle uski quality check ho jaye to bekaar skill share karne se bachaa ja sakta hai.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Linux",
-    "Claude Code",
-    "Codex"
-   ],
-   "r": "low",
-   "rn": "Low risk. Basic check bina key ke chalta hai. Agar NVIDIA Build ka optional step lein to skill ka text unke model ko bheja jata hai, isliye private skill ho to dhyan rakhein.",
-   "t": "agent",
-   "type": "Command-line tool (Python)",
-   "win": [
-    "Python 3.12 ya naya hona chahiye. Phir: `pip install skillevaluator`",
-    "Skill check karne ke liye: `skillevaluator validate ./my-skill --tiers 1`"
-   ]
-  },
-  "archived": "2026-11-18"
- },
  "NVIDIA/auto-ontology": {
   "EN": {
    "and": [
@@ -523,6 +456,81 @@
   },
   "archived": "2026-11-10"
  },
+ "Tencent/LoopForge": {
+  "EN": {
+   "and": [
+    "Does not run on a tablet; it runs on a server. You can open the server in a browser."
+   ],
+   "bani": "When coding agents run alone, there is no record, review or approval. LoopForge adds roles, sandboxes and checkpoints, and saves a good way of working as an SOP (a standard step-by-step workflow).",
+   "job": "Software teams, engineering managers, DevOps (people who run servers) engineers, automation builders.",
+   "kahan": "Software companies, startups, IT teams that want code and data on their own servers.",
+   "kya": "A workspace where you describe the work in chat, and coding agents write code inside a sandbox (a separate safe box) and open a PR (a request to add the code change).",
+   "need": "When 5 people use agents, each one works differently. For example: make an SOP for bug fixes, and next time the same steps run, with review and approval built in.",
+   "plat": [
+    "Linux",
+    "Mac",
+    "Docker (self-hosted)"
+   ],
+   "rn": "Medium risk because it runs Docker, asks for GitHub authorization and gives your code to agents (question 2). Its install script can also install Linux packages.",
+   "type": "Self-hosted workspace (runs on your own server)",
+   "win": [
+    "The README is for Linux and Mac; on Windows you may need WSL (Linux inside Windows), so see the official README.",
+    "Install Docker and Git, then: `git clone https://github.com/Tencent/LoopForge.git`",
+    "`cd LoopForge`",
+    "`./start.sh`",
+    "After the start, set your model API keys and GitHub authorization."
+   ]
+  },
+  "R": {
+   "and": [
+    "Tablet par nahi chalta; ye server par chalta hai. Browser se aap server ko khol sakte hain."
+   ],
+   "bani": "Coding agents akele chalate time kaam ka record, review aur approval nahi hota. LoopForge roles, sandboxes aur checkpoints jodta hai, aur achha tareeka SOP (step-by-step standard workflow) ke roop mein save kar deta hai.",
+   "job": "Software teams, engineering managers, DevOps (server sambhalne wale) engineers, AI automation builders.",
+   "kahan": "Software companies, startups, IT teams jo apne servers par code aur data rakhna chahte hain.",
+   "kya": "Aisa workspace jahan aap chat mein kaam batate hain aur coding agents sandbox (alag surakshit dabba) mein code likhkar PR (code change ki request) khol dete hain.",
+   "lang": [
+    [
+     "Go",
+     61.4
+    ],
+    [
+     "JavaScript",
+     23.1
+    ],
+    [
+     "Python",
+     7.4
+    ],
+    [
+     "CSS",
+     3.6
+    ],
+    [
+     "Other",
+     4.5
+    ]
+   ],
+   "need": "Team mein jab 5 log agents se kaam karwate hain, to har kisi ka tareeka alag hota hai. Jaise: ek bug fix ka SOP bana lo, to agli baar bhi wahi steps, review aur approval ke saath chalenge.",
+   "plat": [
+    "Linux",
+    "Mac",
+    "Docker (self-hosted)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye Docker chalata hai, GitHub authorization maangta hai aur apka code agents ko deta hai (sawaal 2). Install script alag se Linux packages bhi install kar sakti hai.",
+   "t": "agent",
+   "type": "Self-hosted workspace (aapke apne server par chalne wala)",
+   "win": [
+    "README Linux aur Mac ke liye hai; Windows par shayad WSL (Windows ke andar Linux) chahiye, official README dekhein.",
+    "Docker aur Git install karein, phir: `git clone https://github.com/Tencent/LoopForge.git`",
+    "`cd LoopForge`",
+    "`./start.sh`",
+    "Start ke baad model API keys aur GitHub authorization set karein."
+   ]
+  },
+  "archived": "2026-11-19"
+ },
  "The-PR-Agent/pr-agent": {
   "EN": {
    "and": [
@@ -707,6 +715,77 @@
    ]
   },
   "archived": "2026-11-16"
+ },
+ "ag-ui-protocol/ag-ui": {
+  "EN": {
+   "and": [
+    "Please see the official README: this is a developer tool, and the README gives no separate steps for an Android tablet."
+   ],
+   "bani": "Every agent framework spoke its own language, so each app had to be wired up again. AG-UI set about 16 standard event types (message, tool call, state change and so on), so you build the app once and connect many agents.",
+   "job": "AI app developers, agent builders, frontend developers, startup founders",
+   "kahan": "Chatbots, copilots (an AI helper inside an app), customer support, internal tools.",
+   "kya": "A simple common way (a protocol) for an AI agent and a user's app to talk to each other. The agent sends events (small messages) and the app shows them on screen.",
+   "need": "If you are building a chat-like AI app where the agent streams its answer live and sometimes asks you a question, AG-UI gives you that pipeline ready-made. Example: your support chatbot shows the reply as it is typed and stops to ask 'Should I cancel the order?'",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk: this is an open protocol and developer kit under the MIT license. It needs no account control and runs no script straight from the internet (it is set up through npm).",
+   "type": "Open protocol + SDKs (a common set of rules for how an AI agent talks to an app)",
+   "win": [
+    "Install Node.js, then run: `npx create-ag-ui-app my-agent-app`",
+    "The next setup steps are in the Quickstart of the official docs."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye developer tool hai, Android tablet par Termux jaisa setup chahiye, README mein alag steps nahi hain."
+   ],
+   "bani": "Har agent framework apni alag bhasha mein baat karta tha, isliye har app mein naya jodna padta tha. AG-UI ne lagbhag 16 standard event types (message, tool call, state change jaise) tay kar diye, taaki ek baar app banao aur kai agents chalao.",
+   "job": "AI app developers, agent builders, frontend developers, startup founders",
+   "kahan": "Chatbots, copilots (app ke andar AI helper), customer support, internal tools.",
+   "kya": "AI agent aur user ki app ke beech baat karne ka ek simple common tareeka (protocol). Agent events bhejta hai aur app unhe screen par dikhati hai.",
+   "lang": [
+    [
+     "TypeScript",
+     37.9
+    ],
+    [
+     "Python",
+     19.2
+    ],
+    [
+     "C#",
+     11.3
+    ],
+    [
+     "Swift",
+     8.1
+    ],
+    [
+     "Other",
+     23.5
+    ]
+   ],
+   "need": "Agar aap chat jaisi AI app bana rahe hain jisme agent live jawab stream kare aur beech mein aapse poochhe, to AG-UI ye pipeline ready deta hai. Example: aapka customer support chatbot typing jaisa jawab dikhaye aur beech mein 'kya order cancel karun?' puchhe.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk: ye open protocol aur developer kit hai, MIT license ke saath. Koi account control ya internet se seedhi script nahi chalti (npm se scaffold hota hai).",
+   "t": "infra",
+   "type": "Open protocol + SDKs (AI agent aur app ke beech baat karne ka common rule)",
+   "win": [
+    "Node.js install karein, phir: `npx create-ag-ui-app my-agent-app`",
+    "Aage ka setup official docs ke Quickstart mein hai."
+   ]
+  },
+  "archived": "2026-11-19"
  },
  "anthropics/claude-quickstarts": {
   "EN": {
@@ -1045,6 +1124,65 @@
   },
   "archived": "2026-11-16"
  },
+ "dream-num/univer": {
+  "EN": {
+   "and": [
+    "Please see the official README: Univer runs inside a web project, and a computer is a better place than an Android tablet to build with it."
+   ],
+   "bani": "Every company needs spreadsheets inside its software, but building one from zero is very hard. The Univer team built this whole office layer ready-made, with formulas, formatting and plugins (add-ons).",
+   "job": "Web developers, SaaS founders, product teams, automation builders",
+   "kahan": "Business software, finance dashboards, HR tools, education platforms, reporting apps.",
+   "kya": "An open-source spreadsheet like Excel and a document editor like Word that you can place inside your own website or app. An AI agent can connect to it too.",
+   "need": "If you are building HR, billing or accounts software and need an Excel-like table, you can plug in Univer instead of writing a new editor. Example: in a school fees app, a teacher fills an Excel-like table and runs formulas right inside the app.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk: this is a developer library installed from the official npm registry (the public store for JavaScript packages). It needs no account control and runs no internet script. Some commercial packages need a separate license, so check the license before use.",
+   "type": "SDK (ready-made building blocks for developers) + open-source Sheets and Docs",
+   "win": [
+    "Install Node.js and `pnpm`, then in your web project run: `pnpm add @univerjs/presets @univerjs/preset-sheets-core`",
+    "The next code steps are in the Quick start of the official README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: Univer web project ke andar chalta hai, Android tablet par development ke liye computer behtar hai."
+   ],
+   "bani": "Har company ko apne software mein spreadsheet chahiye hota hai, lekin zero se banana bahut mushkil hai. Univer team ne ye pura office layer ready-made bana diya, jisme formulas, formatting aur plugins (add-ons) hain.",
+   "job": "Web developers, SaaS founders, product teams, automation builders",
+   "kahan": "Business software, finance dashboards, HR tools, education platforms, reporting apps.",
+   "kya": "Ek open-source Excel jaisa spreadsheet aur Word jaisa document editor, jo aap apni website ya app ke andar laga sakte hain. AI agent bhi isse connect ho sakta hai.",
+   "lang": [
+    [
+     "TypeScript",
+     98.9
+    ],
+    [
+     "Other",
+     1.1
+    ]
+   ],
+   "need": "Aap apna HR, billing ya accounts software bana rahe hon aur usme Excel jaisa table chahiye, to naya editor likhne ki jagah Univer laga sakte hain. Example: aapki school ki fees app mein teacher seedha sheet jaisa table bharein aur formulas chalayein.",
+   "plat": [
+    "Web app",
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk: ye developer library hai, official npm package se install hoti hai, na koi account control chahiye na internet script chalti hai. Commercial packages ke liye alag license lag sakta hai, to use se pehle license check karein.",
+   "t": "infra",
+   "type": "SDK (developers ke liye ready-made building blocks) + open-source Sheets/Docs",
+   "win": [
+    "Node.js aur `pnpm` install karein, phir apne web project mein: `pnpm add @univerjs/presets @univerjs/preset-sheets-core`",
+    "Aage ke code steps official README ke Quick start mein diye gaye hain."
+   ]
+  },
+  "archived": "2026-11-19"
+ },
  "dsx-ai-factory/nvke": {
   "EN": {
    "and": [
@@ -1105,6 +1243,63 @@
    ]
   },
   "archived": "2026-11-10"
+ },
+ "elementalsouls/Claude-BugHunter": {
+  "EN": {
+   "and": [
+    "Does not run on a tablet; Claude Code runs on a computer."
+   ],
+   "bani": "Security researchers had to hunt for old reports and techniques every time. This bundle puts patterns from disclosed reports and reporting steps in one place.",
+   "job": "Security researchers, bug bounty hunters, authorized red-team testers.",
+   "kahan": "Cyber security teams, bug bounty platforms, penetration testing companies.",
+   "kya": "A bundle of 83 skills for Claude Code, made to help with bug hunting and red-team work (authorized security testing).",
+   "need": "For example, in an authorized bug bounty program a tester must write a report; the skills remind them of the format and steps.",
+   "plat": [
+    "Claude Code"
+   ],
+   "rn": "High risk because it is a bundle of hacking and exploit related tools (question 1). Test only systems where you have written permission.",
+   "type": "Claude Code skill bundle (security testing)",
+   "win": [
+    "Run in Claude Code: `/plugin marketplace add elementalsouls/Claude-BugHunter`",
+    "`/plugin install claude-bughunter@elementalsouls`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Tablet par nahi chalta; Claude Code computer par chalta hai."
+   ],
+   "bani": "Security researchers ko har baar purani reports aur techniques dhundhni padti thi. Is bundle mein disclosed reports ke patterns aur reporting ke steps ek jagah diye gaye hain.",
+   "job": "Security researchers, bug bounty hunters, authorized red-team testers.",
+   "kahan": "Cyber security teams, bug bounty platforms, penetration testing companies.",
+   "kya": "Claude Code ke liye 83 skills ka bundle jo bug hunting aur red-team (authorized security testing) kaam mein madad ke liye bana hai.",
+   "lang": [
+    [
+     "Python",
+     88.7
+    ],
+    [
+     "PowerShell",
+     5.7
+    ],
+    [
+     "Shell",
+     5.7
+    ]
+   ],
+   "need": "Jaise ek authorized bug bounty program mein tester ko report likhni hai; skills uska format aur steps yaad dilate hain.",
+   "plat": [
+    "Claude Code"
+   ],
+   "r": "high",
+   "rn": "High risk kyunki ye hacking/exploit se jude tools ka bundle hai (sawaal 1). Sirf wahi systems test karein jinki likhit permission aapke paas ho.",
+   "t": "sec",
+   "type": "Claude Code skill bundle (security testing)",
+   "win": [
+    "Claude Code mein chalayein: `/plugin marketplace add elementalsouls/Claude-BugHunter`",
+    "`/plugin install claude-bughunter@elementalsouls`"
+   ]
+  },
+  "archived": "2026-11-19"
  },
  "garrytan/gbrain": {
   "EN": {
@@ -1764,61 +1959,6 @@
   },
   "archived": "2026-11-14"
  },
- "nvm-sh/nvm": {
-  "EN": {
-   "and": [
-    "Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
-   ],
-   "bani": "Different projects need different Node.js versions. Keeping only one version broke older projects. nvm makes switching a one-line command.",
-   "job": "developers, automation builders, AI learners",
-   "kahan": "Web teams, startups, freelancers, AI tool setups.",
-   "kya": "A tool that lets you install and switch between different versions of Node.js (an engine that runs JavaScript) on one computer.",
-   "need": "Many AI automation tools need a recent Node.js. Example: one tool needs Node 22 while an older project runs on Node 18; nvm keeps both.",
-   "plat": [
-    "Mac",
-    "Linux",
-    "Windows (WSL)"
-   ],
-   "rn": "Medium risk because the install runs a script from the internet (question 3). The project is old and well known, but check the script first.",
-   "type": "Node.js version manager (command line)",
-   "win": [
-    "nvm-sh does not run directly on Windows; use WSL (Linux inside Windows). Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
-   ],
-   "bani": "Alag projects ko alag Node.js version chahiye hota hai. Ek hi version rakhne se purane projects toot jate the. nvm ne ek command se version badalna aasaan bana diya.",
-   "job": "Developers, automation builders, AI learners.",
-   "kahan": "Web development teams, startups, freelancers, AI tool setups.",
-   "kya": "Ek tool jo ek computer par Node.js (JavaScript chalane wala engine) ke alag-alag versions install karke badalne deta hai.",
-   "lang": [
-    [
-     "Shell",
-     88.9
-    ],
-    [
-     "JavaScript",
-     11.1
-    ]
-   ],
-   "need": "Agar aap AI automation tools chalate hain, to unhe aksar naya Node.js chahiye. Example: ek tool ko Node 22 chahiye aur purana project Node 18 par chalta hai, nvm dono rakh deta hai.",
-   "plat": [
-    "Mac",
-    "Linux",
-    "Windows (WSL)"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki install internet se seedhi script chalata hai (sawaal 3). Project purana aur jaana-maana hai, par script ka check zaroor karein.",
-   "t": "infra",
-   "type": "Node.js version manager (command line)",
-   "win": [
-    "Windows par nvm-sh seedha nahi chalta; WSL (Windows ke andar Linux) use karein. Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
-   ]
-  },
-  "archived": "2026-11-14"
- },
  "openai/codex-security": {
   "EN": {
    "and": [
@@ -2329,58 +2469,74 @@
   },
   "archived": "2026-11-12"
  },
- "tradermonty/claude-trading-skills": {
+ "vercel-labs/agent-browser": {
   "EN": {
    "and": [
-    "Please see the official README"
+    "Not available on Android."
    ],
-   "bani": "Most investors have little time. This project gives ready workflows that build a disciplined process. It does not give buy/sell signals.",
-   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
-   "kahan": "Personal investing, finance learners, hobby traders.",
-   "kya": "A set of Claude skills that helps investors with market review, risk checks, trade plans and journaling.",
-   "need": "To give structure to your investing habit. Example: a daily market summary and a portfolio risk check in one flow.",
+   "bani": "It was hard to make AI agents work on websites because a page's full code is very big. The Vercel team made a small snapshot with only the clickable parts, so the agent makes fewer mistakes.",
+   "job": "AI automation developers, QA testers, data and research teams.",
+   "kahan": "Website testing, AI agent projects, research automation, internal tools.",
+   "kya": "Agent-browser is a command line tool (a tool you run from the terminal) that lets an AI agent control the Chrome browser: open a page, take a snapshot, click a button, fill a form.",
+   "need": "If you want an AI agent to work on websites for you, such as filling a form or checking something, it must be able to run a browser. For example, you ask the agent to look up prices on 5 sites and make a list.",
    "plat": [
-    "Claude Code",
-    "Claude.ai"
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code"
    ],
-   "rn": "Medium risk because it relates to money decisions (you can lose money; this is not financial advice) and some skills need API keys (access passwords) (question 2).",
-   "type": "Claude Skills for investing",
+   "rn": "Medium risk because through the browser the agent can click inside your logged-in accounts (email, shopping, GitHub) (question 2). It is an official Vercel project. Use a separate browser profile or test accounts only.",
+   "type": "Browser control command line tool for AI agents",
    "win": [
-    "Please see the official README: download a `.skill` file from the release and upload it in Claude"
+    "You need Node.js. In the terminal: `npm install -g agent-browser`",
+    "The first time, to download the browser: `agent-browser install`",
+    "To try it without installing: `npx agent-browser open example.com`"
    ]
   },
   "R": {
    "and": [
-    "Official README dekhein"
+    "Android par nahi."
    ],
-   "bani": "Zyada tar investors ke paas time kam hota hai. Is project mein ready workflows hain jo ek disciplined process banate hain. Ye buy/sell signal nahi deta.",
-   "job": "Individual investors, ETF and dividend investors, traders, AI learners",
-   "kahan": "Personal investing, finance learners, hobby traders.",
-   "kya": "Claude ke liye skills ka set jo investors ko market review, risk check, trade plan aur journal banane mein madad karta hai.",
+   "bani": "AI agents ko website par kaam karwana mushkil tha, kyunki page ka poora code bahut bada hota hai. Vercel ki team ne chhota snapshot banaya jisme sirf click hone wale elements hote hain, taaki agent kam galti kare.",
+   "job": "AI automation developers, QA testers, data aur research teams.",
+   "kahan": "Website testing, AI agent projects, research automation, internal tools.",
+   "kya": "Agent-browser ek command line tool (terminal se chalne wala tool) hai jisse AI agent Chrome browser ko control kar sakta hai: page kholna, snapshot lena, button click karna, form bharna.",
    "lang": [
     [
-     "Python",
-     99.1
+     "TypeScript",
+     58
+    ],
+    [
+     "Rust",
+     33
+    ],
+    [
+     "JavaScript",
+     7
     ],
     [
      "Other",
-     0.9
+     2
     ]
    ],
-   "need": "Investing ki aadat ko structure dene ke liye. Example: roz subah market ka summary aur apne portfolio ka risk check ek hi flow mein.",
+   "need": "Agar aap chahte hain ki AI agent aapke liye website par kaam kare, jaise form bharna ya cheez check karna, to use browser chalana aana chahiye. Jaise aap agent se kehte hain ki 5 sites se price dekh kar list banaye.",
    "plat": [
-    "Claude Code",
-    "Claude.ai"
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code"
    ],
    "r": "med",
-   "rn": "Medium risk kyunki ye financial decisions se juda hai (loss ho sakta hai, ye financial advice nahi hai) aur kuch skills ke liye API keys chahiye (sawaal 2).",
+   "rn": "Medium risk kyunki agent browser ke through aapke logged-in accounts (email, shop, GitHub) par click kar sakta hai (sawaal 2). Ye Vercel ka official project hai. Alag browser profile ya test accounts se hi chalayein.",
    "t": "agent",
-   "type": "Claude Skills for investing",
+   "type": "AI agents ke liye browser control CLI",
    "win": [
-    "Official README dekhein: release se `.skill` file download karke Claude mein upload karein"
+    "Node.js chahiye. Terminal mein: `npm install -g agent-browser`",
+    "Pehli baar browser download karne ke liye: `agent-browser install`",
+    "Bina install ke try karne ke liye: `npx agent-browser open example.com`"
    ]
   },
-  "archived": "2026-11-18"
+  "archived": "2026-11-19"
  },
  "vercel-labs/agent-desktop": {
   "EN": {

@@ -3004,6 +3004,196 @@
     "src": "Trendshift",
     "upd": "2026-11-05"
    }
+  },
+  "2026-11-19": {
+   "daily": {
+    "lbl": "Daily",
+    "src": "GitHub",
+    "upd": "2026-11-19",
+    "rows": [
+     [
+      "cursor/plugins",
+      "314"
+     ],
+     [
+      "HKUDS/CLI-Anything",
+      "389"
+     ],
+     [
+      "mvanhorn/last30days-skill",
+      "1.1k"
+     ],
+     [
+      "getarcaneapp/arcane",
+      "547"
+     ],
+     [
+      "NVIDIA/SkillEvaluator",
+      "312"
+     ],
+     [
+      "nvm-sh/nvm",
+      "237"
+     ],
+     [
+      "astral-sh/uv",
+      "258"
+     ],
+     [
+      "google-research/paper-orchestra",
+      "1.5k"
+     ],
+     [
+      "google-labs-code/stitch-skills",
+      "365"
+     ],
+     [
+      "sveltejs/svelte",
+      "692"
+     ]
+    ]
+   },
+   "weekly": {
+    "lbl": "Weekly",
+    "src": "GitHub",
+    "upd": "2026-11-19",
+    "rows": [
+     [
+      "GoogleChrome/modern-web-guidance-src",
+      "7.3k"
+     ],
+     [
+      "backnotprop/plannotator",
+      "3.3k"
+     ],
+     [
+      "meta/astryx",
+      "6.3k"
+     ],
+     [
+      "we-promise/sure",
+      "3.9k"
+     ],
+     [
+      "alibaba/open-code-review",
+      "4.4k"
+     ],
+     [
+      "google-labs-code/stitch-skills",
+      "1.6k"
+     ],
+     [
+      "tradermonty/claude-trading-skills",
+      "3.2k"
+     ],
+     [
+      "ChromeDevTools/chrome-devtools-mcp",
+      "3.1k"
+     ],
+     [
+      "anthropics/skills",
+      "4.4k"
+     ],
+     [
+      "ZhuLinsen/daily_stock_analysis",
+      "3.6k"
+     ]
+    ]
+   },
+   "monthly": {
+    "lbl": "Monthly",
+    "src": "GitHub",
+    "upd": "2026-11-16",
+    "rows": [
+     [
+      "Nutlope/hallmark",
+      "25.4k"
+     ],
+     [
+      "cloudflare/security-audit-skill",
+      "43.5k"
+     ],
+     [
+      "pingdotgg/t3code",
+      "33.6k"
+     ],
+     [
+      "thedotmack/claude-mem",
+      "17.0k"
+     ],
+     [
+      "pbakaus/impeccable",
+      "29.6k"
+     ],
+     [
+      "anthropics/skills",
+      "14.3k"
+     ],
+     [
+      "HKUDS/DeepTutor",
+      "18.3k"
+     ],
+     [
+      "heygen-com/hyperframes",
+      "20.9k"
+     ],
+     [
+      "sherlock-project/sherlock",
+      "18.4k"
+     ],
+     [
+      "AgriciDaniel/claude-seo",
+      "10.7k"
+     ]
+    ]
+   },
+   "yearly": {
+    "lbl": "Yearly",
+    "rows": [
+     [
+      "openclaw/openclaw",
+      "398.6k"
+     ],
+     [
+      "obra/superpowers",
+      "301.1k"
+     ],
+     [
+      "morluto/rea",
+      "432.3k"
+     ],
+     [
+      "NousResearch/hermes-agent",
+      "261.7k"
+     ],
+     [
+      "mattpocock/skills",
+      "311.8k"
+     ],
+     [
+      "affaan-m/ECC",
+      "298.8k"
+     ],
+     [
+      "anomalyco/opencode",
+      "182.1k"
+     ],
+     [
+      "multica-ai/andrej-karpathy-skills",
+      "230.7k"
+     ],
+     [
+      "msitarzewski/agency-agents",
+      "166.3k"
+     ],
+     [
+      "anthropics/skills",
+      "157.9k"
+     ]
+    ],
+    "src": "Trendshift",
+    "upd": "2026-11-05"
+   }
   }
  }
 }

@@ -255,6 +255,73 @@
   },
   "archived": "2026-11-16"
  },
+ "NVIDIA/SkillEvaluator": {
+  "EN": {
+   "and": [
+    "Please see the official README: this tool runs in a computer's terminal.",
+    "On Android, reading the docs and the NVIDIA blog is the practical option."
+   ],
+   "bani": "People build new skills every day, but nobody knows if they are really good. NVIDIA made a tool that can score a skill even without an AI key, and can also run an agent with and without the skill to measure the difference.",
+   "job": "AI engineers, developers, automation builders, AI learners, QA testers",
+   "kahan": "AI product teams, companies that publish their own skills, CI pipelines (automatic checks that run on every change).",
+   "kya": "Gives AI agent skills a report card: quality, security, overlap and real effect, all checked in one go.",
+   "need": "Just as an exam shows how much a student learned, checking a skill before sharing it helps you avoid sending out a weak one.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code",
+    "Codex"
+   ],
+   "rn": "Low risk. The basic check runs without any key. If you use the optional NVIDIA Build step, the skill's text is sent to their model, so be careful with private skills.",
+   "type": "Command-line tool (a program you run by typing commands, made with Python)",
+   "win": [
+    "You need Python 3.12 or newer. Then: `pip install skillevaluator`",
+    "To check a skill: `skillevaluator validate ./my-skill --tiers 1`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye tool computer ke terminal mein chalta hai.",
+    "Android par sirf docs padhna aur NVIDIA ka blog dekhna practical hai."
+   ],
+   "bani": "Log har din nayi skills bana rahe hain, par kisi ko pata nahi hota ki wo sach mein achhi hain ya nahi. NVIDIA ne ek tool banaya jo skill ko bina AI key ke bhi score de sakta hai, aur skill ke saath aur uske bina agent chalakar farak check kar sakta hai.",
+   "job": "AI engineers, developers, automation builders, AI learners, QA testers",
+   "kahan": "AI product teams, companies jo apni skills publish karti hain, CI pipelines.",
+   "kya": "AI agent skills ka report card banata hai: quality, security, overlap aur asli asar, sab check karke.",
+   "lang": [
+    [
+     "Python",
+     96.5
+    ],
+    [
+     "MDX",
+     3.1
+    ],
+    [
+     "Other",
+     0.4
+    ]
+   ],
+   "need": "Jaise school mein exam se pata chalta hai ki student kitna seekha, waise hi skill ko chalane se pehle uski quality check ho jaye to bekaar skill share karne se bachaa ja sakta hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Claude Code",
+    "Codex"
+   ],
+   "r": "low",
+   "rn": "Low risk. Basic check bina key ke chalta hai. Agar NVIDIA Build ka optional step lein to skill ka text unke model ko bheja jata hai, isliye private skill ho to dhyan rakhein.",
+   "t": "agent",
+   "type": "Command-line tool (Python)",
+   "win": [
+    "Python 3.12 ya naya hona chahiye. Phir: `pip install skillevaluator`",
+    "Skill check karne ke liye: `skillevaluator validate ./my-skill --tiers 1`"
+   ]
+  },
+  "archived": "2026-11-20"
+ },
  "NVIDIA/auto-ontology": {
   "EN": {
    "and": [
@@ -649,6 +716,65 @@
   },
   "archived": "2026-11-13"
  },
+ "ZhuLinsen/daily_stock_analysis": {
+  "EN": {
+   "and": [
+    "Please see the official README"
+   ],
+   "bani": "Checking news, prices and indicators (chart signals) separately every day is tiring. This project collects the data, makes an AI report and sends it to WeChat, Telegram, Slack or email.",
+   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
+   "kahan": "Fintech, trading research and personal investing.",
+   "kya": "Uses AI to analyse your chosen stocks (mainly China, US and HK markets) every day and sends a dashboard.",
+   "need": "If you are learning about stocks, a daily summary saves time. Example: each morning your phone gets 'watch these 5 stocks today'. This is not financial advice.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "GitHub Actions"
+   ],
+   "rn": "Low risk because there is no exploit or script, but trading on such signals can cause money loss, so use it only to learn.",
+   "type": "AI stock analysis bot",
+   "win": [
+    "Please see the official README"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein"
+   ],
+   "bani": "Roz news, price aur indicators (chart ke signals) alag alag dekhna thakane wala hai. Yeh project data jodta hai, AI se report banata hai aur WeChat, Telegram, Slack ya email par bhejta hai.",
+   "job": "Data analyst, fintech developer, AI automation learner, retail investor.",
+   "kahan": "Fintech, trading research aur personal investing.",
+   "kya": "AI se aapki chuni hui stocks (India nahi, mainly China/US/HK markets) ka roz analysis karke dashboard bhejta hai.",
+   "lang": [
+    [
+     "Python",
+     66.3
+    ],
+    [
+     "TypeScript",
+     31.4
+    ],
+    [
+     "Other",
+     2.3
+    ]
+   ],
+   "need": "Agar aap stocks ke baare mein seekhna chahte hain, to roz ka summary time bachata hai. Example: subah aapke phone par 'aaj in 5 stocks par yeh dhyan dein' ka message aa jata hai. Yeh financial advice nahi hai.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "GitHub Actions"
+   ],
+   "r": "low",
+   "rn": "Low risk kyunki koi exploit ya script nahi hai, par stock signals par depend karke paisa lagana loss kara sakta hai, isliye sirf seekhne ke liye use karein.",
+   "t": "life",
+   "type": "AI stock analysis bot",
+   "win": [
+    "Official README dekhein"
+   ]
+  },
+  "archived": "2026-11-20"
+ },
  "addyosmani/agent-skills": {
   "EN": {
    "and": [
@@ -715,77 +841,6 @@
    ]
   },
   "archived": "2026-11-16"
- },
- "ag-ui-protocol/ag-ui": {
-  "EN": {
-   "and": [
-    "Please see the official README: this is a developer tool, and the README gives no separate steps for an Android tablet."
-   ],
-   "bani": "Every agent framework spoke its own language, so each app had to be wired up again. AG-UI set about 16 standard event types (message, tool call, state change and so on), so you build the app once and connect many agents.",
-   "job": "AI app developers, agent builders, frontend developers, startup founders",
-   "kahan": "Chatbots, copilots (an AI helper inside an app), customer support, internal tools.",
-   "kya": "A simple common way (a protocol) for an AI agent and a user's app to talk to each other. The agent sends events (small messages) and the app shows them on screen.",
-   "need": "If you are building a chat-like AI app where the agent streams its answer live and sometimes asks you a question, AG-UI gives you that pipeline ready-made. Example: your support chatbot shows the reply as it is typed and stops to ask 'Should I cancel the order?'",
-   "plat": [
-    "Web app",
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "rn": "Low risk: this is an open protocol and developer kit under the MIT license. It needs no account control and runs no script straight from the internet (it is set up through npm).",
-   "type": "Open protocol + SDKs (a common set of rules for how an AI agent talks to an app)",
-   "win": [
-    "Install Node.js, then run: `npx create-ag-ui-app my-agent-app`",
-    "The next setup steps are in the Quickstart of the official docs."
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein: ye developer tool hai, Android tablet par Termux jaisa setup chahiye, README mein alag steps nahi hain."
-   ],
-   "bani": "Har agent framework apni alag bhasha mein baat karta tha, isliye har app mein naya jodna padta tha. AG-UI ne lagbhag 16 standard event types (message, tool call, state change jaise) tay kar diye, taaki ek baar app banao aur kai agents chalao.",
-   "job": "AI app developers, agent builders, frontend developers, startup founders",
-   "kahan": "Chatbots, copilots (app ke andar AI helper), customer support, internal tools.",
-   "kya": "AI agent aur user ki app ke beech baat karne ka ek simple common tareeka (protocol). Agent events bhejta hai aur app unhe screen par dikhati hai.",
-   "lang": [
-    [
-     "TypeScript",
-     37.9
-    ],
-    [
-     "Python",
-     19.2
-    ],
-    [
-     "C#",
-     11.3
-    ],
-    [
-     "Swift",
-     8.1
-    ],
-    [
-     "Other",
-     23.5
-    ]
-   ],
-   "need": "Agar aap chat jaisi AI app bana rahe hain jisme agent live jawab stream kare aur beech mein aapse poochhe, to AG-UI ye pipeline ready deta hai. Example: aapka customer support chatbot typing jaisa jawab dikhaye aur beech mein 'kya order cancel karun?' puchhe.",
-   "plat": [
-    "Web app",
-    "Windows",
-    "Mac",
-    "Linux"
-   ],
-   "r": "low",
-   "rn": "Low risk: ye open protocol aur developer kit hai, MIT license ke saath. Koi account control ya internet se seedhi script nahi chalti (npm se scaffold hota hai).",
-   "t": "infra",
-   "type": "Open protocol + SDKs (AI agent aur app ke beech baat karne ka common rule)",
-   "win": [
-    "Node.js install karein, phir: `npx create-ag-ui-app my-agent-app`",
-    "Aage ka setup official docs ke Quickstart mein hai."
-   ]
-  },
-  "archived": "2026-11-19"
  },
  "anthropics/claude-quickstarts": {
   "EN": {
@@ -916,6 +971,73 @@
    ]
   },
   "archived": "2026-11-16"
+ },
+ "astral-sh/uv": {
+  "EN": {
+   "and": [
+    "Please see the official README: it lists only macOS, Linux and Windows, with no separate steps for Android."
+   ],
+   "bani": "With Python, installing libraries (ready-made code packages), making separate project spaces and switching Python versions each needed a different tool, and they were slow. uv puts them together, and the README says it is 10-100 times faster than pip.",
+   "job": "developers, data analysts, AI engineers, automation builders, students",
+   "kahan": "Software companies, data science teams, AI startups and students learning Python.",
+   "kya": "A very fast tool written in Rust that does the job of pip, virtualenv, pyenv and several other Python tools in one place.",
+   "need": "Whenever you start a Python automation or AI project, you first have to install libraries. Example: if you write a small script that grabs data from a website every day, uv can set up everything it needs in a few seconds.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because the first installer in the README downloads and runs a script from the internet (question 3). A safer way is `pip install uv` from PyPI (the official Python library store), shown below.",
+   "type": "Developer tool (a fast helper for Python projects)",
+   "win": [
+    "`pip install uv`",
+    "`pipx install uv`",
+    "The README's Windows installer runs a script from the internet, so that command is not shown here (why: if the website changes, a wrong script could run)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: README mein sirf macOS, Linux aur Windows likha hai, Android ke liye alag steps nahi diye gaye."
+   ],
+   "bani": "Python mein libraries (packages) install karna, alag environments banana aur Python ke versions badalna, sab ke liye alag alag tools chalane padte the aur wo slow bhi the. uv in sab ko ek jagah laata hai aur README kehta hai ki ye pip se 10-100 guna tez hai.",
+   "job": "developers, data analysts, AI engineers, automation builders, students",
+   "kahan": "Software companies, data science teams, AI startups aur wo students jo Python seekh rahe hain.",
+   "kya": "Rust mein bana bahut tez Python tool jo pip, virtualenv, pyenv jaise kai tools ka kaam akela kar deta hai.",
+   "lang": [
+    [
+     "Rust",
+     84.4
+    ],
+    [
+     "Python",
+     11.2
+    ],
+    [
+     "Shell",
+     3.0
+    ],
+    [
+     "Other",
+     1.4
+    ]
+   ],
+   "need": "Jab bhi aap Python wala automation ya AI project shuru karte hain, pehle libraries lagani padti hain. Example: agar aap ek chhota script banate hain jo roz ek website se data nikaalta hai, to uv se uska poora setup kuch second mein ho jata hai.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki README ka pehla installer internet se script download karke chalata hai (sawaal 3). Safer rasta: PyPI se `pip install uv`, jo neeche diya gaya hai.",
+   "t": "infra",
+   "type": "Developer tool (Python package and project manager)",
+   "win": [
+    "`pip install uv`",
+    "`pipx install uv`",
+    "README ka Windows installer internet se script chalata hai, isliye wo command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ]
+  },
+  "archived": "2026-11-20"
  },
  "block/buzz": {
   "EN": {
@@ -1244,63 +1366,6 @@
   },
   "archived": "2026-11-10"
  },
- "elementalsouls/Claude-BugHunter": {
-  "EN": {
-   "and": [
-    "Does not run on a tablet; Claude Code runs on a computer."
-   ],
-   "bani": "Security researchers had to hunt for old reports and techniques every time. This bundle puts patterns from disclosed reports and reporting steps in one place.",
-   "job": "Security researchers, bug bounty hunters, authorized red-team testers.",
-   "kahan": "Cyber security teams, bug bounty platforms, penetration testing companies.",
-   "kya": "A bundle of 83 skills for Claude Code, made to help with bug hunting and red-team work (authorized security testing).",
-   "need": "For example, in an authorized bug bounty program a tester must write a report; the skills remind them of the format and steps.",
-   "plat": [
-    "Claude Code"
-   ],
-   "rn": "High risk because it is a bundle of hacking and exploit related tools (question 1). Test only systems where you have written permission.",
-   "type": "Claude Code skill bundle (security testing)",
-   "win": [
-    "Run in Claude Code: `/plugin marketplace add elementalsouls/Claude-BugHunter`",
-    "`/plugin install claude-bughunter@elementalsouls`"
-   ]
-  },
-  "R": {
-   "and": [
-    "Tablet par nahi chalta; Claude Code computer par chalta hai."
-   ],
-   "bani": "Security researchers ko har baar purani reports aur techniques dhundhni padti thi. Is bundle mein disclosed reports ke patterns aur reporting ke steps ek jagah diye gaye hain.",
-   "job": "Security researchers, bug bounty hunters, authorized red-team testers.",
-   "kahan": "Cyber security teams, bug bounty platforms, penetration testing companies.",
-   "kya": "Claude Code ke liye 83 skills ka bundle jo bug hunting aur red-team (authorized security testing) kaam mein madad ke liye bana hai.",
-   "lang": [
-    [
-     "Python",
-     88.7
-    ],
-    [
-     "PowerShell",
-     5.7
-    ],
-    [
-     "Shell",
-     5.7
-    ]
-   ],
-   "need": "Jaise ek authorized bug bounty program mein tester ko report likhni hai; skills uska format aur steps yaad dilate hain.",
-   "plat": [
-    "Claude Code"
-   ],
-   "r": "high",
-   "rn": "High risk kyunki ye hacking/exploit se jude tools ka bundle hai (sawaal 1). Sirf wahi systems test karein jinki likhit permission aapke paas ho.",
-   "t": "sec",
-   "type": "Claude Code skill bundle (security testing)",
-   "win": [
-    "Claude Code mein chalayein: `/plugin marketplace add elementalsouls/Claude-BugHunter`",
-    "`/plugin install claude-bughunter@elementalsouls`"
-   ]
-  },
-  "archived": "2026-11-19"
- },
  "garrytan/gbrain": {
   "EN": {
    "and": [
@@ -1365,6 +1430,73 @@
    ]
   },
   "archived": "2026-11-11"
+ },
+ "getarcaneapp/arcane": {
+  "EN": {
+   "and": [
+    "Please see the official README: the setup steps are in the docs at getarcane.app.",
+    "On a phone or tablet you can only open the dashboard in a browser, while the server runs on another machine."
+   ],
+   "bani": "Many Docker tools (Docker packs apps into small sealed boxes called containers) feel old and heavy. Arcane is a modern dashboard where containers, images and networks all show in one place. Version 3 now lives on the main branch.",
+   "job": "DevOps, self-hosting hobbyists, developers, small IT teams",
+   "kahan": "Home labs, small company servers, startups, college projects that use Docker.",
+   "kya": "A clean dashboard to manage Docker containers with your mouse, so you do not need to remember long commands.",
+   "need": "If one small server runs many apps, typing commands every time gets tiring. It is like a shop's stock register: when everything is on one page, mistakes are fewer.",
+   "plat": [
+    "Web app",
+    "Linux",
+    "Docker"
+   ],
+   "rn": "Medium risk because it controls Docker on your server, which means wide access to the machine (question 2). Do not leave the dashboard open on the internet and use a strong password.",
+   "type": "Web app (a control panel for Docker)",
+   "win": [
+    "Please see the official README: the setup steps are in the docs at getarcane.app, the README shows no command.",
+    "Docker Desktop or Docker Engine must be installed first."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: setup steps getarcane.app ke docs par hain.",
+    "Phone ya tablet par sirf browser se dashboard khol sakte hain, server kisi aur machine par chalta hai."
+   ],
+   "bani": "Docker (chhote dibbon mein apps chalane ki technology) ke liye aam tools purane aur bhaari lagte the. Arcane ek modern dashboard hai jahan containers, images aur networks ek jagah dikhte hain. Version 3 ab main branch par hai.",
+   "job": "DevOps, self-hosting hobbyists, developers, small IT teams",
+   "kahan": "Home lab, chhoti companies ke servers, startups, college projects jahan Docker use hota hai.",
+   "kya": "Docker containers ko mouse se manage karne wala saaf-suthra dashboard, bina lambi commands yaad rakhe.",
+   "lang": [
+    [
+     "Go",
+     44.1
+    ],
+    [
+     "Svelte",
+     33.6
+    ],
+    [
+     "TypeScript",
+     22.0
+    ],
+    [
+     "Other",
+     0.3
+    ]
+   ],
+   "need": "Agar aapke paas ek chhota server hai jisme kai apps chalte hain, to har baar terminal mein commands likhna thaka deta hai. Jaise dukaan ka stock register: sab kuch ek page par dikh jaye to galti kam hoti hai.",
+   "plat": [
+    "Web app",
+    "Linux",
+    "Docker"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye aapke server ke Docker ko control karta hai, yaani poore machine tak pahunch milti hai (sawaal 2). Dashboard ko internet par khula na chhodein aur strong password rakhein.",
+   "t": "infra",
+   "type": "Web app (Docker control panel)",
+   "win": [
+    "Official README dekhein: setup steps getarcane.app ke docs par hain, README mein command nahi di gayi.",
+    "Pehle Docker Desktop ya Docker Engine install hona chahiye."
+   ]
+  },
+  "archived": "2026-11-20"
  },
  "ggml-org/ggml": {
   "EN": {
@@ -1513,6 +1645,67 @@
    ]
   },
   "archived": "2026-11-18"
+ },
+ "google-research/paper-orchestra": {
+  "EN": {
+   "and": [
+    "Please see the official README: this tool runs on Python and Conda, and the README has no steps for phones or tablets."
+   ],
+   "bani": "Writing a research paper takes a long time: outline, reading other papers, writing sections and making plots. Here several AI agents work like a team, each with one part of the job, and the result follows a conference's template.",
+   "job": "researchers, students, AI engineers, data analysts",
+   "kahan": "Universities, AI research labs, and teams preparing papers for conferences.",
+   "kya": "A tool from Google's research team that turns a rough idea and experiment notes into a draft research paper in LaTeX (a paper-writing format).",
+   "need": "Say you ran an experiment and have your notes, but the paper format feels hard. This tool builds a first draft from those notes, and you can then read and improve it yourself.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Medium risk because setup needs API keys (secret passwords for AI services) and optionally your email password in a `.env` file (question 2). The README also says it is not an officially supported Google product, and the dataset is not released yet.",
+   "type": "Multi-agent research tool (a team of AI helpers, run with Python)",
+   "win": [
+    "`conda create -n paper_orchestra python=3.11`",
+    "`conda activate paper_orchestra`",
+    "`pip install -r requirements.txt`",
+    "Then create a `.env` file and add your API keys (the email password is only for the demo and is not required)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye tool Python aur Conda par chalta hai, phone ya tablet ke liye steps README mein nahi hain."
+   ],
+   "bani": "Research paper likhna bahut time leta hai: outline, literature review, sections aur plots sab banane padte hain. Yahan alag alag AI agents ek team ki tarah kaam karte hain, har ek ke paas ek hissa hota hai, aur akhir mein conference ke template mein paper nikalta hai.",
+   "job": "researchers, students, AI engineers, data analysts",
+   "kahan": "Universities, AI research labs, aur wo teams jo conference ke liye paper taiyar karti hain.",
+   "kya": "Google ki research team ka tool jo rough idea aur experiment notes ko LaTeX research paper ke draft mein badalta hai.",
+   "lang": [
+    [
+     "Python",
+     96.9
+    ],
+    [
+     "Shell",
+     3.1
+    ]
+   ],
+   "need": "Maan lijiye aapne ek experiment kiya aur notes tayyar hain, par paper ka format banana mushkil lag raha hai. Ye tool un notes se pehla draft bana deta hai, jise aap phir khud padh kar behtar bana sakte hain.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki setup mein API keys aur optionally aapke email ka password `.env` file mein rakhna padta hai (sawaal 2). README bhi saaf kehta hai: ye officially supported Google product nahi hai. Dataset abhi release nahi hua.",
+   "t": "agent",
+   "type": "Multi-agent research tool (Python, command-line)",
+   "win": [
+    "`conda create -n paper_orchestra python=3.11`",
+    "`conda activate paper_orchestra`",
+    "`pip install -r requirements.txt`",
+    "Phir `.env` file banakar apni API keys daalein (email password sirf demo ke liye, zaroori nahi)."
+   ]
+  },
+  "archived": "2026-11-20"
  },
  "google/elephant-goldfish-model": {
   "EN": {
@@ -1959,6 +2152,61 @@
   },
   "archived": "2026-11-14"
  },
+ "nvm-sh/nvm": {
+  "EN": {
+   "and": [
+    "Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
+   ],
+   "bani": "Different projects need different Node.js versions. Keeping only one version broke older projects. nvm makes switching a one-line command.",
+   "job": "developers, automation builders, AI learners",
+   "kahan": "Web teams, startups, freelancers, AI tool setups.",
+   "kya": "A tool that lets you install and switch between different versions of Node.js (an engine that runs JavaScript) on one computer.",
+   "need": "Many AI automation tools need a recent Node.js. Example: one tool needs Node 22 while an older project runs on Node 18; nvm keeps both.",
+   "plat": [
+    "Mac",
+    "Linux",
+    "Windows (WSL)"
+   ],
+   "rn": "Medium risk because the install runs a script from the internet (question 3). The project is old and well known, but check the script first.",
+   "type": "Node.js version manager (command line)",
+   "win": [
+    "nvm-sh does not run directly on Windows; use WSL (Linux inside Windows). Please see the official README: this project's installer runs a script from the internet, so the command is not shown here (why: if the website changes, a wrong script could run)."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ],
+   "bani": "Alag projects ko alag Node.js version chahiye hota hai. Ek hi version rakhne se purane projects toot jate the. nvm ne ek command se version badalna aasaan bana diya.",
+   "job": "Developers, automation builders, AI learners.",
+   "kahan": "Web development teams, startups, freelancers, AI tool setups.",
+   "kya": "Ek tool jo ek computer par Node.js (JavaScript chalane wala engine) ke alag-alag versions install karke badalne deta hai.",
+   "lang": [
+    [
+     "Shell",
+     88.9
+    ],
+    [
+     "JavaScript",
+     11.1
+    ]
+   ],
+   "need": "Agar aap AI automation tools chalate hain, to unhe aksar naya Node.js chahiye. Example: ek tool ko Node 22 chahiye aur purana project Node 18 par chalta hai, nvm dono rakh deta hai.",
+   "plat": [
+    "Mac",
+    "Linux",
+    "Windows (WSL)"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki install internet se seedhi script chalata hai (sawaal 3). Project purana aur jaana-maana hai, par script ka check zaroor karein.",
+   "t": "infra",
+   "type": "Node.js version manager (command line)",
+   "win": [
+    "Windows par nvm-sh seedha nahi chalta; WSL (Windows ke andar Linux) use karein. Official README dekhein: is project ka installer internet se script chalata hai, isliye command yahan nahi di gayi (kyun: website badal jaye to galat script chal sakti hai)."
+   ]
+  },
+  "archived": "2026-11-20"
+ },
  "openai/codex-security": {
   "EN": {
    "and": [
@@ -2031,71 +2279,6 @@
    ]
   },
   "archived": "2026-11-15"
- },
- "pookjw/HermesEnabler": {
-  "EN": {
-   "and": [
-    "It does not run on Android, because an iPhone and Apple Watch are needed."
-   ],
-   "bani": "Apple does not give this feature to normal users. The developer built an app that helps turn it on with Developer Mode.",
-   "job": "iOS developers, Apple Watch testers, tinkerers",
-   "kahan": "Developer testing, hobby experiments.",
-   "kya": "An app installed from an iPhone that switches on a hidden feature (Hermes) on a supported Apple Watch beta.",
-   "need": "Only for curious developers testing beta watchOS. Example: a developer wants to try a new Watch feature on their own Watch.",
-   "plat": [
-    "iPhone",
-    "Apple Watch",
-    "Mac",
-    "Windows"
-   ],
-   "rn": "Medium risk because the app is installed from outside the App Store (question 4) and needs Developer Mode on the Watch. Works only on watchOS 27.0 to 27.3 beta 1.",
-   "type": "Apple Watch hidden-feature app (sideloaded)",
-   "win": [
-    "According to the README, Windows uses the community tool WatchBridge (github.com/AdminZachary/iloader-for-windows). Please see the official README."
-   ]
-  },
-  "R": {
-   "and": [
-    "Android par ye nahi chalta, kyunki iPhone aur Apple Watch chahiye."
-   ],
-   "bani": "Apple ne ye feature normal users ko nahi diya. Developer ne ek app banayi jo Watch par developer mode ke saath ise on karne mein madad karti hai.",
-   "job": "iOS developers, Apple Watch testers, tinkerers.",
-   "kahan": "Developer testing, hobby experiments.",
-   "kya": "Ek app jo supported Apple Watch beta par ek chhupa hua feature (Hermes) chalu karne ke liye iPhone se install hota hai.",
-   "lang": [
-    [
-     "Swift",
-     74.3
-    ],
-    [
-     "C",
-     11.4
-    ],
-    [
-     "Python",
-     5.7
-    ],
-    [
-     "Other",
-     8.6
-    ]
-   ],
-   "need": "Sirf curious developers ke liye, jo beta watchOS par test karte hain. Example: koi developer naye Watch feature ko apni Watch par try karna chahta hai.",
-   "plat": [
-    "iPhone",
-    "Apple Watch",
-    "Mac",
-    "Windows"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki app App Store ke bahar se sideload hoti hai (sawaal 4) aur Watch par Developer Mode chahiye. Sirf watchOS 27.0 se 27.3 beta 1 par chalti hai.",
-   "t": "device",
-   "type": "Apple Watch hidden-feature app (sideloaded)",
-   "win": [
-    "README ke hisaab se Windows par community tool WatchBridge use hota hai (github.com/AdminZachary/iloader-for-windows). Official README dekhein."
-   ]
-  },
-  "archived": "2026-11-14"
  },
  "ranxianglei/billion-context": {
   "EN": {
@@ -2346,6 +2529,67 @@
    ]
   },
   "archived": "2026-11-16"
+ },
+ "sveltejs/svelte": {
+  "EN": {
+   "and": [
+    "Please see the official README: it has no separate phone steps, so check the guide on svelte.dev."
+   ],
+   "bani": "Big frameworks send a lot of extra code to the browser, which can make pages heavy. Svelte is a compiler (a translator that works before the site goes live), so it does the work early and sends lighter code to the visitor.",
+   "job": "web developers, designers, freelancers, founders, students",
+   "kahan": "Startups, news and media sites, dashboards, and small shops' online pages.",
+   "kya": "A framework for building websites and web apps that turns your page parts into fast JavaScript (the language of web pages).",
+   "need": "If you want your shop or portfolio site to be fast and light, Svelte can build it with less code. Example: a booking form page that opens instantly even on an old phone.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web app"
+   ],
+   "rn": "Low risk. It is an MIT-licensed open source project (free to use and share), it has no install command that runs an internet script, and it does not ask for control of any account.",
+   "type": "Web framework (a tool that builds websites)",
+   "win": [
+    "Please see the official README: it has no install command, and the setup guide is on svelte.dev."
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: README mein phone ke liye alag steps nahi hain, svelte.dev ki guide dekhein."
+   ],
+   "bani": "Bade frameworks browser mein bahut sa extra code chalate hain, jisse pages bhaari ho sakte hain. Svelte ek compiler hai: wo build ke time hi kaam nipta deta hai, taaki browser tak halka code pahunche.",
+   "job": "web developers, designers, freelancers, founders, students",
+   "kahan": "Startups, news aur media websites, dashboards aur chhoti dukaano ki online pages.",
+   "kya": "Website aur web apps banane ka framework jo aapke components ko tez JavaScript mein badal deta hai.",
+   "lang": [
+    [
+     "Svelte",
+     53.6
+    ],
+    [
+     "JavaScript",
+     40.5
+    ],
+    [
+     "Other",
+     5.9
+    ]
+   ],
+   "need": "Agar aapko apni dukaan ya portfolio ki website tez aur halki chahiye, to Svelte se wo kam code mein ban jati hai. Example: ek booking form wala page jo purane phone par bhi turant khul jaye.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web app"
+   ],
+   "r": "low",
+   "rn": "Low risk. MIT license wala open source project hai, koi aisi install command nahi, jo internet se script chalaye, aur kisi account ka control nahi maanga jata.",
+   "t": "infra",
+   "type": "Web framework (JavaScript compiler)",
+   "win": [
+    "Official README dekhein: README mein install command nahi hai, setup guide svelte.dev par hai."
+   ]
+  },
+  "archived": "2026-11-20"
  },
  "tailscale/tailcat": {
   "EN": {
@@ -2602,6 +2846,75 @@
    ]
   },
   "archived": "2026-11-14"
+ },
+ "we-promise/sure": {
+  "EN": {
+   "and": [
+    "Please see the official README: this is a server app, so you must host it on a server and open it in the tablet browser"
+   ],
+   "bani": "The Maybe Finance team built this app, but the business did not work and the project stopped. The community forked (copied and continued) the code so people can host it free on their own server.",
+   "job": "Everyday users who budget, freelancers, finance bloggers, self-hosting fans, Ruby developers.",
+   "kahan": "Home budgets, small business accounts, personal investing tracking.",
+   "kya": "A personal finance and wealth app. The dashboard shows cashflow, net worth and spending, and an AI assistant answers questions.",
+   "need": "If you want to track money, spending and savings in one place without giving data to a company, this self-hosted app helps. It is like turning a household notebook into a smart dashboard.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "Linux",
+    "Mac",
+    "Windows"
+   ],
+   "rn": "Medium risk because the app holds your financial data and AI API keys (question 2). If you host it, server security is your responsibility.",
+   "type": "Personal finance app",
+   "win": [
+    "See the official hosting guide (Docker); for developer setup run `cp .env.local.example .env.local`, `bin/setup`, `bin/dev`",
+    "See the official README"
+   ]
+  },
+  "R": {
+   "and": [
+    "Official README dekhein: ye server app hai, tablet par browser se chalane ke liye kisi server par host karna padega"
+   ],
+   "bani": "Maybe Finance team ne ye app banaya tha, par business nahi chala aur project band ho gaya. Community ne is code ko fork karke zinda rakha, taaki log ise apne server par free host kar sakein.",
+   "job": "Aam users jo budget track karte hain, freelancers, finance bloggers, self-hosting shauqeen, Ruby developers.",
+   "kahan": "Ghar ka budget, small business ka hisaab, personal investing tracking.",
+   "kya": "Personal finance aur wealth management app: dashboard mein cashflow, net worth, spending dikhta hai, aur ek AI assistant sawaal ka jawab deta hai.",
+   "lang": [
+    [
+     "Ruby",
+     89.4
+    ],
+    [
+     "JavaScript",
+     4.8
+    ],
+    [
+     "Dart",
+     4.2
+    ],
+    [
+     "Other",
+     1.6
+    ]
+   ],
+   "need": "Agar aap apna paisa, kharche aur savings ek jagah dekhna chahte hain aur data kisi company ko nahi dena, to ye self-host app kaam aati hai. Jaise ghar ka kharcha ek diary ke bajay ek smart dashboard mein dikhe.",
+   "plat": [
+    "Web app",
+    "Docker",
+    "Linux",
+    "Mac",
+    "Windows"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki app aapka financial data aur AI API keys sambhalta hai (sawaal 2). Self-host karein to server ki security aapki responsibility hai.",
+   "t": "life",
+   "type": "Personal finance app",
+   "win": [
+    "Official hosting guide dekhein (docker) aur developer setup ke liye `cp .env.local.example .env.local`, `bin/setup`, `bin/dev`",
+    "Official README dekhein"
+   ]
+  },
+  "archived": "2026-11-20"
  },
  "zed-industries/zed": {
   "EN": {

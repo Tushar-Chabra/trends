@@ -1,4 +1,67 @@
 {
+ "AgriciDaniel/claude-seo": {
+  "EN": {
+   "and": [
+    "Does not run on a tablet; Claude Code runs on a computer."
+   ],
+   "bani": "SEO consultants are costly and you must run many tools separately. This plugin has 29 skills and 20 agents that check technical SEO, content, schema (structured data for search engines) and AI search together.",
+   "job": "Marketers, SEO freelancers, small business owners, website owners.",
+   "kahan": "Digital marketing agencies, e-commerce stores, local businesses, blogs.",
+   "kya": "A free plugin that audits any website for SEO in 10 to 15 minutes and gives an action plan sorted by priority.",
+   "need": "Your small shop's website ranks low on Google. Running the plugin shows what is wrong with speed, sitemap or schema.",
+   "plat": [
+    "Claude Code"
+   ],
+   "rn": "Low risk. It installs through the official plugin system; `/seo setup` adds its own Python environment and a headless browser (a browser with no screen). Check only your own sites or sites you have permission for.",
+   "type": "Claude Code plugin (SEO audit)",
+   "win": [
+    "In Claude Code (version 1.0.33 or newer) run: `/plugin marketplace add AgriciDaniel/claude-seo`",
+    "`/plugin install claude-seo@agricidaniel-claude-seo`",
+    "`/seo setup`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Tablet par nahi chalta; Claude Code computer par chalta hai."
+   ],
+   "bani": "SEO ke liye consultant mehnge hote hain aur kai tools alag alag chalane padte hain. Is plugin mein 29 skills aur 20 agents technical SEO, content, schema (search engines ke liye structured data) aur AI search ko ek saath check karte hain.",
+   "job": "Marketers, SEO freelancers, small business owners, website owners.",
+   "kahan": "Digital marketing agencies, e-commerce stores, local businesses, blogs.",
+   "kya": "Free plugin jo kisi bhi website ka SEO audit 10-15 minute mein karke priority ke saath action plan deta hai.",
+   "lang": [
+    [
+     "Python",
+     85.0
+    ],
+    [
+     "Shell",
+     8.8
+    ],
+    [
+     "PowerShell",
+     5.1
+    ],
+    [
+     "Other",
+     1.1
+    ]
+   ],
+   "need": "Aapki chhoti dukaan ki website Google par neeche aati hai. Plugin chalakar pata chalta hai ki speed, sitemap ya schema mein kya galat hai.",
+   "plat": [
+    "Claude Code"
+   ],
+   "r": "low",
+   "rn": "Low risk. Install official plugin se hota hai; `/seo setup` apna Python environment aur headless browser (bina screen ka browser) laga leta hai. Sirf apni ya permission wali websites check karein.",
+   "t": "agent",
+   "type": "Claude Code plugin (SEO audit)",
+   "win": [
+    "Claude Code (1.0.33 ya naya) mein chalayein: `/plugin marketplace add AgriciDaniel/claude-seo`",
+    "`/plugin install claude-seo@agricidaniel-claude-seo`",
+    "`/seo setup`"
+   ]
+  },
+  "archived": "2026-11-23"
+ },
  "D4Vinci/Scrapling": {
   "EN": {
    "and": [
@@ -1839,6 +1902,73 @@
   },
   "archived": "2026-11-14"
  },
+ "heygen-com/hyperframes": {
+  "EN": {
+   "and": [
+    "It does not run on Android (it is a computer tool)."
+   ],
+   "bani": "The HeyGen team saw that AI agents write HTML very well, but find it hard to run a video editor. So they made HTML itself the video format.",
+   "job": "Video creators, marketers, developers, AI automation learners.",
+   "kahan": "Social media videos, product demos, data chart videos, marketing teams.",
+   "kya": "You write in HTML what should appear in the video, and this tool turns it into a real video file. It is made to work with AI agents.",
+   "need": "For people who want to make videos without an editing app. For example, you tell the agent 'make a 10 second video of this chart', and it does it.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "rn": "Low risk. As per the README the install is through npm and a plugin, and the desktop app is downloaded from the official website hyperframes.studio. It only works inside your project folder.",
+   "type": "A video-making framework (write HTML, render a video)",
+   "win": [
+    "You need Node.js 22 or newer. In the terminal (the text window where you type commands): `npx hyperframes skills update`",
+    "For an agent plugin: `claude plugin marketplace add heygen-com/hyperframes` then `claude plugin install hyperframes@hyperframes`",
+    "Or for separate skills: `npx skills add heygen-com/hyperframes`"
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi chalta (ye computer ka tool hai)."
+   ],
+   "bani": "HeyGen team ne dekha ki AI agents HTML bahut achhe se likh lete hain, par video editor chalana unke liye mushkil hai. Isliye unhone HTML ko hi video ka format bana diya.",
+   "job": "Video creators, marketers, developers, AI automation learners.",
+   "kahan": "Social media videos, product demos, data charts ke videos, marketing teams.",
+   "kya": "Aap HTML mein likhte hain ki video mein kya dikhna hai, aur ye tool use asli video file mein badal deta hai. AI agents ke saath kaam karne ke liye bana hai.",
+   "lang": [
+    [
+     "TypeScript",
+     74.6
+    ],
+    [
+     "HTML",
+     17.4
+    ],
+    [
+     "JavaScript",
+     7.2
+    ],
+    [
+     "Other",
+     0.8
+    ]
+   ],
+   "need": "Un logon ke liye jo bina editing app ke video banana chahte hain. Jaise aap agent se kahein 'is chart ka 10 second ka video bana do', aur wo bana de.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux"
+   ],
+   "r": "low",
+   "rn": "Low risk. README ke hisaab se install npm aur plugin se hota hai, aur desktop app official website hyperframes.studio se download hoti hai. Ye sirf aapke project folder mein kaam karta hai.",
+   "t": "media",
+   "type": "Video banane ka framework (HTML likho, video render karo)",
+   "win": [
+    "Node.js 22 ya naya chahiye. Terminal mein: `npx hyperframes skills update`",
+    "Agent ke liye plugin: `claude plugin marketplace add heygen-com/hyperframes` phir `claude plugin install hyperframes@hyperframes`",
+    "Ya alag skills ke liye: `npx skills add heygen-com/hyperframes`"
+   ]
+  },
+  "archived": "2026-11-23"
+ },
  "homeassistant-ai/ha-mcp": {
   "EN": {
    "and": [
@@ -2029,61 +2159,6 @@
    ]
   },
   "archived": "2026-11-12"
- },
- "milind-soni/OpenMausBot": {
-  "EN": {
-   "and": [
-    "Please see the official README."
-   ],
-   "bani": "Running many AI agents and watching their work is hard. This project built a chat app where all bots sit in one sidebar and ask you to approve before they act. It is an independent project inspired by Grok Bot.",
-   "job": "Freelancers, founders, people learning AI automation, power users.",
-   "kahan": "Productivity, small business, research, content teams.",
-   "kya": "An open-source app where every bot is a real agent (Claude or Codex, running on your computer). Each bot has its own name, model, cloud computer and connected apps. You talk to them like contacts.",
-   "need": "If you want AI to do many jobs, it is easier to manage all bots in one place. For example, a freelancer has one bot write emails, another do research, and approves only the important actions.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Ubuntu"
-   ],
-   "rn": "Medium risk because the bots can get control of your connected apps and accounts (question 2). The README itself says the project has no crypto token and that coins using its name are fake. Keep approval for important actions turned ON.",
-   "type": "Desktop chat app (your team of AI bots, like a chat)",
-   "win": [
-    "Please see the official README (the installer is downloaded from GitHub releases)."
-   ]
-  },
-  "R": {
-   "and": [
-    "Official README dekhein."
-   ],
-   "bani": "Alag alag AI agents ko chalana aur unka kaam dekhna mushkil hai. Is project ne ek chat app banayi jahan sab bots ek sidebar mein hote hain aur kaam karne se pehle aapse approval maangte hain. Ye Grok Bot se inspired ek independent project hai.",
-   "job": "Freelancers, founders, AI automation learners, power users.",
-   "kahan": "Productivity, small business, research, content teams.",
-   "kya": "Ek open-source app jisme har bot ek asli agent hota hai (Claude ya Codex, aapke computer par chalta hai). Har bot ka apna naam, model, cloud computer aur jude hue apps hote hain. Aap unse contacts ki tarah baat karte hain.",
-   "lang": [
-    [
-     "TypeScript",
-     91
-    ],
-    [
-     "JavaScript",
-     9
-    ]
-   ],
-   "need": "Agar aap kai kaam AI se karwana chahte hain, to ek jagah se sab bots sambhalna aasaan hota hai. Jaise ek freelancer ek bot se emails, doosre se research karwata hai aur sirf zaroori kaam approve karta hai.",
-   "plat": [
-    "Windows",
-    "Mac",
-    "Ubuntu"
-   ],
-   "r": "med",
-   "rn": "Medium risk kyunki bots ko aapke connected apps aur accounts ka control mil sakta hai (sawaal 2). README khud kehta hai ki is project ka koi crypto token nahi hai; us naam ke coins fake hain. Zaroori kaam ke approval ko ON rakhein.",
-   "t": "agent",
-   "type": "Desktop chat app (aapki AI bots ki team, chat ki tarah)",
-   "win": [
-    "Official README dekhein (installer GitHub releases se download hota hai)."
-   ]
-  },
-  "archived": "2026-11-17"
  },
  "nodejs/node": {
   "EN": {
@@ -2468,6 +2543,67 @@
    ]
   },
   "archived": "2026-11-13"
+ },
+ "sherlock-project/sherlock": {
+  "EN": {
+   "and": [
+    "Not available on Android."
+   ],
+   "bani": "Finding one person's or brand's accounts across many sites takes a long time. This project automates it, so one command checks all the sites.",
+   "job": "Security researchers, OSINT analysts (people who research using public information), journalists, brand teams.",
+   "kahan": "Security research, investigations, brand protection, digital safety training.",
+   "kya": "Sherlock takes a username and checks 400+ social networks to see where an account with that name exists. The accounts it finds are saved in a text file.",
+   "need": "If you want to protect your brand name or do research, you need to see where a username is used. For example, you start a new business and check whether the name is free on Instagram, X and GitHub.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Docker"
+   ],
+   "rn": "Medium risk because it automatically checks many sites (question 5), and some sites' rules may not allow that. It can affect someone's privacy, so use it only on your own names or with permission. It can also include 18+ sites (this is controlled by an option).",
+   "type": "Tool that finds social media accounts from a username",
+   "win": [
+    "You need Python. In the terminal: `pipx install sherlock-project`",
+    "Or with Docker: `docker run -it --rm sherlock/sherlock`",
+    "To run it: `sherlock user123` (replace user123 with the username)"
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par nahi."
+   ],
+   "bani": "Kisi ek person ya brand ke accounts alag alag sites par dhundna bahut time leta hai. Is project ne ye kaam automatic kar diya, taaki ek command se saari sites check ho jayein.",
+   "job": "Security researchers, OSINT analysts (public jaankari se research karne wale), journalists, brand teams.",
+   "kahan": "Security research, investigations, brand protection, digital safety training.",
+   "kya": "Sherlock ek username leta hai aur 400 se zyada social networks par check karta hai ki us naam ka account kahan bana hua hai. Mile hue accounts ki list ek text file mein save ho jati hai.",
+   "lang": [
+    [
+     "Python",
+     94
+    ],
+    [
+     "Shell",
+     6
+    ]
+   ],
+   "need": "Agar aap apna brand naam bachana chahte hain ya research karte hain, to dekhna hota hai ki wo username kahan lagaa hua hai. Jaise aap naya business shuru kar rahe hain aur check karte hain ki wo naam Instagram, X aur GitHub par free hai ya nahi.",
+   "plat": [
+    "Windows",
+    "Mac",
+    "Linux",
+    "Docker"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki ye bahut sari sites par automatic check karta hai (sawaal 5), kuch sites ke rules ise rok sakte hain. Ye kisi ki privacy par effect daal sakta hai, isliye sirf apne ya permission wale naam par use karein. Isme 18+ sites bhi ho sakti hain (option se control hota hai).",
+   "t": "sec",
+   "type": "Username se social media accounts dhundne ka tool",
+   "win": [
+    "Python chahiye. Terminal mein: `pipx install sherlock-project`",
+    "Ya Docker se: `docker run -it --rm sherlock/sherlock`",
+    "Chalane ke liye: `sherlock user123` (user123 ki jagah wo username likhein)"
+   ]
+  },
+  "archived": "2026-11-23"
  },
  "storytold/artcraft": {
   "EN": {

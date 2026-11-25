@@ -4144,6 +4144,196 @@
     "src": "Trendshift",
     "upd": "2026-11-05"
    }
+  },
+  "2026-11-25": {
+   "daily": {
+    "lbl": "Daily",
+    "src": "GitHub",
+    "upd": "2026-11-25",
+    "rows": [
+     [
+      "elementalsouls/Claude-BugHunter",
+      "1.8k"
+     ],
+     [
+      "obra/superpowers",
+      "1.0k"
+     ],
+     [
+      "HKUDS/CLI-Anything",
+      "1.1k"
+     ],
+     [
+      "jingyaogong/minimind",
+      "727"
+     ],
+     [
+      "cursor/plugins",
+      "360"
+     ],
+     [
+      "firecrawl/firecrawl",
+      "991"
+     ],
+     [
+      "nginx/nginx",
+      "158"
+     ],
+     [
+      "openvinotoolkit/openvino",
+      "185"
+     ],
+     [
+      "cathrynlavery/diagram-design",
+      "802"
+     ],
+     [
+      "mvanhorn/last30days-skill",
+      "703"
+     ]
+    ]
+   },
+   "weekly": {
+    "lbl": "Weekly",
+    "src": "GitHub",
+    "upd": "2026-11-25",
+    "rows": [
+     [
+      "backnotprop/plannotator",
+      "2.0k"
+     ],
+     [
+      "google-labs-code/stitch-skills",
+      "2.6k"
+     ],
+     [
+      "GoogleChrome/modern-web-guidance-src",
+      "2.5k"
+     ],
+     [
+      "alibaba/open-code-review",
+      "2.6k"
+     ],
+     [
+      "mvanhorn/last30days-skill",
+      "5.4k"
+     ],
+     [
+      "ChromeDevTools/chrome-devtools-mcp",
+      "1.3k"
+     ],
+     [
+      "tradermonty/claude-trading-skills",
+      "1.5k"
+     ],
+     [
+      "ag-ui-protocol/ag-ui",
+      "1.8k"
+     ],
+     [
+      "meta/astryx",
+      "2.9k"
+     ],
+     [
+      "pookjw/HermesEnabler",
+      "328"
+     ]
+    ]
+   },
+   "monthly": {
+    "lbl": "Monthly",
+    "src": "GitHub",
+    "upd": "2026-11-23",
+    "rows": [
+     [
+      "Nutlope/hallmark",
+      "29.0k"
+     ],
+     [
+      "cloudflare/security-audit-skill",
+      "39.3k"
+     ],
+     [
+      "milind-soni/OpenMausBot",
+      "21.5k"
+     ],
+     [
+      "pingdotgg/t3code",
+      "41.5k"
+     ],
+     [
+      "anthropics/skills",
+      "16.5k"
+     ],
+     [
+      "thedotmack/claude-mem",
+      "17.4k"
+     ],
+     [
+      "Jakeschincariol/instagram-agent-skill",
+      "5.8k"
+     ],
+     [
+      "backnotprop/plannotator",
+      "4.8k"
+     ],
+     [
+      "HKUDS/DeepTutor",
+      "19.7k"
+     ],
+     [
+      "pbakaus/impeccable",
+      "30.6k"
+     ]
+    ]
+   },
+   "yearly": {
+    "lbl": "Yearly",
+    "rows": [
+     [
+      "openclaw/openclaw",
+      "398.6k"
+     ],
+     [
+      "obra/superpowers",
+      "301.1k"
+     ],
+     [
+      "morluto/rea",
+      "432.3k"
+     ],
+     [
+      "NousResearch/hermes-agent",
+      "261.7k"
+     ],
+     [
+      "mattpocock/skills",
+      "311.8k"
+     ],
+     [
+      "affaan-m/ECC",
+      "298.8k"
+     ],
+     [
+      "anomalyco/opencode",
+      "182.1k"
+     ],
+     [
+      "multica-ai/andrej-karpathy-skills",
+      "230.7k"
+     ],
+     [
+      "msitarzewski/agency-agents",
+      "166.3k"
+     ],
+     [
+      "anthropics/skills",
+      "157.9k"
+     ]
+    ],
+    "src": "Trendshift",
+    "upd": "2026-11-05"
+   }
   }
  }
 }

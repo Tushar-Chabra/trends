@@ -13,7 +13,7 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
           "November", "December"]
 DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 # Archive list page style: same colours and fonts as the main page (sketch look), light + dark.
-ARC_CSS = """:root{--bg:#fbfaf7;--dot:#d9d6ce;--paper:#fff;--ink:#1e1e1e;--muted:#5f5b55;--line:#1e1e1e;--accent:#6965db;--hl:#fff3a3;--hand:"Kalam","Comic Sans MS","Segoe Print",cursive;--body:"Nunito","Segoe UI",system-ui,sans-serif}
+ARC_CSS = """:root{--bg:#fbfaf7;--dot:#d9d6ce;--paper:#fff;--ink:#1e1e1e;--muted:#5f5b55;--line:#1e1e1e;--accent:#6965db;--hl:#fff3a3;--hand:"Patrick Hand","Comic Sans MS","Segoe Print",cursive;--body:"Patrick Hand","Comic Sans MS","Segoe Print",cursive}
 @media(prefers-color-scheme:dark){:root{--bg:#121212;--dot:#2c2c2c;--paper:#1c1c1e;--ink:#e3e3e3;--muted:#a3a09a;--line:#cfcfcf;--accent:#a8a5ff;--hl:#4a4318;color-scheme:dark}}
 *{box-sizing:border-box}
 html,body{overflow-x:clip}
@@ -113,7 +113,7 @@ def write_all(data):
             '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src \'self\'">'
             '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">'
             '<title>GitHub Trends Archive</title>'
-            '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Nunito:wght@400;600;800;900&display=swap">'
+            '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">'
             '<style>' + ARC_CSS + '</style></head><body>'
             '<nav class="bar" aria-label="GitHub Trends"><a class="brand" href="../"><span class="bm" aria-hidden="true">GT</span>'
             '<span class="bt">GitHub Trends</span></a><a class="today" href="../">Today\'s trends &#8594;</a></nav>'

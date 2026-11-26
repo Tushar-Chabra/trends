@@ -2355,6 +2355,71 @@
   },
   "archived": "2026-11-15"
  },
+ "pookjw/HermesEnabler": {
+  "EN": {
+   "and": [
+    "It does not run on Android, because an iPhone and Apple Watch are needed."
+   ],
+   "bani": "Apple does not give this feature to normal users. The developer built an app that helps turn it on with Developer Mode.",
+   "job": "iOS developers, Apple Watch testers, tinkerers",
+   "kahan": "Developer testing, hobby experiments.",
+   "kya": "An app installed from an iPhone that switches on a hidden feature (Hermes) on a supported Apple Watch beta.",
+   "need": "Only for curious developers testing beta watchOS. Example: a developer wants to try a new Watch feature on their own Watch.",
+   "plat": [
+    "iPhone",
+    "Apple Watch",
+    "Mac",
+    "Windows"
+   ],
+   "rn": "Medium risk because the app is installed from outside the App Store (question 4) and needs Developer Mode on the Watch. Works only on watchOS 27.0 to 27.3 beta 1.",
+   "type": "Apple Watch hidden-feature app (sideloaded)",
+   "win": [
+    "According to the README, Windows uses the community tool WatchBridge (github.com/AdminZachary/iloader-for-windows). Please see the official README."
+   ]
+  },
+  "R": {
+   "and": [
+    "Android par ye nahi chalta, kyunki iPhone aur Apple Watch chahiye."
+   ],
+   "bani": "Apple ne ye feature normal users ko nahi diya. Developer ne ek app banayi jo Watch par developer mode ke saath ise on karne mein madad karti hai.",
+   "job": "iOS developers, Apple Watch testers, tinkerers.",
+   "kahan": "Developer testing, hobby experiments.",
+   "kya": "Ek app jo supported Apple Watch beta par ek chhupa hua feature (Hermes) chalu karne ke liye iPhone se install hota hai.",
+   "lang": [
+    [
+     "Swift",
+     74.3
+    ],
+    [
+     "C",
+     11.4
+    ],
+    [
+     "Python",
+     5.7
+    ],
+    [
+     "Other",
+     8.6
+    ]
+   ],
+   "need": "Sirf curious developers ke liye, jo beta watchOS par test karte hain. Example: koi developer naye Watch feature ko apni Watch par try karna chahta hai.",
+   "plat": [
+    "iPhone",
+    "Apple Watch",
+    "Mac",
+    "Windows"
+   ],
+   "r": "med",
+   "rn": "Medium risk kyunki app App Store ke bahar se sideload hoti hai (sawaal 4) aur Watch par Developer Mode chahiye. Sirf watchOS 27.0 se 27.3 beta 1 par chalti hai.",
+   "t": "device",
+   "type": "Apple Watch hidden-feature app (sideloaded)",
+   "win": [
+    "README ke hisaab se Windows par community tool WatchBridge use hota hai (github.com/AdminZachary/iloader-for-windows). Official README dekhein."
+   ]
+  },
+  "archived": "2026-11-26"
+ },
  "ranxianglei/billion-context": {
   "EN": {
    "and": [

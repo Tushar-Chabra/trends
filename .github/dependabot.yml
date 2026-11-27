@@ -1,0 +1,8 @@
+# Workflow ke actions (checkout, pages) purane na hon, isliye mahine mein ek baar
+# Dependabot khud update ka pull request kholta hai.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
